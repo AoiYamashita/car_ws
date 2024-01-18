@@ -1,0 +1,349 @@
+[0.000000] (-) TimerEvent: {}
+[0.003840] (mypkg) JobQueued: {'identifier': 'mypkg', 'dependencies': OrderedDict()}
+[0.005301] (mypkg) JobStarted: {'identifier': 'mypkg'}
+[0.098655] (-) TimerEvent: {}
+[0.200763] (-) TimerEvent: {}
+[0.304830] (-) TimerEvent: {}
+[0.406342] (-) TimerEvent: {}
+[0.510065] (-) TimerEvent: {}
+[0.611762] (-) TimerEvent: {}
+[0.720113] (-) TimerEvent: {}
+[0.822970] (-) TimerEvent: {}
+[0.931928] (-) TimerEvent: {}
+[1.038678] (-) TimerEvent: {}
+[1.142800] (-) TimerEvent: {}
+[1.253285] (-) TimerEvent: {}
+[1.354883] (-) TimerEvent: {}
+[1.457275] (-) TimerEvent: {}
+[1.558594] (-) TimerEvent: {}
+[1.660001] (-) TimerEvent: {}
+[1.761561] (-) TimerEvent: {}
+[1.863283] (-) TimerEvent: {}
+[1.965355] (-) TimerEvent: {}
+[2.066906] (-) TimerEvent: {}
+[2.168815] (-) TimerEvent: {}
+[2.270657] (-) TimerEvent: {}
+[2.377445] (-) TimerEvent: {}
+[2.478912] (-) TimerEvent: {}
+[2.580538] (-) TimerEvent: {}
+[2.682308] (-) TimerEvent: {}
+[2.784088] (-) TimerEvent: {}
+[2.885827] (-) TimerEvent: {}
+[2.987452] (-) TimerEvent: {}
+[3.089140] (-) TimerEvent: {}
+[3.192225] (-) TimerEvent: {}
+[3.294098] (-) TimerEvent: {}
+[3.395954] (-) TimerEvent: {}
+[3.498815] (-) TimerEvent: {}
+[3.605614] (-) TimerEvent: {}
+[3.708553] (-) TimerEvent: {}
+[3.812209] (-) TimerEvent: {}
+[3.915896] (-) TimerEvent: {}
+[4.021131] (-) TimerEvent: {}
+[4.122602] (-) TimerEvent: {}
+[4.224256] (-) TimerEvent: {}
+[4.326971] (-) TimerEvent: {}
+[4.428765] (-) TimerEvent: {}
+[4.530432] (-) TimerEvent: {}
+[4.632141] (-) TimerEvent: {}
+[4.733844] (-) TimerEvent: {}
+[4.835560] (-) TimerEvent: {}
+[4.937273] (-) TimerEvent: {}
+[5.039125] (-) TimerEvent: {}
+[5.140832] (-) TimerEvent: {}
+[5.242476] (-) TimerEvent: {}
+[5.353077] (-) TimerEvent: {}
+[5.454982] (-) TimerEvent: {}
+[5.565098] (-) TimerEvent: {}
+[5.667325] (-) TimerEvent: {}
+[5.769001] (-) TimerEvent: {}
+[5.870672] (-) TimerEvent: {}
+[5.983968] (-) TimerEvent: {}
+[6.086601] (-) TimerEvent: {}
+[6.189172] (-) TimerEvent: {}
+[6.292000] (-) TimerEvent: {}
+[6.394315] (-) TimerEvent: {}
+[6.500013] (-) TimerEvent: {}
+[6.602350] (-) TimerEvent: {}
+[6.705627] (-) TimerEvent: {}
+[6.809406] (-) TimerEvent: {}
+[6.912329] (-) TimerEvent: {}
+[7.016512] (-) TimerEvent: {}
+[7.118765] (-) TimerEvent: {}
+[7.220738] (-) TimerEvent: {}
+[7.322258] (-) TimerEvent: {}
+[7.424806] (-) TimerEvent: {}
+[7.527311] (-) TimerEvent: {}
+[7.629095] (-) TimerEvent: {}
+[7.730604] (-) TimerEvent: {}
+[7.832198] (-) TimerEvent: {}
+[7.933857] (-) TimerEvent: {}
+[8.035370] (-) TimerEvent: {}
+[8.137040] (-) TimerEvent: {}
+[8.238391] (-) TimerEvent: {}
+[8.339860] (-) TimerEvent: {}
+[8.441442] (-) TimerEvent: {}
+[8.543279] (-) TimerEvent: {}
+[8.645137] (-) TimerEvent: {}
+[8.746796] (-) TimerEvent: {}
+[8.849349] (-) TimerEvent: {}
+[8.951985] (-) TimerEvent: {}
+[9.054269] (-) TimerEvent: {}
+[9.155927] (-) TimerEvent: {}
+[9.257624] (-) TimerEvent: {}
+[9.359377] (-) TimerEvent: {}
+[9.461056] (-) TimerEvent: {}
+[9.562736] (-) TimerEvent: {}
+[9.664496] (-) TimerEvent: {}
+[9.766225] (-) TimerEvent: {}
+[9.867948] (-) TimerEvent: {}
+[9.969505] (-) TimerEvent: {}
+[10.071425] (-) TimerEvent: {}
+[10.173187] (-) TimerEvent: {}
+[10.281047] (-) TimerEvent: {}
+[10.382468] (-) TimerEvent: {}
+[10.484034] (-) TimerEvent: {}
+[10.585578] (-) TimerEvent: {}
+[10.697051] (-) TimerEvent: {}
+[10.798533] (-) TimerEvent: {}
+[10.900126] (-) TimerEvent: {}
+[11.012433] (-) TimerEvent: {}
+[11.113923] (-) TimerEvent: {}
+[11.215494] (-) TimerEvent: {}
+[11.317554] (-) TimerEvent: {}
+[11.420348] (-) TimerEvent: {}
+[11.522145] (-) TimerEvent: {}
+[11.623696] (-) TimerEvent: {}
+[11.733023] (-) TimerEvent: {}
+[11.834508] (-) TimerEvent: {}
+[11.936035] (-) TimerEvent: {}
+[12.037582] (-) TimerEvent: {}
+[12.145057] (-) TimerEvent: {}
+[12.246532] (-) TimerEvent: {}
+[12.348133] (-) TimerEvent: {}
+[12.449662] (-) TimerEvent: {}
+[12.551201] (-) TimerEvent: {}
+[12.652798] (-) TimerEvent: {}
+[12.754293] (-) TimerEvent: {}
+[12.855791] (-) TimerEvent: {}
+[12.957294] (-) TimerEvent: {}
+[13.058610] (-) TimerEvent: {}
+[13.160375] (-) TimerEvent: {}
+[13.262033] (-) TimerEvent: {}
+[13.363592] (-) TimerEvent: {}
+[13.465300] (-) TimerEvent: {}
+[13.566717] (-) TimerEvent: {}
+[13.668383] (-) TimerEvent: {}
+[13.770879] (-) TimerEvent: {}
+[13.873088] (-) TimerEvent: {}
+[13.974618] (-) TimerEvent: {}
+[14.077100] (-) TimerEvent: {}
+[14.179433] (-) TimerEvent: {}
+[14.281135] (-) TimerEvent: {}
+[14.382824] (-) TimerEvent: {}
+[14.485072] (-) TimerEvent: {}
+[14.591424] (-) TimerEvent: {}
+[14.693146] (-) TimerEvent: {}
+[14.794658] (-) TimerEvent: {}
+[14.904977] (-) TimerEvent: {}
+[15.007176] (-) TimerEvent: {}
+[15.109724] (-) TimerEvent: {}
+[15.211336] (-) TimerEvent: {}
+[15.312925] (-) TimerEvent: {}
+[15.414375] (-) TimerEvent: {}
+[15.515850] (-) TimerEvent: {}
+[15.617392] (-) TimerEvent: {}
+[15.718932] (-) TimerEvent: {}
+[15.821484] (-) TimerEvent: {}
+[15.923999] (-) TimerEvent: {}
+[16.026587] (-) TimerEvent: {}
+[16.129243] (-) TimerEvent: {}
+[16.231873] (-) TimerEvent: {}
+[16.333506] (-) TimerEvent: {}
+[16.435189] (-) TimerEvent: {}
+[16.537079] (-) TimerEvent: {}
+[16.638699] (-) TimerEvent: {}
+[16.740412] (-) TimerEvent: {}
+[16.842173] (-) TimerEvent: {}
+[16.943887] (-) TimerEvent: {}
+[17.045563] (-) TimerEvent: {}
+[17.147217] (-) TimerEvent: {}
+[17.248920] (-) TimerEvent: {}
+[17.350401] (-) TimerEvent: {}
+[17.452088] (-) TimerEvent: {}
+[17.553825] (-) TimerEvent: {}
+[17.655545] (-) TimerEvent: {}
+[17.757943] (-) TimerEvent: {}
+[17.859481] (-) TimerEvent: {}
+[17.962115] (-) TimerEvent: {}
+[18.065050] (-) TimerEvent: {}
+[18.166723] (-) TimerEvent: {}
+[18.268350] (-) TimerEvent: {}
+[18.370960] (-) TimerEvent: {}
+[18.473427] (-) TimerEvent: {}
+[18.576886] (-) TimerEvent: {}
+[18.680843] (-) TimerEvent: {}
+[18.784592] (-) TimerEvent: {}
+[18.888385] (-) TimerEvent: {}
+[18.992349] (-) TimerEvent: {}
+[19.098264] (-) TimerEvent: {}
+[19.112263] (mypkg) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../build/mypkg', 'build', '--build-base', '/home/yamashita/car_ws/build/mypkg/build', 'install', '--record', '/home/yamashita/car_ws/build/mypkg/install.log', '--single-version-externally-managed'], 'cwd': '/home/yamashita/car_ws/src/mypkg', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'yamashita', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/yamashita', 'OLDPWD': '/home/yamashita/car_ws/src/mypkg', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'SYSTEMD_EXEC_PID': '3069', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'IM_CONFIG_PHASE': '1', 'COLCON_PREFIX_PATH': '/home/yamashita/car_ws/install:/home/yamashita/serial_ws/install:/home/yamashita/ros2_ws/install', 'ROS_DISTRO': 'humble', 'GTK_IM_MODULE': 'ibus', 'LOGNAME': 'yamashita', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'yamashita', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'WINDOWPATH': '2', 'PATH': '/opt/ros/humble/bin:/home/yamashita/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/raspberrypi:@/tmp/.ICE-unix/1688,unix/raspberrypi:/tmp/.ICE-unix/1688', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/d7e2241b_ec81_48d9_9f43_607cd84e2d5b', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':1', 'LANG': 'C.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.86', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/yamashita/serial_ws/install/ros_serial:/home/yamashita/ros2_ws/install/robo231:/opt/ros/humble', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/yamashita/car_ws/build/mypkg', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/yamashita/car_ws/build/mypkg/prefix_override:/home/yamashita/car_ws/install/mypkg/lib/python3.10/site-packages:/home/yamashita/serial_ws/install/ros_serial/lib/python3.10/site-packages:/home/yamashita/ros2_ws/install/robo231/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'VTE_VERSION': '6800'}, 'shell': False}
+[19.198878] (-) TimerEvent: {}
+[19.301545] (-) TimerEvent: {}
+[19.405336] (-) TimerEvent: {}
+[19.507611] (-) TimerEvent: {}
+[19.609252] (-) TimerEvent: {}
+[19.710994] (-) TimerEvent: {}
+[19.813376] (-) TimerEvent: {}
+[19.915339] (-) TimerEvent: {}
+[20.017113] (-) TimerEvent: {}
+[20.118346] (-) TimerEvent: {}
+[20.219895] (-) TimerEvent: {}
+[20.332985] (-) TimerEvent: {}
+[20.434375] (-) TimerEvent: {}
+[20.535871] (-) TimerEvent: {}
+[20.637442] (-) TimerEvent: {}
+[20.738840] (-) TimerEvent: {}
+[20.840320] (-) TimerEvent: {}
+[20.941976] (-) TimerEvent: {}
+[21.043852] (-) TimerEvent: {}
+[21.145446] (-) TimerEvent: {}
+[21.247161] (-) TimerEvent: {}
+[21.348987] (-) TimerEvent: {}
+[21.450637] (-) TimerEvent: {}
+[21.552335] (-) TimerEvent: {}
+[21.653999] (-) TimerEvent: {}
+[21.755572] (-) TimerEvent: {}
+[21.857119] (-) TimerEvent: {}
+[21.958760] (-) TimerEvent: {}
+[22.060504] (-) TimerEvent: {}
+[22.162271] (-) TimerEvent: {}
+[22.263764] (-) TimerEvent: {}
+[22.365317] (-) TimerEvent: {}
+[22.466838] (-) TimerEvent: {}
+[22.568436] (-) TimerEvent: {}
+[22.670081] (-) TimerEvent: {}
+[22.771667] (-) TimerEvent: {}
+[22.873035] (-) TimerEvent: {}
+[22.916170] (mypkg) StdoutLine: {'line': b'running egg_info\n'}
+[22.918644] (mypkg) StdoutLine: {'line': b'creating ../../build/mypkg/mypkg.egg-info\n'}
+[22.973333] (-) TimerEvent: {}
+[23.075420] (-) TimerEvent: {}
+[23.177151] (-) TimerEvent: {}
+[23.222561] (mypkg) StdoutLine: {'line': b'writing ../../build/mypkg/mypkg.egg-info/PKG-INFO\n'}
+[23.229554] (mypkg) StdoutLine: {'line': b'writing dependency_links to ../../build/mypkg/mypkg.egg-info/dependency_links.txt\n'}
+[23.233058] (mypkg) StdoutLine: {'line': b'writing entry points to ../../build/mypkg/mypkg.egg-info/entry_points.txt\n'}
+[23.235657] (mypkg) StdoutLine: {'line': b'writing requirements to ../../build/mypkg/mypkg.egg-info/requires.txt\n'}
+[23.237739] (mypkg) StdoutLine: {'line': b'writing top-level names to ../../build/mypkg/mypkg.egg-info/top_level.txt\n'}
+[23.240279] (mypkg) StdoutLine: {'line': b"writing manifest file '../../build/mypkg/mypkg.egg-info/SOURCES.txt'\n"}
+[23.288975] (-) TimerEvent: {}
+[23.391559] (-) TimerEvent: {}
+[23.494088] (-) TimerEvent: {}
+[23.596786] (-) TimerEvent: {}
+[23.699218] (-) TimerEvent: {}
+[23.801831] (-) TimerEvent: {}
+[23.878942] (mypkg) StdoutLine: {'line': b"reading manifest file '../../build/mypkg/mypkg.egg-info/SOURCES.txt'\n"}
+[23.893949] (mypkg) StdoutLine: {'line': b"writing manifest file '../../build/mypkg/mypkg.egg-info/SOURCES.txt'\n"}
+[23.898171] (mypkg) StdoutLine: {'line': b'running build\n'}
+[23.902808] (-) TimerEvent: {}
+[23.906482] (mypkg) StdoutLine: {'line': b'running build_py\n'}
+[23.908728] (mypkg) StdoutLine: {'line': b'creating /home/yamashita/car_ws/build/mypkg/build\n'}
+[23.910600] (mypkg) StdoutLine: {'line': b'creating /home/yamashita/car_ws/build/mypkg/build/lib\n'}
+[23.911585] (mypkg) StdoutLine: {'line': b'creating /home/yamashita/car_ws/build/mypkg/build/lib/mypkg\n'}
+[23.912432] (mypkg) StdoutLine: {'line': b'copying mypkg/serial.py -> /home/yamashita/car_ws/build/mypkg/build/lib/mypkg\n'}
+[23.920075] (mypkg) StdoutLine: {'line': b'copying mypkg/receiver.py -> /home/yamashita/car_ws/build/mypkg/build/lib/mypkg\n'}
+[23.928825] (mypkg) StdoutLine: {'line': b'copying mypkg/__init__.py -> /home/yamashita/car_ws/build/mypkg/build/lib/mypkg\n'}
+[23.930071] (mypkg) StdoutLine: {'line': b'running install\n'}
+[23.933920] (mypkg) StderrLine: {'line': b'/home/yamashita/.local/lib/python3.10/site-packages/setuptools/_distutils/cmd.py:66: SetuptoolsDeprecationWarning: setup.py install is deprecated.\n'}
+[23.935398] (mypkg) StderrLine: {'line': b'!!\n'}
+[23.936252] (mypkg) StderrLine: {'line': b'\n'}
+[23.937165] (mypkg) StderrLine: {'line': b'        ********************************************************************************\n'}
+[23.937915] (mypkg) StderrLine: {'line': b'        Please avoid running ``setup.py`` directly.\n'}
+[23.938610] (mypkg) StderrLine: {'line': b'        Instead, use pypa/build, pypa/installer or other\n'}
+[23.939250] (mypkg) StderrLine: {'line': b'        standards-based tools.\n'}
+[23.939953] (mypkg) StderrLine: {'line': b'\n'}
+[23.940744] (mypkg) StderrLine: {'line': b'        See https://blog.ganssle.io/articles/2021/10/setup-py-deprecated.html for details.\n'}
+[23.941616] (mypkg) StderrLine: {'line': b'        ********************************************************************************\n'}
+[23.942345] (mypkg) StderrLine: {'line': b'\n'}
+[23.943042] (mypkg) StderrLine: {'line': b'!!\n'}
+[23.943698] (mypkg) StderrLine: {'line': b'  self.initialize_options()\n'}
+[24.003510] (-) TimerEvent: {}
+[24.025967] (mypkg) StdoutLine: {'line': b'running install_lib\n'}
+[24.104180] (-) TimerEvent: {}
+[24.207549] (-) TimerEvent: {}
+[24.309607] (-) TimerEvent: {}
+[24.342143] (mypkg) StdoutLine: {'line': b'creating /home/yamashita/car_ws/install/mypkg/lib/python3.10/site-packages/mypkg\n'}
+[24.345864] (mypkg) StdoutLine: {'line': b'copying /home/yamashita/car_ws/build/mypkg/build/lib/mypkg/serial.py -> /home/yamashita/car_ws/install/mypkg/lib/python3.10/site-packages/mypkg\n'}
+[24.352385] (mypkg) StdoutLine: {'line': b'copying /home/yamashita/car_ws/build/mypkg/build/lib/mypkg/receiver.py -> /home/yamashita/car_ws/install/mypkg/lib/python3.10/site-packages/mypkg\n'}
+[24.359120] (mypkg) StdoutLine: {'line': b'copying /home/yamashita/car_ws/build/mypkg/build/lib/mypkg/__init__.py -> /home/yamashita/car_ws/install/mypkg/lib/python3.10/site-packages/mypkg\n'}
+[24.366948] (mypkg) StdoutLine: {'line': b'byte-compiling /home/yamashita/car_ws/install/mypkg/lib/python3.10/site-packages/mypkg/serial.py to serial.cpython-310.pyc\n'}
+[24.372466] (mypkg) StdoutLine: {'line': b'byte-compiling /home/yamashita/car_ws/install/mypkg/lib/python3.10/site-packages/mypkg/receiver.py to receiver.cpython-310.pyc\n'}
+[24.385876] (mypkg) StdoutLine: {'line': b'byte-compiling /home/yamashita/car_ws/install/mypkg/lib/python3.10/site-packages/mypkg/__init__.py to __init__.cpython-310.pyc\n'}
+[24.388811] (mypkg) StdoutLine: {'line': b'running install_data\n'}
+[24.410306] (-) TimerEvent: {}
+[24.513986] (-) TimerEvent: {}
+[24.617886] (-) TimerEvent: {}
+[24.707888] (mypkg) StdoutLine: {'line': b'creating /home/yamashita/car_ws/install/mypkg/share/ament_index\n'}
+[24.711481] (mypkg) StdoutLine: {'line': b'creating /home/yamashita/car_ws/install/mypkg/share/ament_index/resource_index\n'}
+[24.713128] (mypkg) StdoutLine: {'line': b'creating /home/yamashita/car_ws/install/mypkg/share/ament_index/resource_index/packages\n'}
+[24.717385] (mypkg) StdoutLine: {'line': b'copying resource/mypkg -> /home/yamashita/car_ws/install/mypkg/share/ament_index/resource_index/packages\n'}
+[24.719766] (-) TimerEvent: {}
+[24.723547] (mypkg) StdoutLine: {'line': b'copying package.xml -> /home/yamashita/car_ws/install/mypkg/share/mypkg\n'}
+[24.727636] (mypkg) StdoutLine: {'line': b'copying launch/car.launch.py -> /home/yamashita/car_ws/install/mypkg/share/mypkg\n'}
+[24.731506] (mypkg) StdoutLine: {'line': b'running install_egg_info\n'}
+[24.820407] (-) TimerEvent: {}
+[24.923479] (-) TimerEvent: {}
+[25.026900] (-) TimerEvent: {}
+[25.051240] (mypkg) StdoutLine: {'line': b'Copying ../../build/mypkg/mypkg.egg-info to /home/yamashita/car_ws/install/mypkg/lib/python3.10/site-packages/mypkg-0.0.0-py3.10.egg-info\n'}
+[25.065810] (mypkg) StdoutLine: {'line': b'running install_scripts\n'}
+[25.127115] (-) TimerEvent: {}
+[25.231262] (-) TimerEvent: {}
+[25.334274] (-) TimerEvent: {}
+[25.437415] (-) TimerEvent: {}
+[25.540445] (-) TimerEvent: {}
+[25.643373] (-) TimerEvent: {}
+[25.747186] (-) TimerEvent: {}
+[25.850168] (-) TimerEvent: {}
+[25.954432] (-) TimerEvent: {}
+[26.071856] (-) TimerEvent: {}
+[26.173429] (-) TimerEvent: {}
+[26.275155] (-) TimerEvent: {}
+[26.376904] (-) TimerEvent: {}
+[26.479460] (-) TimerEvent: {}
+[26.581130] (-) TimerEvent: {}
+[26.683638] (-) TimerEvent: {}
+[26.786190] (-) TimerEvent: {}
+[26.887965] (-) TimerEvent: {}
+[26.990295] (-) TimerEvent: {}
+[27.092938] (-) TimerEvent: {}
+[27.194846] (-) TimerEvent: {}
+[27.297370] (-) TimerEvent: {}
+[27.399882] (-) TimerEvent: {}
+[27.502566] (-) TimerEvent: {}
+[27.604491] (-) TimerEvent: {}
+[27.708104] (-) TimerEvent: {}
+[27.812319] (-) TimerEvent: {}
+[27.916415] (-) TimerEvent: {}
+[28.019275] (-) TimerEvent: {}
+[28.055047] (mypkg) StdoutLine: {'line': b'Installing camera script to /home/yamashita/car_ws/install/mypkg/lib/mypkg\n'}
+[28.057460] (mypkg) StdoutLine: {'line': b'Installing serial script to /home/yamashita/car_ws/install/mypkg/lib/mypkg\n'}
+[28.061609] (mypkg) StdoutLine: {'line': b"writing list of installed files to '/home/yamashita/car_ws/build/mypkg/install.log'\n"}
+[28.120085] (-) TimerEvent: {}
+[28.223244] (-) TimerEvent: {}
+[28.326520] (-) TimerEvent: {}
+[28.429786] (-) TimerEvent: {}
+[28.505074] (mypkg) CommandEnded: {'returncode': 0}
+[28.530542] (-) TimerEvent: {}
+[28.635514] (-) TimerEvent: {}
+[28.740094] (-) TimerEvent: {}
+[28.844549] (-) TimerEvent: {}
+[28.948030] (-) TimerEvent: {}
+[29.049890] (-) TimerEvent: {}
+[29.151852] (-) TimerEvent: {}
+[29.253207] (-) TimerEvent: {}
+[29.355082] (-) TimerEvent: {}
+[29.456925] (-) TimerEvent: {}
+[29.558218] (-) TimerEvent: {}
+[29.659698] (-) TimerEvent: {}
+[29.721671] (mypkg) JobEnded: {'identifier': 'mypkg', 'rc': 0}
+[29.733881] (-) EventReactorShutdown: {}
