@@ -1,0 +1,47 @@
+[2.462s] Invoking command in '/home/yamashita/car_ws/build/coordinate_msg': /usr/bin/cmake /home/yamashita/car_ws/src/coordinate_msg -DCMAKE_INSTALL_PREFIX=/home/yamashita/car_ws/install/coordinate_msg
+[2.624s] -- Found ament_cmake: 1.3.6 (/opt/ros/humble/share/ament_cmake/cmake)
+[4.370s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[4.390s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[4.420s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[4.849s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[7.230s] Error parsing '/home/yamashita/car_ws/src/coordinate_msg/package.xml':
+[7.707s] Traceback (most recent call last):
+[7.708s]   File "/usr/lib/python3/dist-packages/catkin_pkg/package.py", line 610, in parse_package_string
+[7.709s]     root = dom.parseString(data)
+[7.712s]   File "/usr/lib/python3.10/xml/dom/minidom.py", line 2000, in parseString
+[7.714s]     return expatbuilder.parseString(string)
+[7.717s]   File "/usr/lib/python3.10/xml/dom/expatbuilder.py", line 925, in parseString
+[7.719s]     return builder.parseString(string)
+[7.721s]   File "/usr/lib/python3.10/xml/dom/expatbuilder.py", line 223, in parseString
+[7.722s]     parser.Parse(string, True)
+[7.723s] xml.parsers.expat.ExpatError: mismatched tag: line 14, column 45
+[7.725s] 
+[7.726s] During handling of the above exception, another exception occurred:
+[7.727s] 
+[7.729s] Traceback (most recent call last):
+[7.730s]   File "/opt/ros/humble/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 150, in <module>
+[7.732s]     main()
+[7.733s]   File "/opt/ros/humble/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 53, in main
+[7.734s]     raise e
+[7.736s]   File "/opt/ros/humble/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 49, in main
+[7.737s]     package = parse_package_string(
+[7.738s]   File "/usr/lib/python3/dist-packages/catkin_pkg/package.py", line 612, in parse_package_string
+[7.740s]     raise InvalidPackage('The manifest contains invalid XML:\n%s' % ex, filename)
+[7.741s] catkin_pkg.package.InvalidPackage: Error(s) in package '/home/yamashita/car_ws/src/coordinate_msg/package.xml':
+[7.742s] The manifest contains invalid XML:
+[7.744s] mismatched tag: line 14, column 45
+[7.950s] [31mCMake Error at /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_package_xml.cmake:95 (message):
+[7.952s]   execute_process(/usr/bin/python3.10
+[7.953s]   /opt/ros/humble/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py
+[7.954s]   /home/yamashita/car_ws/src/coordinate_msg/package.xml
+[7.955s]   /home/yamashita/car_ws/build/coordinate_msg/ament_cmake_core/package.cmake)
+[7.956s]   returned error code 1
+[7.957s] Call Stack (most recent call first):
+[7.959s]   /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_package_xml.cmake:49 (_ament_package_xml)
+[7.960s]   /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:226 (ament_package_xml)
+[7.961s]   CMakeLists.txt:13 (rosidl_generate_interfaces)
+[7.963s] 
+[7.964s] [0m
+[7.965s] -- Configuring incomplete, errors occurred!
+[7.966s] See also "/home/yamashita/car_ws/build/coordinate_msg/CMakeFiles/CMakeOutput.log".
+[7.995s] Invoked command in '/home/yamashita/car_ws/build/coordinate_msg' returned '1': /usr/bin/cmake /home/yamashita/car_ws/src/coordinate_msg -DCMAKE_INSTALL_PREFIX=/home/yamashita/car_ws/install/coordinate_msg

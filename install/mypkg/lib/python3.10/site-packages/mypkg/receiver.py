@@ -2,6 +2,7 @@ import rclpy
 from rclpy.node import Node
 from rclpy.qos import qos_profile_sensor_data
 from sensor_msgs.msg import Image
+#from geometry_msgs.msg import Vector3
 import numpy as np
 import cv2
 from cv_bridge import CvBridge
@@ -82,6 +83,7 @@ class ImgReceiver(Node):
         self.br = CvBridge()
         self.subscription = self.create_subscription(Image,"image_raw",self.cb,qos_profile_sensor_data)
         self.publisher = self.create_publisher(Image,"processed",10)
+        self.publisher = self.create_publisher(Vector3,"balls",10)
     def cb(self,data):
 
         #process of opencv
@@ -111,13 +113,16 @@ class ImgReceiver(Node):
                 cv2.drawContours(no_img,cnt,-1,(255,255,255),2)
                 cv2.circle(no_img,(int(np.average(cnt[:,0,0])),int(np.average(cnt[:,0,1]))),2,(0,255,0),2)
                 cv2.putText(no_img,text=str(area),org=(int(np.average(cnt[:,0,0])),int(np.average(cnt[:,0,1]))),fontFace=cv2.FONT_HERSHEY_SIMPLEX,fontScale=1.0,color=(0, 255, 0),thickness=2,lineType=cv2.LINE_AA)
+
         
         circles = Sarch_Circle(contours,0,90,10)
 
         for i in circles:
             cv2.circle(frame,(int(i[0]),int(i[1])),int(i[2]),(0,255,0),2)
 
-        result = self.br.cv2_to_imgmsg(frame,'bgr8')
+
+
+        result = self.br.cv2_to_imgmsg(no_img,'bgr8')
         self.publisher.publish(result)
 
         pass

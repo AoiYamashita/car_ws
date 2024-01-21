@@ -1,0 +1,6 @@
+{
+  "package_name": "coordinate_msg",
+  "non_idl_tuples": [
+    "/home/yamashita/car_ws/src/coordinate_msg:msg/Coordinate.msg"
+  ]
+}

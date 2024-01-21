@@ -1,0 +1,8 @@
+setup.py
+coordinate_msg/__init__.py
+coordinate_msg.egg-info/PKG-INFO
+coordinate_msg.egg-info/SOURCES.txt
+coordinate_msg.egg-info/dependency_links.txt
+coordinate_msg.egg-info/top_level.txt
+coordinate_msg/msg/__init__.py
+coordinate_msg/msg/_coordinate.py

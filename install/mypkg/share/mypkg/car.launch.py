@@ -19,4 +19,9 @@ def generate_launch_description():
             executable = 'usb_cam_node_exe',
             output = 'screen',
             )
+    web = launch_ros.actions.Node(
+            package = 'rosbridge_server',
+            executable = 'rosbridge_websocket_launch.xml',
+            output = 'screen',
+            )
     return launch.LaunchDescription([camera,serial,usb_cam])

@@ -1,0 +1,2 @@
+Invoking command in '/home/yamashita/car_ws/build/coordinate_msg': /usr/bin/cmake /home/yamashita/car_ws/src/coordinate_msg -DCMAKE_INSTALL_PREFIX=/home/yamashita/car_ws/install/coordinate_msg
+Invoked command in '/home/yamashita/car_ws/build/coordinate_msg' returned '1': /usr/bin/cmake /home/yamashita/car_ws/src/coordinate_msg -DCMAKE_INSTALL_PREFIX=/home/yamashita/car_ws/install/coordinate_msg

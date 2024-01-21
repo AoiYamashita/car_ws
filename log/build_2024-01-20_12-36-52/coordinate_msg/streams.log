@@ -1,0 +1,52 @@
+[2.491s] Invoking command in '/home/yamashita/car_ws/build/coordinate_msg': /usr/bin/cmake /home/yamashita/car_ws/src/coordinate_msg -DCMAKE_INSTALL_PREFIX=/home/yamashita/car_ws/install/coordinate_msg
+[2.696s] -- Found ament_cmake: 1.3.6 (/opt/ros/humble/share/ament_cmake/cmake)
+[5.477s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[5.498s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[5.528s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[5.961s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[8.223s] [31mCMake Error at /opt/ros/humble/share/rosidl_adapter/cmake/rosidl_adapt_interfaces.cmake:59 (message):
+[8.227s]   execute_process(/usr/bin/python3.10 -m rosidl_adapter --package-name
+[8.229s]   coordinate_msg --arguments-file
+[8.230s]   /home/yamashita/car_ws/build/coordinate_msg/rosidl_adapter__arguments__coordinate_msg.json
+[8.232s]   --output-dir
+[8.233s]   /home/yamashita/car_ws/build/coordinate_msg/rosidl_adapter/coordinate_msg
+[8.235s]   --output-file
+[8.236s]   /home/yamashita/car_ws/build/coordinate_msg/rosidl_adapter/coordinate_msg.idls)
+[8.237s]   returned error code 1:
+[8.238s] 
+[8.239s]   Error processing 'float coord[100][3]' of 'coordinate_msg/Coordinate':
+[8.240s]   ''float' is an invalid message name.  It should have the pattern
+[8.242s]   '^[A-Z][A-Za-z0-9]*$''
+[8.243s] 
+[8.243s]   Traceback (most recent call last):
+[8.244s] 
+[8.245s]     File "/usr/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+[8.246s]       return _run_code(code, main_globals, None,
+[8.247s]     File "/usr/lib/python3.10/runpy.py", line 86, in _run_code
+[8.248s]       exec(code, run_globals)
+[8.250s]     File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_adapter/__main__.py", line 19, in <module>
+[8.251s]       sys.exit(main())
+[8.252s]     File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_adapter/main.py", line 53, in main
+[8.254s]       abs_idl_file = convert_to_idl(
+[8.255s]     File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_adapter/__init__.py", line 19, in convert_to_idl
+[8.256s]       return convert_msg_to_idl(
+[8.258s]     File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_adapter/msg/__init__.py", line 28, in convert_msg_to_idl
+[8.259s]       msg = parse_message_string(package_name, input_file.stem, content)
+[8.260s]     File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_adapter/parser.py", line 520, in parse_message_string
+[8.261s]       Type(type_string, context_package_name=pkg_name),
+[8.263s]     File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_adapter/parser.py", line 277, in __init__
+[8.265s]       super(Type, self).__init__(
+[8.268s]     File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_adapter/parser.py", line 205, in __init__
+[8.272s]       raise InvalidResourceName(
+[8.276s] 
+[8.277s]   rosidl_adapter.parser.InvalidResourceName: 'float' is an invalid message
+[8.278s]   name.  It should have the pattern '^[A-Z][A-Za-z0-9]*$'
+[8.279s] 
+[8.280s] Call Stack (most recent call first):
+[8.281s]   /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:130 (rosidl_adapt_interfaces)
+[8.282s]   CMakeLists.txt:13 (rosidl_generate_interfaces)
+[8.283s] 
+[8.284s] [0m
+[8.285s] -- Configuring incomplete, errors occurred!
+[8.286s] See also "/home/yamashita/car_ws/build/coordinate_msg/CMakeFiles/CMakeOutput.log".
+[8.287s] Invoked command in '/home/yamashita/car_ws/build/coordinate_msg' returned '1': /usr/bin/cmake /home/yamashita/car_ws/src/coordinate_msg -DCMAKE_INSTALL_PREFIX=/home/yamashita/car_ws/install/coordinate_msg

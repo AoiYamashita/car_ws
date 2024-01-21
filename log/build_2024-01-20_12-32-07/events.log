@@ -1,0 +1,186 @@
+[0.000000] (-) TimerEvent: {}
+[0.004286] (coordinate_msg) JobQueued: {'identifier': 'coordinate_msg', 'dependencies': OrderedDict()}
+[0.005253] (mypkg) JobQueued: {'identifier': 'mypkg', 'dependencies': OrderedDict()}
+[0.005847] (coordinate_msg) JobStarted: {'identifier': 'coordinate_msg'}
+[0.097779] (-) TimerEvent: {}
+[0.200244] (-) TimerEvent: {}
+[0.301729] (-) TimerEvent: {}
+[0.403252] (-) TimerEvent: {}
+[0.504577] (-) TimerEvent: {}
+[0.608130] (-) TimerEvent: {}
+[0.710849] (-) TimerEvent: {}
+[0.813871] (-) TimerEvent: {}
+[0.915707] (-) TimerEvent: {}
+[1.019113] (-) TimerEvent: {}
+[1.127345] (-) TimerEvent: {}
+[1.157890] (mypkg) JobStarted: {'identifier': 'mypkg'}
+[1.227582] (-) TimerEvent: {}
+[1.330020] (-) TimerEvent: {}
+[1.431630] (-) TimerEvent: {}
+[1.534510] (-) TimerEvent: {}
+[1.638361] (-) TimerEvent: {}
+[1.740102] (-) TimerEvent: {}
+[1.842563] (-) TimerEvent: {}
+[1.945702] (-) TimerEvent: {}
+[2.047590] (-) TimerEvent: {}
+[2.150616] (-) TimerEvent: {}
+[2.253566] (-) TimerEvent: {}
+[2.355359] (-) TimerEvent: {}
+[2.458090] (-) TimerEvent: {}
+[2.492098] (coordinate_msg) JobProgress: {'identifier': 'coordinate_msg', 'progress': 'cmake'}
+[2.499087] (coordinate_msg) Command: {'cmd': ['/usr/bin/cmake', '/home/yamashita/car_ws/src/coordinate_msg', '-DCMAKE_INSTALL_PREFIX=/home/yamashita/car_ws/install/coordinate_msg'], 'cwd': '/home/yamashita/car_ws/build/coordinate_msg', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'yamashita'), ('SSH_CLIENT', '192.168.0.11 58954 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/yamashita'), ('OLDPWD', '/home/yamashita/car_ws/src/coordinate_msg/msg'), ('NVM_BIN', '/home/yamashita/.nvm/versions/node/v14.4.0/bin'), ('SSH_TTY', '/dev/pts/0'), ('NVM_INC', '/home/yamashita/.nvm/versions/node/v14.4.0/include/node'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('NVM_DIR', '/home/yamashita/.nvm'), ('COLCON_PREFIX_PATH', '/home/yamashita/car_ws/install:/home/yamashita/serial_ws/install:/home/yamashita/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'yamashita'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '4'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/yamashita/.local/bin:/home/yamashita/.nvm/versions/node/v14.4.0/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/yamashita/car_ws/install/mypkg:/home/yamashita/serial_ws/install/ros_serial:/home/yamashita/ros2_ws/install/robo231:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/yamashita/car_ws/build/coordinate_msg'), ('SSH_CONNECTION', '192.168.0.11 58954 192.168.0.19 22'), ('NVM_CD_FLAGS', ''), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/yamashita/car_ws/install/mypkg/lib/python3.10/site-packages:/home/yamashita/serial_ws/install/ros_serial/lib/python3.10/site-packages:/home/yamashita/ros2_ws/install/robo231/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1')]), 'shell': False}
+[2.558661] (-) TimerEvent: {}
+[2.661226] (-) TimerEvent: {}
+[2.689388] (coordinate_msg) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.6 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[2.761590] (-) TimerEvent: {}
+[2.863306] (-) TimerEvent: {}
+[2.964861] (-) TimerEvent: {}
+[3.066411] (-) TimerEvent: {}
+[3.168054] (-) TimerEvent: {}
+[3.269631] (-) TimerEvent: {}
+[3.371471] (-) TimerEvent: {}
+[3.473058] (-) TimerEvent: {}
+[3.574484] (-) TimerEvent: {}
+[3.676205] (-) TimerEvent: {}
+[3.777727] (-) TimerEvent: {}
+[3.879547] (-) TimerEvent: {}
+[3.981189] (-) TimerEvent: {}
+[4.082858] (-) TimerEvent: {}
+[4.184422] (-) TimerEvent: {}
+[4.286023] (-) TimerEvent: {}
+[4.387904] (-) TimerEvent: {}
+[4.439674] (coordinate_msg) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[4.458604] (coordinate_msg) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[4.487672] (coordinate_msg) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[4.489037] (-) TimerEvent: {}
+[4.590949] (-) TimerEvent: {}
+[4.692786] (-) TimerEvent: {}
+[4.794813] (-) TimerEvent: {}
+[4.896970] (-) TimerEvent: {}
+[4.916340] (coordinate_msg) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[4.997408] (-) TimerEvent: {}
+[5.099290] (-) TimerEvent: {}
+[5.200992] (-) TimerEvent: {}
+[5.303906] (-) TimerEvent: {}
+[5.405603] (-) TimerEvent: {}
+[5.508632] (-) TimerEvent: {}
+[5.611944] (-) TimerEvent: {}
+[5.717235] (-) TimerEvent: {}
+[5.819686] (-) TimerEvent: {}
+[5.923824] (-) TimerEvent: {}
+[6.026939] (-) TimerEvent: {}
+[6.129737] (-) TimerEvent: {}
+[6.232742] (-) TimerEvent: {}
+[6.337336] (-) TimerEvent: {}
+[6.440170] (-) TimerEvent: {}
+[6.545516] (-) TimerEvent: {}
+[6.647676] (-) TimerEvent: {}
+[6.751563] (-) TimerEvent: {}
+[6.855933] (-) TimerEvent: {}
+[6.958597] (-) TimerEvent: {}
+[7.060148] (-) TimerEvent: {}
+[7.162367] (-) TimerEvent: {}
+[7.230978] (coordinate_msg) StderrLine: {'line': b"Error parsing '/home/yamashita/car_ws/src/coordinate_msg/package.xml':\n"}
+[7.262716] (-) TimerEvent: {}
+[7.364340] (-) TimerEvent: {}
+[7.466315] (-) TimerEvent: {}
+[7.568157] (-) TimerEvent: {}
+[7.672974] (-) TimerEvent: {}
+[7.774516] (-) TimerEvent: {}
+[7.876004] (-) TimerEvent: {}
+[7.977346] (-) TimerEvent: {}
+[8.078666] (-) TimerEvent: {}
+[8.180025] (-) TimerEvent: {}
+[8.281509] (-) TimerEvent: {}
+[8.383138] (-) TimerEvent: {}
+[8.449631] (coordinate_msg) StderrLine: {'line': b'Traceback (most recent call last):\n'}
+[8.451099] (coordinate_msg) StderrLine: {'line': b'  File "/usr/lib/python3/dist-packages/catkin_pkg/package.py", line 610, in parse_package_string\n'}
+[8.454325] (coordinate_msg) StderrLine: {'line': b'    root = dom.parseString(data)\n'}
+[8.455715] (coordinate_msg) StderrLine: {'line': b'  File "/usr/lib/python3.10/xml/dom/minidom.py", line 2000, in parseString\n'}
+[8.460844] (coordinate_msg) StderrLine: {'line': b'    return expatbuilder.parseString(string)\n'}
+[8.462431] (coordinate_msg) StderrLine: {'line': b'  File "/usr/lib/python3.10/xml/dom/expatbuilder.py", line 925, in parseString\n'}
+[8.465641] (coordinate_msg) StderrLine: {'line': b'    return builder.parseString(string)\n'}
+[8.467403] (coordinate_msg) StderrLine: {'line': b'  File "/usr/lib/python3.10/xml/dom/expatbuilder.py", line 223, in parseString\n'}
+[8.470165] (coordinate_msg) StderrLine: {'line': b'    parser.Parse(string, True)\n'}
+[8.472704] (coordinate_msg) StderrLine: {'line': b'xml.parsers.expat.ExpatError: mismatched tag: line 14, column 45\n'}
+[8.474136] (coordinate_msg) StderrLine: {'line': b'\n'}
+[8.475735] (coordinate_msg) StderrLine: {'line': b'During handling of the above exception, another exception occurred:\n'}
+[8.477113] (coordinate_msg) StderrLine: {'line': b'\n'}
+[8.478399] (coordinate_msg) StderrLine: {'line': b'Traceback (most recent call last):\n'}
+[8.479785] (coordinate_msg) StderrLine: {'line': b'  File "/opt/ros/humble/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 150, in <module>\n'}
+[8.481118] (coordinate_msg) StderrLine: {'line': b'    main()\n'}
+[8.482354] (coordinate_msg) StderrLine: {'line': b'  File "/opt/ros/humble/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 53, in main\n'}
+[8.483704] (-) TimerEvent: {}
+[8.484920] (coordinate_msg) StderrLine: {'line': b'    raise e\n'}
+[8.486901] (coordinate_msg) StderrLine: {'line': b'  File "/opt/ros/humble/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 49, in main\n'}
+[8.488266] (coordinate_msg) StderrLine: {'line': b'    package = parse_package_string(\n'}
+[8.490214] (coordinate_msg) StderrLine: {'line': b'  File "/usr/lib/python3/dist-packages/catkin_pkg/package.py", line 612, in parse_package_string\n'}
+[8.491709] (coordinate_msg) StderrLine: {'line': b"    raise InvalidPackage('The manifest contains invalid XML:\\n%s' % ex, filename)\n"}
+[8.493152] (coordinate_msg) StderrLine: {'line': b"catkin_pkg.package.InvalidPackage: Error(s) in package '/home/yamashita/car_ws/src/coordinate_msg/package.xml':\n"}
+[8.494370] (coordinate_msg) StderrLine: {'line': b'The manifest contains invalid XML:\n'}
+[8.495778] (coordinate_msg) StderrLine: {'line': b'mismatched tag: line 14, column 45\n'}
+[8.584119] (-) TimerEvent: {}
+[8.685714] (-) TimerEvent: {}
+[8.704104] (coordinate_msg) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[8.705500] (coordinate_msg) StdoutLine: {'line': b'See also "/home/yamashita/car_ws/build/coordinate_msg/CMakeFiles/CMakeOutput.log".\n'}
+[8.707468] (coordinate_msg) StderrLine: {'line': b'\x1b[31mCMake Error at /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_package_xml.cmake:95 (message):\n'}
+[8.708761] (coordinate_msg) StderrLine: {'line': b'  execute_process(/usr/bin/python3.10\n'}
+[8.709936] (coordinate_msg) StderrLine: {'line': b'  /opt/ros/humble/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py\n'}
+[8.711125] (coordinate_msg) StderrLine: {'line': b'  /home/yamashita/car_ws/src/coordinate_msg/package.xml\n'}
+[8.712330] (coordinate_msg) StderrLine: {'line': b'  /home/yamashita/car_ws/build/coordinate_msg/ament_cmake_core/package.cmake)\n'}
+[8.713453] (coordinate_msg) StderrLine: {'line': b'  returned error code 1\n'}
+[8.714583] (coordinate_msg) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[8.715912] (coordinate_msg) StderrLine: {'line': b'  /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_package_xml.cmake:49 (_ament_package_xml)\n'}
+[8.717046] (coordinate_msg) StderrLine: {'line': b'  /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:226 (ament_package_xml)\n'}
+[8.718222] (coordinate_msg) StderrLine: {'line': b'  CMakeLists.txt:13 (rosidl_generate_interfaces)\n'}
+[8.719459] (coordinate_msg) StderrLine: {'line': b'\n'}
+[8.720633] (coordinate_msg) StderrLine: {'line': b'\x1b[0m\n'}
+[8.744980] (coordinate_msg) CommandEnded: {'returncode': 1}
+[8.750376] (coordinate_msg) JobEnded: {'identifier': 'coordinate_msg', 'rc': 1}
+[8.786006] (-) TimerEvent: {}
+[8.887371] (-) TimerEvent: {}
+[8.988732] (-) TimerEvent: {}
+[9.090028] (-) TimerEvent: {}
+[9.191324] (-) TimerEvent: {}
+[9.292620] (-) TimerEvent: {}
+[9.393973] (-) TimerEvent: {}
+[9.495315] (-) TimerEvent: {}
+[9.596575] (-) TimerEvent: {}
+[9.697933] (-) TimerEvent: {}
+[9.799296] (-) TimerEvent: {}
+[9.900570] (-) TimerEvent: {}
+[10.001876] (-) TimerEvent: {}
+[10.103136] (-) TimerEvent: {}
+[10.204367] (-) TimerEvent: {}
+[10.305636] (-) TimerEvent: {}
+[10.407064] (-) TimerEvent: {}
+[10.508258] (-) TimerEvent: {}
+[10.609654] (-) TimerEvent: {}
+[10.710966] (-) TimerEvent: {}
+[10.812551] (-) TimerEvent: {}
+[10.913823] (-) TimerEvent: {}
+[11.015068] (-) TimerEvent: {}
+[11.116364] (-) TimerEvent: {}
+[11.217705] (-) TimerEvent: {}
+[11.318994] (-) TimerEvent: {}
+[11.420290] (-) TimerEvent: {}
+[11.521562] (-) TimerEvent: {}
+[11.622915] (-) TimerEvent: {}
+[11.724138] (-) TimerEvent: {}
+[11.825299] (-) TimerEvent: {}
+[11.926678] (-) TimerEvent: {}
+[12.028090] (-) TimerEvent: {}
+[12.129460] (-) TimerEvent: {}
+[12.230816] (-) TimerEvent: {}
+[12.332104] (-) TimerEvent: {}
+[12.433370] (-) TimerEvent: {}
+[12.534826] (-) TimerEvent: {}
+[12.636118] (-) TimerEvent: {}
+[12.737409] (-) TimerEvent: {}
+[12.838865] (-) TimerEvent: {}
+[12.940290] (-) TimerEvent: {}
+[13.041817] (-) TimerEvent: {}
+[13.143469] (-) TimerEvent: {}
+[13.244973] (-) TimerEvent: {}
+[13.329417] (mypkg) JobEnded: {'identifier': 'mypkg', 'rc': 'SIGINT'}
+[13.343536] (-) EventReactorShutdown: {}

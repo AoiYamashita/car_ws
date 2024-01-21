@@ -1,0 +1,41 @@
+[13.325s] Invoking command in '/home/yamashita/car_ws/src/mypkg': PYTHONPATH=/home/yamashita/car_ws/build/mypkg/prefix_override:/home/yamashita/car_ws/install/mypkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/mypkg build --build-base /home/yamashita/car_ws/build/mypkg/build install --record /home/yamashita/car_ws/build/mypkg/install.log --single-version-externally-managed
+[16.518s] running egg_info
+[16.980s] writing ../../build/mypkg/mypkg.egg-info/PKG-INFO
+[16.990s] writing dependency_links to ../../build/mypkg/mypkg.egg-info/dependency_links.txt
+[17.063s] writing entry points to ../../build/mypkg/mypkg.egg-info/entry_points.txt
+[17.066s] writing requirements to ../../build/mypkg/mypkg.egg-info/requires.txt
+[17.069s] writing top-level names to ../../build/mypkg/mypkg.egg-info/top_level.txt
+[17.612s] reading manifest file '../../build/mypkg/mypkg.egg-info/SOURCES.txt'
+[17.710s] writing manifest file '../../build/mypkg/mypkg.egg-info/SOURCES.txt'
+[17.713s] running build
+[17.716s] running build_py
+[17.717s] copying mypkg/serial.py -> /home/yamashita/car_ws/build/mypkg/build/lib/mypkg
+[18.270s] copying mypkg/receiver.py -> /home/yamashita/car_ws/build/mypkg/build/lib/mypkg
+[18.276s] copying mypkg/__init__.py -> /home/yamashita/car_ws/build/mypkg/build/lib/mypkg
+[18.284s] running install
+[18.293s] /home/yamashita/.local/lib/python3.10/site-packages/setuptools/_distutils/cmd.py:66: SetuptoolsDeprecationWarning: setup.py install is deprecated.
+[18.296s] !!
+[18.299s] 
+[18.300s]         ********************************************************************************
+[18.302s]         Please avoid running ``setup.py`` directly.
+[18.303s]         Instead, use pypa/build, pypa/installer or other
+[18.305s]         standards-based tools.
+[18.319s] 
+[18.320s]         See https://blog.ganssle.io/articles/2021/10/setup-py-deprecated.html for details.
+[18.322s]         ********************************************************************************
+[18.331s] 
+[18.332s] !!
+[18.345s]   self.initialize_options()
+[18.403s] running install_lib
+[18.668s] running install_data
+[18.924s] copying resource/mypkg -> /home/yamashita/car_ws/install/mypkg/share/ament_index/resource_index/packages
+[18.927s] copying package.xml -> /home/yamashita/car_ws/install/mypkg/share/mypkg
+[18.930s] copying launch/car.launch.py -> /home/yamashita/car_ws/install/mypkg/share/mypkg
+[19.327s] running install_egg_info
+[20.159s] removing '/home/yamashita/car_ws/install/mypkg/lib/python3.10/site-packages/mypkg-0.0.0-py3.10.egg-info' (and everything under it)
+[20.167s] Copying ../../build/mypkg/mypkg.egg-info to /home/yamashita/car_ws/install/mypkg/lib/python3.10/site-packages/mypkg-0.0.0-py3.10.egg-info
+[20.191s] running install_scripts
+[23.525s] Installing camera script to /home/yamashita/car_ws/install/mypkg/lib/mypkg
+[23.532s] Installing serial script to /home/yamashita/car_ws/install/mypkg/lib/mypkg
+[23.535s] writing list of installed files to '/home/yamashita/car_ws/build/mypkg/install.log'
+[24.153s] Invoked command in '/home/yamashita/car_ws/src/mypkg' returned '0': PYTHONPATH=/home/yamashita/car_ws/build/mypkg/prefix_override:/home/yamashita/car_ws/install/mypkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/mypkg build --build-base /home/yamashita/car_ws/build/mypkg/build install --record /home/yamashita/car_ws/build/mypkg/install.log --single-version-externally-managed
