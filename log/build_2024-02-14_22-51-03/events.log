@@ -1,0 +1,102 @@
+[0.000000] (-) TimerEvent: {}
+[0.002361] (coordinate_msg) JobQueued: {'identifier': 'coordinate_msg', 'dependencies': OrderedDict()}
+[0.002859] (mypkg) JobQueued: {'identifier': 'mypkg', 'dependencies': OrderedDict()}
+[0.003296] (coordinate_msg) JobStarted: {'identifier': 'coordinate_msg'}
+[0.095623] (-) TimerEvent: {}
+[0.197829] (-) TimerEvent: {}
+[0.204088] (mypkg) JobStarted: {'identifier': 'mypkg'}
+[0.298122] (-) TimerEvent: {}
+[0.399472] (-) TimerEvent: {}
+[0.490364] (coordinate_msg) JobProgress: {'identifier': 'coordinate_msg', 'progress': 'cmake'}
+[0.497246] (coordinate_msg) JobProgress: {'identifier': 'coordinate_msg', 'progress': 'build'}
+[0.503553] (coordinate_msg) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/yamashita/car_ws/build/coordinate_msg', '--', '-j4', '-l4'], 'cwd': '/home/yamashita/car_ws/build/coordinate_msg', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'yamashita'), ('SSH_CLIENT', '192.168.0.11 64706 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/yamashita'), ('OLDPWD', '/home/yamashita'), ('SSH_TTY', '/dev/pts/1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('LOGNAME', 'yamashita'), ('_', '/usr/bin/colcon'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '4'), ('PATH', '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/yamashita/car_ws/build/coordinate_msg'), ('SSH_CONNECTION', '192.168.0.11 64706 192.168.0.19 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('COLCON', '1')]), 'shell': False}
+[0.512178] (-) TimerEvent: {}
+[0.614301] (-) TimerEvent: {}
+[0.715906] (-) TimerEvent: {}
+[0.817278] (-) TimerEvent: {}
+[0.919175] (-) TimerEvent: {}
+[1.020500] (-) TimerEvent: {}
+[1.122257] (-) TimerEvent: {}
+[1.223732] (-) TimerEvent: {}
+[1.264947] (coordinate_msg) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.7 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[1.324025] (-) TimerEvent: {}
+[1.426080] (-) TimerEvent: {}
+[1.528308] (-) TimerEvent: {}
+[1.631195] (-) TimerEvent: {}
+[1.734431] (-) TimerEvent: {}
+[1.836804] (-) TimerEvent: {}
+[1.939636] (-) TimerEvent: {}
+[2.042092] (-) TimerEvent: {}
+[2.144618] (-) TimerEvent: {}
+[2.246067] (-) TimerEvent: {}
+[2.347569] (-) TimerEvent: {}
+[2.448991] (-) TimerEvent: {}
+[2.551555] (-) TimerEvent: {}
+[2.654444] (-) TimerEvent: {}
+[2.756311] (-) TimerEvent: {}
+[2.857896] (-) TimerEvent: {}
+[2.959487] (-) TimerEvent: {}
+[3.005320] (coordinate_msg) StderrLine: {'line': b'Traceback (most recent call last):\n'}
+[3.016265] (coordinate_msg) StderrLine: {'line': b'  File "/opt/ros/humble/share/ament_cmake_core/cmake/package_templates/templates_2_cmake.py", line 21, in <module>\n'}
+[3.018568] (coordinate_msg) StderrLine: {'line': b'    from ament_package.templates import get_environment_hook_template_path\n'}
+[3.020973] (coordinate_msg) StderrLine: {'line': b"ModuleNotFoundError: No module named 'ament_package'\n"}
+[3.060264] (-) TimerEvent: {}
+[3.163230] (coordinate_msg) StderrLine: {'line': b'\x1b[31mCMake Error at /opt/ros/humble/share/ament_cmake_core/cmake/ament_cmake_package_templates-extras.cmake:41 (message):\n'}
+[3.164784] (-) TimerEvent: {}
+[3.165706] (coordinate_msg) StderrLine: {'line': b'  execute_process(/usr/bin/python3.10\n'}
+[3.171072] (coordinate_msg) StderrLine: {'line': b'  /opt/ros/humble/share/ament_cmake_core/cmake/package_templates/templates_2_cmake.py\n'}
+[3.173238] (coordinate_msg) StderrLine: {'line': b'  /home/yamashita/car_ws/build/coordinate_msg/ament_cmake_package_templates/templates.cmake)\n'}
+[3.177420] (coordinate_msg) StderrLine: {'line': b'  returned error code 1\n'}
+[3.179435] (coordinate_msg) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[3.182246] (coordinate_msg) StderrLine: {'line': b'  /opt/ros/humble/share/ament_cmake_core/cmake/ament_cmake_coreConfig.cmake:41 (include)\n'}
+[3.183069] (coordinate_msg) StderrLine: {'line': b'  /opt/ros/humble/share/ament_cmake/cmake/ament_cmake_export_dependencies-extras.cmake:15 (find_package)\n'}
+[3.183681] (coordinate_msg) StderrLine: {'line': b'  /opt/ros/humble/share/ament_cmake/cmake/ament_cmakeConfig.cmake:41 (include)\n'}
+[3.184241] (coordinate_msg) StderrLine: {'line': b'  CMakeLists.txt:9 (find_package)\n'}
+[3.184805] (coordinate_msg) StderrLine: {'line': b'\n'}
+[3.185359] (coordinate_msg) StderrLine: {'line': b'\x1b[0m\n'}
+[3.186184] (coordinate_msg) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[3.186926] (coordinate_msg) StdoutLine: {'line': b'See also "/home/yamashita/car_ws/build/coordinate_msg/CMakeFiles/CMakeOutput.log".\n'}
+[3.230957] (coordinate_msg) StderrLine: {'line': b'gmake: *** [Makefile:747: cmake_check_build_system] Error 1\n'}
+[3.247465] (coordinate_msg) CommandEnded: {'returncode': 2}
+[3.265217] (-) TimerEvent: {}
+[3.367452] (-) TimerEvent: {}
+[3.469713] (-) TimerEvent: {}
+[3.571771] (-) TimerEvent: {}
+[3.674835] (-) TimerEvent: {}
+[3.776354] (-) TimerEvent: {}
+[3.880253] (-) TimerEvent: {}
+[3.983248] (-) TimerEvent: {}
+[4.085183] (-) TimerEvent: {}
+[4.188471] (-) TimerEvent: {}
+[4.291360] (-) TimerEvent: {}
+[4.394991] (-) TimerEvent: {}
+[4.441543] (coordinate_msg) JobEnded: {'identifier': 'coordinate_msg', 'rc': 2}
+[4.495267] (-) TimerEvent: {}
+[4.596432] (-) TimerEvent: {}
+[4.697716] (-) TimerEvent: {}
+[4.799063] (-) TimerEvent: {}
+[4.900344] (-) TimerEvent: {}
+[5.001583] (-) TimerEvent: {}
+[5.102922] (-) TimerEvent: {}
+[5.204132] (-) TimerEvent: {}
+[5.305377] (-) TimerEvent: {}
+[5.406785] (-) TimerEvent: {}
+[5.508257] (-) TimerEvent: {}
+[5.610002] (-) TimerEvent: {}
+[5.711229] (-) TimerEvent: {}
+[5.812501] (-) TimerEvent: {}
+[5.913856] (-) TimerEvent: {}
+[6.015116] (-) TimerEvent: {}
+[6.116596] (-) TimerEvent: {}
+[6.218188] (-) TimerEvent: {}
+[6.319588] (-) TimerEvent: {}
+[6.421194] (-) TimerEvent: {}
+[6.522835] (-) TimerEvent: {}
+[6.624100] (-) TimerEvent: {}
+[6.725601] (-) TimerEvent: {}
+[6.827200] (-) TimerEvent: {}
+[6.928721] (-) TimerEvent: {}
+[7.030239] (-) TimerEvent: {}
+[7.122096] (mypkg) JobEnded: {'identifier': 'mypkg', 'rc': 'SIGINT'}
+[7.172285] (-) TimerEvent: {}
+[7.173443] (-) EventReactorShutdown: {}

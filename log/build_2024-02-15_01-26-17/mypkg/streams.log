@@ -1,0 +1,30 @@
+[10.309s] Invoking command in '/home/yamashita/car_ws/src/mypkg': PYTHONPATH=/home/yamashita/car_ws/build/mypkg/prefix_override:/home/yamashita/car_ws/install/mypkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/mypkg build --build-base /home/yamashita/car_ws/build/mypkg/build install --record /home/yamashita/car_ws/build/mypkg/install.log --single-version-externally-managed
+[12.954s] running egg_info
+[12.958s] writing ../../build/mypkg/mypkg.egg-info/PKG-INFO
+[12.960s] writing dependency_links to ../../build/mypkg/mypkg.egg-info/dependency_links.txt
+[12.962s] writing entry points to ../../build/mypkg/mypkg.egg-info/entry_points.txt
+[12.964s] writing requirements to ../../build/mypkg/mypkg.egg-info/requires.txt
+[12.965s] writing top-level names to ../../build/mypkg/mypkg.egg-info/top_level.txt
+[12.983s] reading manifest file '../../build/mypkg/mypkg.egg-info/SOURCES.txt'
+[12.991s] writing manifest file '../../build/mypkg/mypkg.egg-info/SOURCES.txt'
+[12.992s] running build
+[12.993s] running build_py
+[12.994s] copying mypkg/receiver.py -> /home/yamashita/car_ws/build/mypkg/build/lib/mypkg
+[12.997s] running install
+[13.000s] running install_lib
+[13.007s] copying /home/yamashita/car_ws/build/mypkg/build/lib/mypkg/receiver.py -> /home/yamashita/car_ws/install/mypkg/lib/python3.10/site-packages/mypkg
+[13.013s] byte-compiling /home/yamashita/car_ws/install/mypkg/lib/python3.10/site-packages/mypkg/receiver.py to receiver.cpython-310.pyc
+[13.020s]   File "/home/yamashita/car_ws/install/mypkg/lib/python3.10/site-packages/mypkg/receiver.py", line 126
+[13.022s]     coord = Measure_Distance(i[0:1],i[2]))
+[13.023s]                                          ^
+[13.024s] SyntaxError: unmatched ')'
+[13.025s] 
+[13.026s] running install_data
+[13.027s] running install_egg_info
+[13.040s] removing '/home/yamashita/car_ws/install/mypkg/lib/python3.10/site-packages/mypkg-0.0.0-py3.10.egg-info' (and everything under it)
+[13.043s] Copying ../../build/mypkg/mypkg.egg-info to /home/yamashita/car_ws/install/mypkg/lib/python3.10/site-packages/mypkg-0.0.0-py3.10.egg-info
+[13.054s] running install_scripts
+[13.215s] Installing camera script to /home/yamashita/car_ws/install/mypkg/lib/mypkg
+[13.217s] Installing serial script to /home/yamashita/car_ws/install/mypkg/lib/mypkg
+[13.220s] writing list of installed files to '/home/yamashita/car_ws/build/mypkg/install.log'
+[13.498s] Invoked command in '/home/yamashita/car_ws/src/mypkg' returned '0': PYTHONPATH=/home/yamashita/car_ws/build/mypkg/prefix_override:/home/yamashita/car_ws/install/mypkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/mypkg build --build-base /home/yamashita/car_ws/build/mypkg/build install --record /home/yamashita/car_ws/build/mypkg/install.log --single-version-externally-managed

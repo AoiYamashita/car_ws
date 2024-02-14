@@ -1,0 +1,589 @@
+[0.000000] (-) TimerEvent: {}
+[0.003694] (coordinate_msg) JobQueued: {'identifier': 'coordinate_msg', 'dependencies': OrderedDict()}
+[0.005257] (mypkg) JobQueued: {'identifier': 'mypkg', 'dependencies': OrderedDict()}
+[0.005660] (coordinate_msg) JobStarted: {'identifier': 'coordinate_msg'}
+[0.097900] (-) TimerEvent: {}
+[0.200148] (-) TimerEvent: {}
+[0.302157] (-) TimerEvent: {}
+[0.403609] (-) TimerEvent: {}
+[0.505710] (-) TimerEvent: {}
+[0.607248] (-) TimerEvent: {}
+[0.668866] (mypkg) JobStarted: {'identifier': 'mypkg'}
+[0.707541] (-) TimerEvent: {}
+[0.809165] (-) TimerEvent: {}
+[0.910520] (-) TimerEvent: {}
+[1.013986] (-) TimerEvent: {}
+[1.115346] (-) TimerEvent: {}
+[1.217087] (-) TimerEvent: {}
+[1.319835] (-) TimerEvent: {}
+[1.421719] (-) TimerEvent: {}
+[1.517960] (coordinate_msg) JobProgress: {'identifier': 'coordinate_msg', 'progress': 'cmake'}
+[1.521990] (-) TimerEvent: {}
+[1.525903] (coordinate_msg) JobProgress: {'identifier': 'coordinate_msg', 'progress': 'build'}
+[1.532052] (coordinate_msg) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/yamashita/car_ws/build/coordinate_msg', '--', '-j4', '-l4'], 'cwd': '/home/yamashita/car_ws/build/coordinate_msg', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'yamashita'), ('SSH_CLIENT', '192.168.0.11 64706 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/yamashita/car_ws/install/coordinate_msg/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/yamashita'), ('OLDPWD', '/home/yamashita'), ('SSH_TTY', '/dev/pts/1'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/home/yamashita/car_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'yamashita'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '4'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/yamashita/car_ws/install/mypkg:/home/yamashita/car_ws/install/coordinate_msg:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/yamashita/car_ws/build/coordinate_msg'), ('SSH_CONNECTION', '192.168.0.11 64706 192.168.0.19 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/yamashita/car_ws/install/mypkg/lib/python3.10/site-packages:/home/yamashita/car_ws/install/coordinate_msg/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/yamashita/car_ws/install/coordinate_msg:/home/yamashita/car_ws/install/mypkg:/opt/ros/humble')]), 'shell': False}
+[1.622349] (-) TimerEvent: {}
+[1.725798] (-) TimerEvent: {}
+[1.779494] (coordinate_msg) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.7 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[1.826062] (-) TimerEvent: {}
+[1.929352] (-) TimerEvent: {}
+[2.032502] (-) TimerEvent: {}
+[2.135735] (-) TimerEvent: {}
+[2.239314] (-) TimerEvent: {}
+[2.342694] (-) TimerEvent: {}
+[2.446142] (-) TimerEvent: {}
+[2.548426] (-) TimerEvent: {}
+[2.651198] (-) TimerEvent: {}
+[2.753850] (-) TimerEvent: {}
+[2.856565] (-) TimerEvent: {}
+[2.959400] (-) TimerEvent: {}
+[3.060763] (-) TimerEvent: {}
+[3.162283] (-) TimerEvent: {}
+[3.264024] (-) TimerEvent: {}
+[3.365536] (-) TimerEvent: {}
+[3.466992] (-) TimerEvent: {}
+[3.480434] (coordinate_msg) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[3.510591] (coordinate_msg) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[3.549703] (coordinate_msg) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[3.567230] (-) TimerEvent: {}
+[3.668655] (-) TimerEvent: {}
+[3.769907] (-) TimerEvent: {}
+[3.871320] (-) TimerEvent: {}
+[3.972871] (-) TimerEvent: {}
+[4.027301] (coordinate_msg) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[4.073163] (-) TimerEvent: {}
+[4.174602] (-) TimerEvent: {}
+[4.276251] (-) TimerEvent: {}
+[4.377770] (-) TimerEvent: {}
+[4.479236] (-) TimerEvent: {}
+[4.580731] (-) TimerEvent: {}
+[4.682220] (-) TimerEvent: {}
+[4.783904] (-) TimerEvent: {}
+[4.885529] (-) TimerEvent: {}
+[4.991530] (-) TimerEvent: {}
+[5.095967] (-) TimerEvent: {}
+[5.199379] (-) TimerEvent: {}
+[5.304132] (-) TimerEvent: {}
+[5.407953] (-) TimerEvent: {}
+[5.510237] (-) TimerEvent: {}
+[5.615500] (-) TimerEvent: {}
+[5.718430] (-) TimerEvent: {}
+[5.820036] (-) TimerEvent: {}
+[5.921549] (-) TimerEvent: {}
+[6.023107] (-) TimerEvent: {}
+[6.124439] (-) TimerEvent: {}
+[6.225811] (-) TimerEvent: {}
+[6.327358] (-) TimerEvent: {}
+[6.428839] (-) TimerEvent: {}
+[6.530347] (-) TimerEvent: {}
+[6.633284] (-) TimerEvent: {}
+[6.735490] (-) TimerEvent: {}
+[6.837337] (-) TimerEvent: {}
+[6.939154] (-) TimerEvent: {}
+[7.041082] (-) TimerEvent: {}
+[7.059544] (coordinate_msg) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[7.141404] (-) TimerEvent: {}
+[7.242936] (-) TimerEvent: {}
+[7.344461] (-) TimerEvent: {}
+[7.446110] (-) TimerEvent: {}
+[7.547683] (-) TimerEvent: {}
+[7.649034] (-) TimerEvent: {}
+[7.750544] (-) TimerEvent: {}
+[7.852331] (-) TimerEvent: {}
+[7.953663] (-) TimerEvent: {}
+[8.055170] (-) TimerEvent: {}
+[8.157170] (-) TimerEvent: {}
+[8.258703] (-) TimerEvent: {}
+[8.360317] (-) TimerEvent: {}
+[8.462212] (-) TimerEvent: {}
+[8.564177] (-) TimerEvent: {}
+[8.665509] (-) TimerEvent: {}
+[8.767093] (-) TimerEvent: {}
+[8.868589] (-) TimerEvent: {}
+[8.969964] (-) TimerEvent: {}
+[9.043733] (coordinate_msg) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[9.070300] (-) TimerEvent: {}
+[9.172445] (-) TimerEvent: {}
+[9.273983] (-) TimerEvent: {}
+[9.375528] (-) TimerEvent: {}
+[9.477109] (-) TimerEvent: {}
+[9.578730] (-) TimerEvent: {}
+[9.680329] (-) TimerEvent: {}
+[9.783182] (-) TimerEvent: {}
+[9.884670] (-) TimerEvent: {}
+[9.986158] (-) TimerEvent: {}
+[10.050010] (mypkg) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../build/mypkg', 'build', '--build-base', '/home/yamashita/car_ws/build/mypkg/build', 'install', '--record', '/home/yamashita/car_ws/build/mypkg/install.log', '--single-version-externally-managed'], 'cwd': '/home/yamashita/car_ws/src/mypkg', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'yamashita', 'SSH_CLIENT': '192.168.0.11 64706 22', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/yamashita/car_ws/install/coordinate_msg/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib', 'MOTD_SHOWN': 'pam', 'HOME': '/home/yamashita', 'OLDPWD': '/home/yamashita', 'SSH_TTY': '/dev/pts/1', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLCON_PREFIX_PATH': '/home/yamashita/car_ws/install', 'ROS_DISTRO': 'humble', 'LOGNAME': 'yamashita', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '4', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'AMENT_PREFIX_PATH': '/home/yamashita/car_ws/install/mypkg:/home/yamashita/car_ws/install/coordinate_msg:/opt/ros/humble', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'PWD': '/home/yamashita/car_ws/build/mypkg', 'SSH_CONNECTION': '192.168.0.11 64706 192.168.0.19 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/yamashita/car_ws/build/mypkg/prefix_override:/home/yamashita/car_ws/install/mypkg/lib/python3.10/site-packages:/home/yamashita/car_ws/install/mypkg/lib/python3.10/site-packages:/home/yamashita/car_ws/install/coordinate_msg/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/yamashita/car_ws/install/coordinate_msg'}, 'shell': False}
+[10.086608] (-) TimerEvent: {}
+[10.188718] (-) TimerEvent: {}
+[10.290088] (-) TimerEvent: {}
+[10.391582] (-) TimerEvent: {}
+[10.492962] (-) TimerEvent: {}
+[10.594504] (-) TimerEvent: {}
+[10.696382] (-) TimerEvent: {}
+[10.797892] (-) TimerEvent: {}
+[10.899343] (-) TimerEvent: {}
+[11.000749] (-) TimerEvent: {}
+[11.102190] (-) TimerEvent: {}
+[11.203561] (-) TimerEvent: {}
+[11.304851] (-) TimerEvent: {}
+[11.406270] (-) TimerEvent: {}
+[11.507881] (-) TimerEvent: {}
+[11.609480] (-) TimerEvent: {}
+[11.633349] (coordinate_msg) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[11.709883] (-) TimerEvent: {}
+[11.811412] (-) TimerEvent: {}
+[11.908281] (coordinate_msg) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[11.911679] (-) TimerEvent: {}
+[12.013134] (-) TimerEvent: {}
+[12.114603] (-) TimerEvent: {}
+[12.175141] (coordinate_msg) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[12.176445] (coordinate_msg) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[12.177350] (coordinate_msg) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/aarch64-linux-gnu/libpython3.10.so\n'}
+[12.214837] (-) TimerEvent: {}
+[12.285030] (coordinate_msg) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.10 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[12.315205] (-) TimerEvent: {}
+[12.416572] (-) TimerEvent: {}
+[12.517956] (-) TimerEvent: {}
+[12.529195] (coordinate_msg) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[12.543935] (coordinate_msg) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[12.587047] (coordinate_msg) StdoutLine: {'line': b'-- Configuring done\n'}
+[12.618283] (-) TimerEvent: {}
+[12.719798] (-) TimerEvent: {}
+[12.821078] (-) TimerEvent: {}
+[12.922308] (-) TimerEvent: {}
+[13.023672] (-) TimerEvent: {}
+[13.052401] (mypkg) StdoutLine: {'line': b'running egg_info\n'}
+[13.057940] (mypkg) StdoutLine: {'line': b'writing ../../build/mypkg/mypkg.egg-info/PKG-INFO\n'}
+[13.060085] (mypkg) StdoutLine: {'line': b'writing dependency_links to ../../build/mypkg/mypkg.egg-info/dependency_links.txt\n'}
+[13.061838] (mypkg) StdoutLine: {'line': b'writing entry points to ../../build/mypkg/mypkg.egg-info/entry_points.txt\n'}
+[13.063423] (mypkg) StdoutLine: {'line': b'writing requirements to ../../build/mypkg/mypkg.egg-info/requires.txt\n'}
+[13.064851] (mypkg) StdoutLine: {'line': b'writing top-level names to ../../build/mypkg/mypkg.egg-info/top_level.txt\n'}
+[13.083004] (mypkg) StdoutLine: {'line': b"reading manifest file '../../build/mypkg/mypkg.egg-info/SOURCES.txt'\n"}
+[13.099035] (mypkg) StdoutLine: {'line': b"writing manifest file '../../build/mypkg/mypkg.egg-info/SOURCES.txt'\n"}
+[13.100797] (mypkg) StdoutLine: {'line': b'running build\n'}
+[13.102338] (mypkg) StdoutLine: {'line': b'running build_py\n'}
+[13.104062] (mypkg) StdoutLine: {'line': b'copying mypkg/serial.py -> /home/yamashita/car_ws/build/mypkg/build/lib/mypkg\n'}
+[13.110544] (mypkg) StdoutLine: {'line': b'copying mypkg/receiver.py -> /home/yamashita/car_ws/build/mypkg/build/lib/mypkg\n'}
+[13.114029] (mypkg) StdoutLine: {'line': b'copying mypkg/__init__.py -> /home/yamashita/car_ws/build/mypkg/build/lib/mypkg\n'}
+[13.116588] (mypkg) StdoutLine: {'line': b'running install\n'}
+[13.123864] (-) TimerEvent: {}
+[13.185314] (mypkg) StderrLine: {'line': b'/usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.\n'}
+[13.187452] (mypkg) StderrLine: {'line': b'  warnings.warn(\n'}
+[13.188935] (mypkg) StdoutLine: {'line': b'running install_lib\n'}
+[13.197003] (mypkg) StdoutLine: {'line': b'copying /home/yamashita/car_ws/build/mypkg/build/lib/mypkg/serial.py -> /home/yamashita/car_ws/install/mypkg/lib/python3.10/site-packages/mypkg\n'}
+[13.199328] (mypkg) StdoutLine: {'line': b'copying /home/yamashita/car_ws/build/mypkg/build/lib/mypkg/receiver.py -> /home/yamashita/car_ws/install/mypkg/lib/python3.10/site-packages/mypkg\n'}
+[13.201492] (mypkg) StdoutLine: {'line': b'copying /home/yamashita/car_ws/build/mypkg/build/lib/mypkg/__init__.py -> /home/yamashita/car_ws/install/mypkg/lib/python3.10/site-packages/mypkg\n'}
+[13.206742] (mypkg) StdoutLine: {'line': b'byte-compiling /home/yamashita/car_ws/install/mypkg/lib/python3.10/site-packages/mypkg/serial.py to serial.cpython-310.pyc\n'}
+[13.211301] (mypkg) StdoutLine: {'line': b'byte-compiling /home/yamashita/car_ws/install/mypkg/lib/python3.10/site-packages/mypkg/receiver.py to receiver.cpython-310.pyc\n'}
+[13.222330] (mypkg) StdoutLine: {'line': b'byte-compiling /home/yamashita/car_ws/install/mypkg/lib/python3.10/site-packages/mypkg/__init__.py to __init__.cpython-310.pyc\n'}
+[13.224117] (-) TimerEvent: {}
+[13.225985] (mypkg) StdoutLine: {'line': b'running install_data\n'}
+[13.231747] (mypkg) StdoutLine: {'line': b'copying resource/mypkg -> /home/yamashita/car_ws/install/mypkg/share/ament_index/resource_index/packages\n'}
+[13.233639] (mypkg) StdoutLine: {'line': b'copying package.xml -> /home/yamashita/car_ws/install/mypkg/share/mypkg\n'}
+[13.235947] (mypkg) StdoutLine: {'line': b'copying launch/car.launch.py -> /home/yamashita/car_ws/install/mypkg/share/mypkg\n'}
+[13.297115] (mypkg) StdoutLine: {'line': b'running install_egg_info\n'}
+[13.317320] (mypkg) StdoutLine: {'line': b"removing '/home/yamashita/car_ws/install/mypkg/lib/python3.10/site-packages/mypkg-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[13.320833] (mypkg) StdoutLine: {'line': b'Copying ../../build/mypkg/mypkg.egg-info to /home/yamashita/car_ws/install/mypkg/lib/python3.10/site-packages/mypkg-0.0.0-py3.10.egg-info\n'}
+[13.324394] (-) TimerEvent: {}
+[13.337702] (mypkg) StdoutLine: {'line': b'running install_scripts\n'}
+[13.424791] (-) TimerEvent: {}
+[13.501890] (coordinate_msg) StdoutLine: {'line': b'-- Generating done\n'}
+[13.525074] (-) TimerEvent: {}
+[13.533949] (mypkg) StdoutLine: {'line': b'Installing camera script to /home/yamashita/car_ws/install/mypkg/lib/mypkg\n'}
+[13.536055] (mypkg) StdoutLine: {'line': b'Installing serial script to /home/yamashita/car_ws/install/mypkg/lib/mypkg\n'}
+[13.539842] (mypkg) StdoutLine: {'line': b"writing list of installed files to '/home/yamashita/car_ws/build/mypkg/install.log'\n"}
+[13.549222] (coordinate_msg) StdoutLine: {'line': b'-- Build files have been written to: /home/yamashita/car_ws/build/coordinate_msg\n'}
+[13.625533] (-) TimerEvent: {}
+[13.728407] (-) TimerEvent: {}
+[13.761550] (coordinate_msg) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target coordinate_msg__rosidl_generator_c\x1b[0m\n'}
+[13.828852] (-) TimerEvent: {}
+[13.871381] (coordinate_msg) StdoutLine: {'line': b'[  3%] Built target coordinate_msg__cpp\n'}
+[13.885192] (mypkg) CommandEnded: {'returncode': 0}
+[13.926573] (coordinate_msg) StdoutLine: {'line': b'[  6%] \x1b[32mBuilding C object CMakeFiles/coordinate_msg__rosidl_generator_c.dir/rosidl_generator_c/coordinate_msg/msg/detail/coordinate__functions.c.o\x1b[0m\n'}
+[13.929028] (-) TimerEvent: {}
+[13.995729] (coordinate_msg) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target coordinate_msg__rosidl_typesupport_fastrtps_cpp\x1b[0m\n'}
+[14.005594] (coordinate_msg) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target coordinate_msg__rosidl_typesupport_introspection_cpp\x1b[0m\n'}
+[14.021006] (coordinate_msg) StdoutLine: {'line': b'[  6%] Built target ament_cmake_python_copy_coordinate_msg\n'}
+[14.030480] (-) TimerEvent: {}
+[14.133358] (-) TimerEvent: {}
+[14.137329] (coordinate_msg) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target coordinate_msg__rosidl_typesupport_cpp\x1b[0m\n'}
+[14.235879] (-) TimerEvent: {}
+[14.326305] (coordinate_msg) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding CXX object CMakeFiles/coordinate_msg__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/coordinate_msg/msg/detail/coordinate__type_support.cpp.o\x1b[0m\n'}
+[14.328709] (coordinate_msg) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding CXX object CMakeFiles/coordinate_msg__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/coordinate_msg/msg/coordinate__type_support.cpp.o\x1b[0m\n'}
+[14.336289] (-) TimerEvent: {}
+[14.370430] (coordinate_msg) StdoutLine: {'line': b'[ 16%] \x1b[32mBuilding CXX object CMakeFiles/coordinate_msg__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/coordinate_msg/msg/detail/dds_fastrtps/coordinate__type_support.cpp.o\x1b[0m\n'}
+[14.437013] (-) TimerEvent: {}
+[14.564555] (-) TimerEvent: {}
+[14.666233] (-) TimerEvent: {}
+[14.769494] (-) TimerEvent: {}
+[14.849452] (mypkg) JobEnded: {'identifier': 'mypkg', 'rc': 0}
+[14.869846] (-) TimerEvent: {}
+[14.971473] (-) TimerEvent: {}
+[15.075040] (-) TimerEvent: {}
+[15.176503] (-) TimerEvent: {}
+[15.278097] (-) TimerEvent: {}
+[15.381819] (-) TimerEvent: {}
+[15.483247] (-) TimerEvent: {}
+[15.584791] (-) TimerEvent: {}
+[15.687689] (-) TimerEvent: {}
+[15.790786] (-) TimerEvent: {}
+[15.893141] (-) TimerEvent: {}
+[15.996704] (-) TimerEvent: {}
+[16.016051] (coordinate_msg) StdoutLine: {'line': b'[ 19%] \x1b[32m\x1b[1mLinking C shared library libcoordinate_msg__rosidl_generator_c.so\x1b[0m\n'}
+[16.097104] (-) TimerEvent: {}
+[16.199159] (-) TimerEvent: {}
+[16.300928] (-) TimerEvent: {}
+[16.402404] (-) TimerEvent: {}
+[16.504857] (-) TimerEvent: {}
+[16.607207] (-) TimerEvent: {}
+[16.709259] (-) TimerEvent: {}
+[16.833455] (coordinate_msg) StdoutLine: {'line': b'[ 22%] Built target coordinate_msg__rosidl_generator_c\n'}
+[16.834757] (-) TimerEvent: {}
+[16.936190] (-) TimerEvent: {}
+[17.038633] (-) TimerEvent: {}
+[17.141142] (-) TimerEvent: {}
+[17.256206] (-) TimerEvent: {}
+[17.358318] (-) TimerEvent: {}
+[17.462007] (-) TimerEvent: {}
+[17.583398] (-) TimerEvent: {}
+[17.687967] (-) TimerEvent: {}
+[17.791734] (-) TimerEvent: {}
+[17.895747] (-) TimerEvent: {}
+[17.999290] (-) TimerEvent: {}
+[18.103109] (-) TimerEvent: {}
+[18.207358] (-) TimerEvent: {}
+[18.310714] (-) TimerEvent: {}
+[18.414517] (-) TimerEvent: {}
+[18.518184] (-) TimerEvent: {}
+[18.621958] (-) TimerEvent: {}
+[18.725746] (-) TimerEvent: {}
+[18.829407] (-) TimerEvent: {}
+[18.933043] (-) TimerEvent: {}
+[19.036694] (-) TimerEvent: {}
+[19.140420] (-) TimerEvent: {}
+[19.242303] (-) TimerEvent: {}
+[19.344546] (-) TimerEvent: {}
+[19.451147] (-) TimerEvent: {}
+[19.554845] (-) TimerEvent: {}
+[19.659095] (-) TimerEvent: {}
+[19.666758] (coordinate_msg) StdoutLine: {'line': b'[ 25%] \x1b[32m\x1b[1mLinking CXX shared library libcoordinate_msg__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[19.759699] (-) TimerEvent: {}
+[19.864722] (-) TimerEvent: {}
+[19.968756] (-) TimerEvent: {}
+[20.072255] (-) TimerEvent: {}
+[20.175513] (-) TimerEvent: {}
+[20.191395] (coordinate_msg) StdoutLine: {'line': b'[ 29%] Built target coordinate_msg__rosidl_typesupport_cpp\n'}
+[20.275968] (-) TimerEvent: {}
+[20.326105] (coordinate_msg) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target coordinate_msg__rosidl_typesupport_fastrtps_c\x1b[0m\n'}
+[20.376324] (-) TimerEvent: {}
+[20.479518] (-) TimerEvent: {}
+[20.489456] (coordinate_msg) StdoutLine: {'line': b'[ 32%] \x1b[32mBuilding CXX object CMakeFiles/coordinate_msg__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/coordinate_msg/msg/detail/coordinate__type_support_c.cpp.o\x1b[0m\n'}
+[20.579980] (-) TimerEvent: {}
+[20.683482] (-) TimerEvent: {}
+[20.786666] (-) TimerEvent: {}
+[20.890386] (-) TimerEvent: {}
+[20.994696] (-) TimerEvent: {}
+[21.098041] (-) TimerEvent: {}
+[21.161516] (coordinate_msg) StdoutLine: {'line': b'[ 35%] \x1b[32m\x1b[1mLinking CXX shared library libcoordinate_msg__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[21.198417] (-) TimerEvent: {}
+[21.302036] (-) TimerEvent: {}
+[21.405647] (-) TimerEvent: {}
+[21.519573] (-) TimerEvent: {}
+[21.546278] (coordinate_msg) StdoutLine: {'line': b'[ 38%] \x1b[32m\x1b[1mLinking CXX shared library libcoordinate_msg__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[21.620167] (-) TimerEvent: {}
+[21.723180] (-) TimerEvent: {}
+[21.837741] (-) TimerEvent: {}
+[21.939641] (-) TimerEvent: {}
+[22.041731] (-) TimerEvent: {}
+[22.145562] (-) TimerEvent: {}
+[22.189025] (coordinate_msg) StdoutLine: {'line': b'[ 41%] Built target coordinate_msg__rosidl_typesupport_introspection_cpp\n'}
+[22.245968] (-) TimerEvent: {}
+[22.296054] (coordinate_msg) StdoutLine: {'line': b'[ 45%] Built target coordinate_msg__rosidl_typesupport_fastrtps_cpp\n'}
+[22.346714] (-) TimerEvent: {}
+[22.361987] (coordinate_msg) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target coordinate_msg__rosidl_typesupport_introspection_c\x1b[0m\n'}
+[22.377547] (coordinate_msg) StdoutLine: {'line': b'running egg_info\n'}
+[22.392999] (coordinate_msg) StdoutLine: {'line': b'writing coordinate_msg.egg-info/PKG-INFO\n'}
+[22.399299] (coordinate_msg) StdoutLine: {'line': b'writing dependency_links to coordinate_msg.egg-info/dependency_links.txt\n'}
+[22.405616] (coordinate_msg) StdoutLine: {'line': b'writing top-level names to coordinate_msg.egg-info/top_level.txt\n'}
+[22.440801] (coordinate_msg) StdoutLine: {'line': b"reading manifest file 'coordinate_msg.egg-info/SOURCES.txt'\n"}
+[22.444070] (coordinate_msg) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target coordinate_msg__rosidl_typesupport_c\x1b[0m\n'}
+[22.447166] (-) TimerEvent: {}
+[22.451266] (coordinate_msg) StdoutLine: {'line': b"writing manifest file 'coordinate_msg.egg-info/SOURCES.txt'\n"}
+[22.497228] (coordinate_msg) StdoutLine: {'line': b'[ 48%] \x1b[32mBuilding C object CMakeFiles/coordinate_msg__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/coordinate_msg/msg/detail/coordinate__type_support.c.o\x1b[0m\n'}
+[22.547560] (-) TimerEvent: {}
+[22.583160] (coordinate_msg) StdoutLine: {'line': b'[ 51%] \x1b[32mBuilding CXX object CMakeFiles/coordinate_msg__rosidl_typesupport_c.dir/rosidl_typesupport_c/coordinate_msg/msg/coordinate__type_support.cpp.o\x1b[0m\n'}
+[22.647932] (-) TimerEvent: {}
+[22.750091] (-) TimerEvent: {}
+[22.849429] (coordinate_msg) StdoutLine: {'line': b'[ 51%] Built target ament_cmake_python_build_coordinate_msg_egg\n'}
+[22.851842] (-) TimerEvent: {}
+[22.959100] (-) TimerEvent: {}
+[22.983449] (coordinate_msg) StdoutLine: {'line': b'[ 54%] \x1b[32m\x1b[1mLinking CXX shared library libcoordinate_msg__rosidl_typesupport_c.so\x1b[0m\n'}
+[23.059429] (-) TimerEvent: {}
+[23.161152] (-) TimerEvent: {}
+[23.263447] (-) TimerEvent: {}
+[23.349897] (coordinate_msg) StdoutLine: {'line': b'[ 58%] Built target coordinate_msg__rosidl_typesupport_c\n'}
+[23.363833] (-) TimerEvent: {}
+[23.465184] (-) TimerEvent: {}
+[23.566711] (-) TimerEvent: {}
+[23.595702] (coordinate_msg) StdoutLine: {'line': b'[ 61%] \x1b[32m\x1b[1mLinking C shared library libcoordinate_msg__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[23.667213] (-) TimerEvent: {}
+[23.769463] (-) TimerEvent: {}
+[23.864883] (coordinate_msg) StdoutLine: {'line': b'[ 64%] Built target coordinate_msg__rosidl_typesupport_introspection_c\n'}
+[23.869800] (-) TimerEvent: {}
+[23.973172] (-) TimerEvent: {}
+[24.074552] (-) TimerEvent: {}
+[24.176087] (-) TimerEvent: {}
+[24.277482] (-) TimerEvent: {}
+[24.378975] (-) TimerEvent: {}
+[24.480374] (-) TimerEvent: {}
+[24.581694] (-) TimerEvent: {}
+[24.681309] (coordinate_msg) StdoutLine: {'line': b'[ 67%] \x1b[32m\x1b[1mLinking CXX shared library libcoordinate_msg__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[24.682438] (-) TimerEvent: {}
+[24.783712] (-) TimerEvent: {}
+[24.885233] (-) TimerEvent: {}
+[24.986848] (-) TimerEvent: {}
+[25.088424] (-) TimerEvent: {}
+[25.189925] (-) TimerEvent: {}
+[25.291200] (-) TimerEvent: {}
+[25.392596] (-) TimerEvent: {}
+[25.410719] (coordinate_msg) StdoutLine: {'line': b'[ 70%] Built target coordinate_msg__rosidl_typesupport_fastrtps_c\n'}
+[25.492955] (-) TimerEvent: {}
+[25.566597] (coordinate_msg) StdoutLine: {'line': b'[ 70%] Built target coordinate_msg\n'}
+[25.593254] (-) TimerEvent: {}
+[25.694743] (-) TimerEvent: {}
+[25.733935] (coordinate_msg) StdoutLine: {'line': b'[ 74%] Built target coordinate_msg__py\n'}
+[25.795176] (-) TimerEvent: {}
+[25.822849] (coordinate_msg) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target coordinate_msg__rosidl_generator_py\x1b[0m\n'}
+[25.895606] (-) TimerEvent: {}
+[25.997405] (-) TimerEvent: {}
+[26.015918] (coordinate_msg) StdoutLine: {'line': b'[ 77%] \x1b[32mBuilding C object CMakeFiles/coordinate_msg__rosidl_generator_py.dir/rosidl_generator_py/coordinate_msg/msg/_coordinate_s.c.o\x1b[0m\n'}
+[26.097712] (-) TimerEvent: {}
+[26.199201] (-) TimerEvent: {}
+[26.300572] (-) TimerEvent: {}
+[26.402058] (-) TimerEvent: {}
+[26.503444] (-) TimerEvent: {}
+[26.604818] (-) TimerEvent: {}
+[26.706269] (-) TimerEvent: {}
+[26.807809] (-) TimerEvent: {}
+[26.909333] (-) TimerEvent: {}
+[27.010807] (-) TimerEvent: {}
+[27.112226] (-) TimerEvent: {}
+[27.213848] (-) TimerEvent: {}
+[27.315047] (-) TimerEvent: {}
+[27.323388] (coordinate_msg) StdoutLine: {'line': b'[ 80%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/coordinate_msg/libcoordinate_msg__rosidl_generator_py.so\x1b[0m\n'}
+[27.415361] (-) TimerEvent: {}
+[27.516780] (-) TimerEvent: {}
+[27.618146] (-) TimerEvent: {}
+[27.719652] (-) TimerEvent: {}
+[27.821503] (-) TimerEvent: {}
+[27.923288] (-) TimerEvent: {}
+[28.025165] (-) TimerEvent: {}
+[28.127266] (-) TimerEvent: {}
+[28.229040] (-) TimerEvent: {}
+[28.232655] (coordinate_msg) StdoutLine: {'line': b'[ 80%] Built target coordinate_msg__rosidl_generator_py\n'}
+[28.329541] (-) TimerEvent: {}
+[28.431610] (-) TimerEvent: {}
+[28.533266] (-) TimerEvent: {}
+[28.635169] (-) TimerEvent: {}
+[28.677480] (coordinate_msg) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target coordinate_msg__rosidl_typesupport_introspection_c__pyext\x1b[0m\n'}
+[28.679563] (coordinate_msg) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target coordinate_msg__rosidl_typesupport_c__pyext\x1b[0m\n'}
+[28.681131] (coordinate_msg) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target coordinate_msg__rosidl_typesupport_fastrtps_c__pyext\x1b[0m\n'}
+[28.735409] (-) TimerEvent: {}
+[28.795470] (coordinate_msg) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding C object CMakeFiles/coordinate_msg__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/coordinate_msg/_coordinate_msg_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[28.797277] (coordinate_msg) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding C object CMakeFiles/coordinate_msg__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/coordinate_msg/_coordinate_msg_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[28.802640] (coordinate_msg) StdoutLine: {'line': b'[ 90%] \x1b[32mBuilding C object CMakeFiles/coordinate_msg__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/coordinate_msg/_coordinate_msg_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[28.835775] (-) TimerEvent: {}
+[28.938656] (-) TimerEvent: {}
+[29.041468] (-) TimerEvent: {}
+[29.144836] (-) TimerEvent: {}
+[29.248018] (-) TimerEvent: {}
+[29.351278] (-) TimerEvent: {}
+[29.454505] (-) TimerEvent: {}
+[29.558720] (-) TimerEvent: {}
+[29.663357] (-) TimerEvent: {}
+[29.726336] (coordinate_msg) StdoutLine: {'line': b'[ 93%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/coordinate_msg/coordinate_msg_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so\x1b[0m\n'}
+[29.744910] (coordinate_msg) StdoutLine: {'line': b'[ 96%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/coordinate_msg/coordinate_msg_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so\x1b[0m\n'}
+[29.763747] (-) TimerEvent: {}
+[29.822020] (coordinate_msg) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/coordinate_msg/coordinate_msg_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so\x1b[0m\n'}
+[29.864149] (-) TimerEvent: {}
+[29.968406] (-) TimerEvent: {}
+[30.071700] (-) TimerEvent: {}
+[30.094490] (coordinate_msg) StdoutLine: {'line': b'[100%] Built target coordinate_msg__rosidl_typesupport_c__pyext\n'}
+[30.120862] (coordinate_msg) StdoutLine: {'line': b'[100%] Built target coordinate_msg__rosidl_typesupport_introspection_c__pyext\n'}
+[30.172031] (-) TimerEvent: {}
+[30.197639] (coordinate_msg) StdoutLine: {'line': b'[100%] Built target coordinate_msg__rosidl_typesupport_fastrtps_c__pyext\n'}
+[30.272344] (-) TimerEvent: {}
+[30.284465] (coordinate_msg) CommandEnded: {'returncode': 0}
+[30.372682] (-) TimerEvent: {}
+[30.474096] (-) TimerEvent: {}
+[30.575471] (-) TimerEvent: {}
+[30.676996] (-) TimerEvent: {}
+[30.779145] (-) TimerEvent: {}
+[30.880461] (-) TimerEvent: {}
+[30.936491] (coordinate_msg) JobProgress: {'identifier': 'coordinate_msg', 'progress': 'install'}
+[30.980726] (-) TimerEvent: {}
+[31.006751] (coordinate_msg) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/yamashita/car_ws/build/coordinate_msg'], 'cwd': '/home/yamashita/car_ws/build/coordinate_msg', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'yamashita'), ('SSH_CLIENT', '192.168.0.11 64706 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/yamashita/car_ws/install/coordinate_msg/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/yamashita'), ('OLDPWD', '/home/yamashita'), ('SSH_TTY', '/dev/pts/1'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/home/yamashita/car_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'yamashita'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '4'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/yamashita/car_ws/install/mypkg:/home/yamashita/car_ws/install/coordinate_msg:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/yamashita/car_ws/build/coordinate_msg'), ('SSH_CONNECTION', '192.168.0.11 64706 192.168.0.19 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/yamashita/car_ws/install/mypkg/lib/python3.10/site-packages:/home/yamashita/car_ws/install/coordinate_msg/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/yamashita/car_ws/install/coordinate_msg:/home/yamashita/car_ws/install/mypkg:/opt/ros/humble')]), 'shell': False}
+[31.067553] (coordinate_msg) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[31.068989] (coordinate_msg) StdoutLine: {'line': b'-- Up-to-date: /home/yamashita/car_ws/install/coordinate_msg/share/ament_index/resource_index/rosidl_interfaces/coordinate_msg\n'}
+[31.070393] (coordinate_msg) StdoutLine: {'line': b'-- Up-to-date: /home/yamashita/car_ws/install/coordinate_msg/include/coordinate_msg/coordinate_msg\n'}
+[31.071937] (coordinate_msg) StdoutLine: {'line': b'-- Up-to-date: /home/yamashita/car_ws/install/coordinate_msg/include/coordinate_msg/coordinate_msg/msg\n'}
+[31.073227] (coordinate_msg) StdoutLine: {'line': b'-- Up-to-date: /home/yamashita/car_ws/install/coordinate_msg/include/coordinate_msg/coordinate_msg/msg/detail\n'}
+[31.074566] (coordinate_msg) StdoutLine: {'line': b'-- Up-to-date: /home/yamashita/car_ws/install/coordinate_msg/include/coordinate_msg/coordinate_msg/msg/detail/coordinate__functions.h\n'}
+[31.076087] (coordinate_msg) StdoutLine: {'line': b'-- Up-to-date: /home/yamashita/car_ws/install/coordinate_msg/include/coordinate_msg/coordinate_msg/msg/detail/coordinate__functions.c\n'}
+[31.077082] (coordinate_msg) StdoutLine: {'line': b'-- Up-to-date: /home/yamashita/car_ws/install/coordinate_msg/include/coordinate_msg/coordinate_msg/msg/detail/coordinate__struct.h\n'}
+[31.077947] (coordinate_msg) StdoutLine: {'line': b'-- Up-to-date: /home/yamashita/car_ws/install/coordinate_msg/include/coordinate_msg/coordinate_msg/msg/detail/coordinate__type_support.h\n'}
+[31.078791] (coordinate_msg) StdoutLine: {'line': b'-- Up-to-date: /home/yamashita/car_ws/install/coordinate_msg/include/coordinate_msg/coordinate_msg/msg/coordinate.h\n'}
+[31.080258] (coordinate_msg) StdoutLine: {'line': b'-- Up-to-date: /home/yamashita/car_ws/install/coordinate_msg/include/coordinate_msg/coordinate_msg/msg/rosidl_generator_c__visibility_control.h\n'}
+[31.081218] (-) TimerEvent: {}
+[31.082187] (coordinate_msg) StdoutLine: {'line': b'-- Installing: /home/yamashita/car_ws/install/coordinate_msg/share/coordinate_msg/environment/library_path.sh\n'}
+[31.083421] (coordinate_msg) StdoutLine: {'line': b'-- Installing: /home/yamashita/car_ws/install/coordinate_msg/share/coordinate_msg/environment/library_path.dsv\n'}
+[31.087280] (coordinate_msg) StdoutLine: {'line': b'-- Installing: /home/yamashita/car_ws/install/coordinate_msg/lib/libcoordinate_msg__rosidl_generator_c.so\n'}
+[31.092213] (coordinate_msg) StdoutLine: {'line': b'-- Set runtime path of "/home/yamashita/car_ws/install/coordinate_msg/lib/libcoordinate_msg__rosidl_generator_c.so" to ""\n'}
+[31.093724] (coordinate_msg) StdoutLine: {'line': b'-- Up-to-date: /home/yamashita/car_ws/install/coordinate_msg/include/coordinate_msg/coordinate_msg\n'}
+[31.094982] (coordinate_msg) StdoutLine: {'line': b'-- Up-to-date: /home/yamashita/car_ws/install/coordinate_msg/include/coordinate_msg/coordinate_msg/msg\n'}
+[31.096332] (coordinate_msg) StdoutLine: {'line': b'-- Up-to-date: /home/yamashita/car_ws/install/coordinate_msg/include/coordinate_msg/coordinate_msg/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[31.097638] (coordinate_msg) StdoutLine: {'line': b'-- Up-to-date: /home/yamashita/car_ws/install/coordinate_msg/include/coordinate_msg/coordinate_msg/msg/detail\n'}
+[31.098422] (coordinate_msg) StdoutLine: {'line': b'-- Up-to-date: /home/yamashita/car_ws/install/coordinate_msg/include/coordinate_msg/coordinate_msg/msg/detail/coordinate__rosidl_typesupport_fastrtps_c.h\n'}
+[31.100730] (coordinate_msg) StdoutLine: {'line': b'-- Installing: /home/yamashita/car_ws/install/coordinate_msg/lib/libcoordinate_msg__rosidl_typesupport_fastrtps_c.so\n'}
+[31.106568] (coordinate_msg) StdoutLine: {'line': b'-- Set runtime path of "/home/yamashita/car_ws/install/coordinate_msg/lib/libcoordinate_msg__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[31.108132] (coordinate_msg) StdoutLine: {'line': b'-- Up-to-date: /home/yamashita/car_ws/install/coordinate_msg/include/coordinate_msg/coordinate_msg\n'}
+[31.109556] (coordinate_msg) StdoutLine: {'line': b'-- Up-to-date: /home/yamashita/car_ws/install/coordinate_msg/include/coordinate_msg/coordinate_msg/msg\n'}
+[31.111016] (coordinate_msg) StdoutLine: {'line': b'-- Up-to-date: /home/yamashita/car_ws/install/coordinate_msg/include/coordinate_msg/coordinate_msg/msg/detail\n'}
+[31.112481] (coordinate_msg) StdoutLine: {'line': b'-- Up-to-date: /home/yamashita/car_ws/install/coordinate_msg/include/coordinate_msg/coordinate_msg/msg/detail/coordinate__rosidl_typesupport_introspection_c.h\n'}
+[31.113622] (coordinate_msg) StdoutLine: {'line': b'-- Up-to-date: /home/yamashita/car_ws/install/coordinate_msg/include/coordinate_msg/coordinate_msg/msg/detail/coordinate__type_support.c\n'}
+[31.114509] (coordinate_msg) StdoutLine: {'line': b'-- Up-to-date: /home/yamashita/car_ws/install/coordinate_msg/include/coordinate_msg/coordinate_msg/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[31.115854] (coordinate_msg) StdoutLine: {'line': b'-- Installing: /home/yamashita/car_ws/install/coordinate_msg/lib/libcoordinate_msg__rosidl_typesupport_introspection_c.so\n'}
+[31.120635] (coordinate_msg) StdoutLine: {'line': b'-- Set runtime path of "/home/yamashita/car_ws/install/coordinate_msg/lib/libcoordinate_msg__rosidl_typesupport_introspection_c.so" to ""\n'}
+[31.124301] (coordinate_msg) StdoutLine: {'line': b'-- Installing: /home/yamashita/car_ws/install/coordinate_msg/lib/libcoordinate_msg__rosidl_typesupport_c.so\n'}
+[31.129259] (coordinate_msg) StdoutLine: {'line': b'-- Set runtime path of "/home/yamashita/car_ws/install/coordinate_msg/lib/libcoordinate_msg__rosidl_typesupport_c.so" to ""\n'}
+[31.130795] (coordinate_msg) StdoutLine: {'line': b'-- Up-to-date: /home/yamashita/car_ws/install/coordinate_msg/include/coordinate_msg/coordinate_msg\n'}
+[31.132057] (coordinate_msg) StdoutLine: {'line': b'-- Up-to-date: /home/yamashita/car_ws/install/coordinate_msg/include/coordinate_msg/coordinate_msg/msg\n'}
+[31.133398] (coordinate_msg) StdoutLine: {'line': b'-- Up-to-date: /home/yamashita/car_ws/install/coordinate_msg/include/coordinate_msg/coordinate_msg/msg/detail\n'}
+[31.135188] (coordinate_msg) StdoutLine: {'line': b'-- Up-to-date: /home/yamashita/car_ws/install/coordinate_msg/include/coordinate_msg/coordinate_msg/msg/detail/coordinate__builder.hpp\n'}
+[31.136629] (coordinate_msg) StdoutLine: {'line': b'-- Up-to-date: /home/yamashita/car_ws/install/coordinate_msg/include/coordinate_msg/coordinate_msg/msg/detail/coordinate__traits.hpp\n'}
+[31.137929] (coordinate_msg) StdoutLine: {'line': b'-- Up-to-date: /home/yamashita/car_ws/install/coordinate_msg/include/coordinate_msg/coordinate_msg/msg/detail/coordinate__struct.hpp\n'}
+[31.138950] (coordinate_msg) StdoutLine: {'line': b'-- Up-to-date: /home/yamashita/car_ws/install/coordinate_msg/include/coordinate_msg/coordinate_msg/msg/coordinate.hpp\n'}
+[31.140269] (coordinate_msg) StdoutLine: {'line': b'-- Up-to-date: /home/yamashita/car_ws/install/coordinate_msg/include/coordinate_msg/coordinate_msg\n'}
+[31.141146] (coordinate_msg) StdoutLine: {'line': b'-- Up-to-date: /home/yamashita/car_ws/install/coordinate_msg/include/coordinate_msg/coordinate_msg/msg\n'}
+[31.142125] (coordinate_msg) StdoutLine: {'line': b'-- Up-to-date: /home/yamashita/car_ws/install/coordinate_msg/include/coordinate_msg/coordinate_msg/msg/detail\n'}
+[31.142854] (coordinate_msg) StdoutLine: {'line': b'-- Up-to-date: /home/yamashita/car_ws/install/coordinate_msg/include/coordinate_msg/coordinate_msg/msg/detail/coordinate__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[31.144072] (coordinate_msg) StdoutLine: {'line': b'-- Installing: /home/yamashita/car_ws/install/coordinate_msg/include/coordinate_msg/coordinate_msg/msg/detail/dds_fastrtps\n'}
+[31.145148] (coordinate_msg) StdoutLine: {'line': b'-- Up-to-date: /home/yamashita/car_ws/install/coordinate_msg/include/coordinate_msg/coordinate_msg/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[31.146048] (coordinate_msg) StdoutLine: {'line': b'-- Installing: /home/yamashita/car_ws/install/coordinate_msg/lib/libcoordinate_msg__rosidl_typesupport_fastrtps_cpp.so\n'}
+[31.148753] (coordinate_msg) StdoutLine: {'line': b'-- Set runtime path of "/home/yamashita/car_ws/install/coordinate_msg/lib/libcoordinate_msg__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[31.150216] (coordinate_msg) StdoutLine: {'line': b'-- Up-to-date: /home/yamashita/car_ws/install/coordinate_msg/include/coordinate_msg/coordinate_msg\n'}
+[31.151466] (coordinate_msg) StdoutLine: {'line': b'-- Up-to-date: /home/yamashita/car_ws/install/coordinate_msg/include/coordinate_msg/coordinate_msg/msg\n'}
+[31.152882] (coordinate_msg) StdoutLine: {'line': b'-- Up-to-date: /home/yamashita/car_ws/install/coordinate_msg/include/coordinate_msg/coordinate_msg/msg/detail\n'}
+[31.153868] (coordinate_msg) StdoutLine: {'line': b'-- Up-to-date: /home/yamashita/car_ws/install/coordinate_msg/include/coordinate_msg/coordinate_msg/msg/detail/coordinate__type_support.cpp\n'}
+[31.154658] (coordinate_msg) StdoutLine: {'line': b'-- Up-to-date: /home/yamashita/car_ws/install/coordinate_msg/include/coordinate_msg/coordinate_msg/msg/detail/coordinate__rosidl_typesupport_introspection_cpp.hpp\n'}
+[31.156421] (coordinate_msg) StdoutLine: {'line': b'-- Installing: /home/yamashita/car_ws/install/coordinate_msg/lib/libcoordinate_msg__rosidl_typesupport_introspection_cpp.so\n'}
+[31.161495] (coordinate_msg) StdoutLine: {'line': b'-- Set runtime path of "/home/yamashita/car_ws/install/coordinate_msg/lib/libcoordinate_msg__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[31.164951] (coordinate_msg) StdoutLine: {'line': b'-- Installing: /home/yamashita/car_ws/install/coordinate_msg/lib/libcoordinate_msg__rosidl_typesupport_cpp.so\n'}
+[31.169844] (coordinate_msg) StdoutLine: {'line': b'-- Set runtime path of "/home/yamashita/car_ws/install/coordinate_msg/lib/libcoordinate_msg__rosidl_typesupport_cpp.so" to ""\n'}
+[31.171391] (coordinate_msg) StdoutLine: {'line': b'-- Up-to-date: /home/yamashita/car_ws/install/coordinate_msg/share/coordinate_msg/environment/pythonpath.sh\n'}
+[31.172694] (coordinate_msg) StdoutLine: {'line': b'-- Installing: /home/yamashita/car_ws/install/coordinate_msg/share/coordinate_msg/environment/pythonpath.dsv\n'}
+[31.175374] (coordinate_msg) StdoutLine: {'line': b'-- Up-to-date: /home/yamashita/car_ws/install/coordinate_msg/local/lib/python3.10/dist-packages/coordinate_msg-0.0.0-py3.10.egg-info\n'}
+[31.176717] (coordinate_msg) StdoutLine: {'line': b'-- Installing: /home/yamashita/car_ws/install/coordinate_msg/local/lib/python3.10/dist-packages/coordinate_msg-0.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[31.179137] (coordinate_msg) StdoutLine: {'line': b'-- Installing: /home/yamashita/car_ws/install/coordinate_msg/local/lib/python3.10/dist-packages/coordinate_msg-0.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[31.181427] (-) TimerEvent: {}
+[31.182710] (coordinate_msg) StdoutLine: {'line': b'-- Installing: /home/yamashita/car_ws/install/coordinate_msg/local/lib/python3.10/dist-packages/coordinate_msg-0.0.0-py3.10.egg-info/PKG-INFO\n'}
+[31.184623] (coordinate_msg) StdoutLine: {'line': b'-- Installing: /home/yamashita/car_ws/install/coordinate_msg/local/lib/python3.10/dist-packages/coordinate_msg-0.0.0-py3.10.egg-info/top_level.txt\n'}
+[31.192312] (coordinate_msg) StdoutLine: {'line': b'-- Up-to-date: /home/yamashita/car_ws/install/coordinate_msg/local/lib/python3.10/dist-packages/coordinate_msg\n'}
+[31.193737] (coordinate_msg) StdoutLine: {'line': b'-- Installing: /home/yamashita/car_ws/install/coordinate_msg/local/lib/python3.10/dist-packages/coordinate_msg/coordinate_msg_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so\n'}
+[31.197209] (coordinate_msg) StdoutLine: {'line': b'-- Installing: /home/yamashita/car_ws/install/coordinate_msg/local/lib/python3.10/dist-packages/coordinate_msg/coordinate_msg_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so\n'}
+[31.200133] (coordinate_msg) StdoutLine: {'line': b'-- Up-to-date: /home/yamashita/car_ws/install/coordinate_msg/local/lib/python3.10/dist-packages/coordinate_msg/msg\n'}
+[31.201509] (coordinate_msg) StdoutLine: {'line': b'-- Up-to-date: /home/yamashita/car_ws/install/coordinate_msg/local/lib/python3.10/dist-packages/coordinate_msg/msg/_coordinate_s.c\n'}
+[31.203037] (coordinate_msg) StdoutLine: {'line': b'-- Up-to-date: /home/yamashita/car_ws/install/coordinate_msg/local/lib/python3.10/dist-packages/coordinate_msg/msg/__init__.py\n'}
+[31.204493] (coordinate_msg) StdoutLine: {'line': b'-- Up-to-date: /home/yamashita/car_ws/install/coordinate_msg/local/lib/python3.10/dist-packages/coordinate_msg/msg/_coordinate.py\n'}
+[31.205519] (coordinate_msg) StdoutLine: {'line': b'-- Up-to-date: /home/yamashita/car_ws/install/coordinate_msg/local/lib/python3.10/dist-packages/coordinate_msg/_coordinate_msg_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[31.206319] (coordinate_msg) StdoutLine: {'line': b'-- Installing: /home/yamashita/car_ws/install/coordinate_msg/local/lib/python3.10/dist-packages/coordinate_msg/libcoordinate_msg__rosidl_generator_py.so\n'}
+[31.207686] (coordinate_msg) StdoutLine: {'line': b'-- Installing: /home/yamashita/car_ws/install/coordinate_msg/local/lib/python3.10/dist-packages/coordinate_msg/__init__.py\n'}
+[31.208922] (coordinate_msg) StdoutLine: {'line': b'-- Installing: /home/yamashita/car_ws/install/coordinate_msg/local/lib/python3.10/dist-packages/coordinate_msg/coordinate_msg_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so\n'}
+[31.211957] (coordinate_msg) StdoutLine: {'line': b'-- Up-to-date: /home/yamashita/car_ws/install/coordinate_msg/local/lib/python3.10/dist-packages/coordinate_msg/_coordinate_msg_s.ep.rosidl_typesupport_c.c\n'}
+[31.213371] (coordinate_msg) StdoutLine: {'line': b'-- Up-to-date: /home/yamashita/car_ws/install/coordinate_msg/local/lib/python3.10/dist-packages/coordinate_msg/_coordinate_msg_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[31.281747] (-) TimerEvent: {}
+[31.383096] (-) TimerEvent: {}
+[31.484341] (-) TimerEvent: {}
+[31.561486] (coordinate_msg) StdoutLine: {'line': b"Listing '/home/yamashita/car_ws/install/coordinate_msg/local/lib/python3.10/dist-packages/coordinate_msg'...\n"}
+[31.563082] (coordinate_msg) StdoutLine: {'line': b"Compiling '/home/yamashita/car_ws/install/coordinate_msg/local/lib/python3.10/dist-packages/coordinate_msg/__init__.py'...\n"}
+[31.564380] (coordinate_msg) StdoutLine: {'line': b"Listing '/home/yamashita/car_ws/install/coordinate_msg/local/lib/python3.10/dist-packages/coordinate_msg/msg'...\n"}
+[31.565471] (coordinate_msg) StdoutLine: {'line': b"Compiling '/home/yamashita/car_ws/install/coordinate_msg/local/lib/python3.10/dist-packages/coordinate_msg/msg/__init__.py'...\n"}
+[31.566522] (coordinate_msg) StdoutLine: {'line': b"Compiling '/home/yamashita/car_ws/install/coordinate_msg/local/lib/python3.10/dist-packages/coordinate_msg/msg/_coordinate.py'...\n"}
+[31.584671] (-) TimerEvent: {}
+[31.623220] (coordinate_msg) StdoutLine: {'line': b'-- Installing: /home/yamashita/car_ws/install/coordinate_msg/local/lib/python3.10/dist-packages/coordinate_msg/coordinate_msg_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so\n'}
+[31.628931] (coordinate_msg) StdoutLine: {'line': b'-- Set runtime path of "/home/yamashita/car_ws/install/coordinate_msg/local/lib/python3.10/dist-packages/coordinate_msg/coordinate_msg_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so" to ""\n'}
+[31.632280] (coordinate_msg) StdoutLine: {'line': b'-- Installing: /home/yamashita/car_ws/install/coordinate_msg/local/lib/python3.10/dist-packages/coordinate_msg/coordinate_msg_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so\n'}
+[31.637973] (coordinate_msg) StdoutLine: {'line': b'-- Set runtime path of "/home/yamashita/car_ws/install/coordinate_msg/local/lib/python3.10/dist-packages/coordinate_msg/coordinate_msg_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so" to ""\n'}
+[31.641010] (coordinate_msg) StdoutLine: {'line': b'-- Installing: /home/yamashita/car_ws/install/coordinate_msg/local/lib/python3.10/dist-packages/coordinate_msg/coordinate_msg_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so\n'}
+[31.646041] (coordinate_msg) StdoutLine: {'line': b'-- Set runtime path of "/home/yamashita/car_ws/install/coordinate_msg/local/lib/python3.10/dist-packages/coordinate_msg/coordinate_msg_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so" to ""\n'}
+[31.649922] (coordinate_msg) StdoutLine: {'line': b'-- Installing: /home/yamashita/car_ws/install/coordinate_msg/lib/libcoordinate_msg__rosidl_generator_py.so\n'}
+[31.654942] (coordinate_msg) StdoutLine: {'line': b'-- Set runtime path of "/home/yamashita/car_ws/install/coordinate_msg/lib/libcoordinate_msg__rosidl_generator_py.so" to ""\n'}
+[31.656570] (coordinate_msg) StdoutLine: {'line': b'-- Up-to-date: /home/yamashita/car_ws/install/coordinate_msg/share/coordinate_msg/msg/Coordinate.idl\n'}
+[31.658264] (coordinate_msg) StdoutLine: {'line': b'-- Up-to-date: /home/yamashita/car_ws/install/coordinate_msg/share/coordinate_msg/msg/Coordinate.msg\n'}
+[31.659619] (coordinate_msg) StdoutLine: {'line': b'-- Up-to-date: /home/yamashita/car_ws/install/coordinate_msg/share/ament_index/resource_index/package_run_dependencies/coordinate_msg\n'}
+[31.660620] (coordinate_msg) StdoutLine: {'line': b'-- Installing: /home/yamashita/car_ws/install/coordinate_msg/share/ament_index/resource_index/parent_prefix_path/coordinate_msg\n'}
+[31.662982] (coordinate_msg) StdoutLine: {'line': b'-- Installing: /home/yamashita/car_ws/install/coordinate_msg/share/coordinate_msg/environment/ament_prefix_path.sh\n'}
+[31.666801] (coordinate_msg) StdoutLine: {'line': b'-- Installing: /home/yamashita/car_ws/install/coordinate_msg/share/coordinate_msg/environment/ament_prefix_path.dsv\n'}
+[31.670743] (coordinate_msg) StdoutLine: {'line': b'-- Installing: /home/yamashita/car_ws/install/coordinate_msg/share/coordinate_msg/environment/path.sh\n'}
+[31.674469] (coordinate_msg) StdoutLine: {'line': b'-- Installing: /home/yamashita/car_ws/install/coordinate_msg/share/coordinate_msg/environment/path.dsv\n'}
+[31.678282] (coordinate_msg) StdoutLine: {'line': b'-- Up-to-date: /home/yamashita/car_ws/install/coordinate_msg/share/coordinate_msg/local_setup.bash\n'}
+[31.679899] (coordinate_msg) StdoutLine: {'line': b'-- Up-to-date: /home/yamashita/car_ws/install/coordinate_msg/share/coordinate_msg/local_setup.sh\n'}
+[31.681416] (coordinate_msg) StdoutLine: {'line': b'-- Up-to-date: /home/yamashita/car_ws/install/coordinate_msg/share/coordinate_msg/local_setup.zsh\n'}
+[31.682461] (coordinate_msg) StdoutLine: {'line': b'-- Installing: /home/yamashita/car_ws/install/coordinate_msg/share/coordinate_msg/local_setup.dsv\n'}
+[31.685005] (coordinate_msg) StdoutLine: {'line': b'-- Installing: /home/yamashita/car_ws/install/coordinate_msg/share/coordinate_msg/package.dsv\n'}
+[31.686134] (-) TimerEvent: {}
+[31.688087] (coordinate_msg) StdoutLine: {'line': b'-- Up-to-date: /home/yamashita/car_ws/install/coordinate_msg/share/ament_index/resource_index/packages/coordinate_msg\n'}
+[31.691318] (coordinate_msg) StdoutLine: {'line': b'-- Up-to-date: /home/yamashita/car_ws/install/coordinate_msg/share/coordinate_msg/cmake/export_coordinate_msg__rosidl_generator_cExport.cmake\n'}
+[31.692791] (coordinate_msg) StdoutLine: {'line': b'-- Up-to-date: /home/yamashita/car_ws/install/coordinate_msg/share/coordinate_msg/cmake/export_coordinate_msg__rosidl_generator_cExport-noconfig.cmake\n'}
+[31.695920] (coordinate_msg) StdoutLine: {'line': b'-- Up-to-date: /home/yamashita/car_ws/install/coordinate_msg/share/coordinate_msg/cmake/export_coordinate_msg__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[31.697499] (coordinate_msg) StdoutLine: {'line': b'-- Up-to-date: /home/yamashita/car_ws/install/coordinate_msg/share/coordinate_msg/cmake/export_coordinate_msg__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[31.700548] (coordinate_msg) StdoutLine: {'line': b'-- Up-to-date: /home/yamashita/car_ws/install/coordinate_msg/share/coordinate_msg/cmake/coordinate_msg__rosidl_typesupport_introspection_cExport.cmake\n'}
+[31.702073] (coordinate_msg) StdoutLine: {'line': b'-- Up-to-date: /home/yamashita/car_ws/install/coordinate_msg/share/coordinate_msg/cmake/coordinate_msg__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[31.704819] (coordinate_msg) StdoutLine: {'line': b'-- Up-to-date: /home/yamashita/car_ws/install/coordinate_msg/share/coordinate_msg/cmake/coordinate_msg__rosidl_typesupport_cExport.cmake\n'}
+[31.706320] (coordinate_msg) StdoutLine: {'line': b'-- Up-to-date: /home/yamashita/car_ws/install/coordinate_msg/share/coordinate_msg/cmake/coordinate_msg__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[31.709050] (coordinate_msg) StdoutLine: {'line': b'-- Up-to-date: /home/yamashita/car_ws/install/coordinate_msg/share/coordinate_msg/cmake/export_coordinate_msg__rosidl_generator_cppExport.cmake\n'}
+[31.712177] (coordinate_msg) StdoutLine: {'line': b'-- Up-to-date: /home/yamashita/car_ws/install/coordinate_msg/share/coordinate_msg/cmake/export_coordinate_msg__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[31.748346] (coordinate_msg) StdoutLine: {'line': b'-- Up-to-date: /home/yamashita/car_ws/install/coordinate_msg/share/coordinate_msg/cmake/export_coordinate_msg__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[31.755124] (coordinate_msg) StdoutLine: {'line': b'-- Up-to-date: /home/yamashita/car_ws/install/coordinate_msg/share/coordinate_msg/cmake/coordinate_msg__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[31.757525] (coordinate_msg) StdoutLine: {'line': b'-- Up-to-date: /home/yamashita/car_ws/install/coordinate_msg/share/coordinate_msg/cmake/coordinate_msg__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[31.762017] (coordinate_msg) StdoutLine: {'line': b'-- Up-to-date: /home/yamashita/car_ws/install/coordinate_msg/share/coordinate_msg/cmake/coordinate_msg__rosidl_typesupport_cppExport.cmake\n'}
+[31.763790] (coordinate_msg) StdoutLine: {'line': b'-- Up-to-date: /home/yamashita/car_ws/install/coordinate_msg/share/coordinate_msg/cmake/coordinate_msg__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[31.768921] (coordinate_msg) StdoutLine: {'line': b'-- Up-to-date: /home/yamashita/car_ws/install/coordinate_msg/share/coordinate_msg/cmake/export_coordinate_msg__rosidl_generator_pyExport.cmake\n'}
+[31.770515] (coordinate_msg) StdoutLine: {'line': b'-- Up-to-date: /home/yamashita/car_ws/install/coordinate_msg/share/coordinate_msg/cmake/export_coordinate_msg__rosidl_generator_pyExport-noconfig.cmake\n'}
+[31.772393] (coordinate_msg) StdoutLine: {'line': b'-- Up-to-date: /home/yamashita/car_ws/install/coordinate_msg/share/coordinate_msg/cmake/rosidl_cmake-extras.cmake\n'}
+[31.774162] (coordinate_msg) StdoutLine: {'line': b'-- Up-to-date: /home/yamashita/car_ws/install/coordinate_msg/share/coordinate_msg/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[31.775999] (coordinate_msg) StdoutLine: {'line': b'-- Up-to-date: /home/yamashita/car_ws/install/coordinate_msg/share/coordinate_msg/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[31.777574] (coordinate_msg) StdoutLine: {'line': b'-- Up-to-date: /home/yamashita/car_ws/install/coordinate_msg/share/coordinate_msg/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[31.779763] (coordinate_msg) StdoutLine: {'line': b'-- Up-to-date: /home/yamashita/car_ws/install/coordinate_msg/share/coordinate_msg/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[31.781165] (coordinate_msg) StdoutLine: {'line': b'-- Up-to-date: /home/yamashita/car_ws/install/coordinate_msg/share/coordinate_msg/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[31.782176] (coordinate_msg) StdoutLine: {'line': b'-- Up-to-date: /home/yamashita/car_ws/install/coordinate_msg/share/coordinate_msg/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[31.783370] (coordinate_msg) StdoutLine: {'line': b'-- Up-to-date: /home/yamashita/car_ws/install/coordinate_msg/share/coordinate_msg/cmake/coordinate_msgConfig.cmake\n'}
+[31.784358] (coordinate_msg) StdoutLine: {'line': b'-- Up-to-date: /home/yamashita/car_ws/install/coordinate_msg/share/coordinate_msg/cmake/coordinate_msgConfig-version.cmake\n'}
+[31.785213] (coordinate_msg) StdoutLine: {'line': b'-- Up-to-date: /home/yamashita/car_ws/install/coordinate_msg/share/coordinate_msg/package.xml\n'}
+[31.786324] (-) TimerEvent: {}
+[31.795541] (coordinate_msg) CommandEnded: {'returncode': 0}
+[31.886619] (-) TimerEvent: {}
+[31.988662] (-) TimerEvent: {}
+[32.090768] (-) TimerEvent: {}
+[32.193109] (-) TimerEvent: {}
+[32.295074] (-) TimerEvent: {}
+[32.396880] (-) TimerEvent: {}
+[32.499651] (-) TimerEvent: {}
+[32.604502] (-) TimerEvent: {}
+[32.707100] (-) TimerEvent: {}
+[32.808267] (-) TimerEvent: {}
+[32.909626] (-) TimerEvent: {}
+[33.010783] (-) TimerEvent: {}
+[33.112402] (-) TimerEvent: {}
+[33.213805] (-) TimerEvent: {}
+[33.315385] (-) TimerEvent: {}
+[33.416878] (-) TimerEvent: {}
+[33.518046] (-) TimerEvent: {}
+[33.620970] (-) TimerEvent: {}
+[33.724138] (-) TimerEvent: {}
+[33.825442] (-) TimerEvent: {}
+[33.927830] (-) TimerEvent: {}
+[34.031108] (-) TimerEvent: {}
+[34.132394] (-) TimerEvent: {}
+[34.235594] (-) TimerEvent: {}
+[34.261218] (coordinate_msg) JobEnded: {'identifier': 'coordinate_msg', 'rc': 0}
+[34.268048] (-) EventReactorShutdown: {}

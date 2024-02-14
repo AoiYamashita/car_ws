@@ -1,0 +1,24 @@
+[9.880s] Invoking command in '/home/yamashita/car_ws/src/mypkg': PYTHONPATH=/home/yamashita/car_ws/build/mypkg/prefix_override:/home/yamashita/car_ws/install/mypkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/mypkg build --build-base /home/yamashita/car_ws/build/mypkg/build install --record /home/yamashita/car_ws/build/mypkg/install.log --single-version-externally-managed
+[12.397s] running egg_info
+[12.399s] writing ../../build/mypkg/mypkg.egg-info/PKG-INFO
+[12.437s] writing dependency_links to ../../build/mypkg/mypkg.egg-info/dependency_links.txt
+[12.440s] writing entry points to ../../build/mypkg/mypkg.egg-info/entry_points.txt
+[12.442s] writing requirements to ../../build/mypkg/mypkg.egg-info/requires.txt
+[12.444s] writing top-level names to ../../build/mypkg/mypkg.egg-info/top_level.txt
+[12.463s] reading manifest file '../../build/mypkg/mypkg.egg-info/SOURCES.txt'
+[12.470s] writing manifest file '../../build/mypkg/mypkg.egg-info/SOURCES.txt'
+[12.472s] running build
+[12.473s] running build_py
+[12.476s] running install
+[12.478s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[12.479s]   warnings.warn(
+[12.480s] running install_lib
+[12.491s] running install_data
+[12.496s] running install_egg_info
+[12.510s] removing '/home/yamashita/car_ws/install/mypkg/lib/python3.10/site-packages/mypkg-0.0.0-py3.10.egg-info' (and everything under it)
+[12.514s] Copying ../../build/mypkg/mypkg.egg-info to /home/yamashita/car_ws/install/mypkg/lib/python3.10/site-packages/mypkg-0.0.0-py3.10.egg-info
+[12.525s] running install_scripts
+[12.696s] Installing camera script to /home/yamashita/car_ws/install/mypkg/lib/mypkg
+[12.698s] Installing serial script to /home/yamashita/car_ws/install/mypkg/lib/mypkg
+[12.701s] writing list of installed files to '/home/yamashita/car_ws/build/mypkg/install.log'
+[12.961s] Invoked command in '/home/yamashita/car_ws/src/mypkg' returned '0': PYTHONPATH=/home/yamashita/car_ws/build/mypkg/prefix_override:/home/yamashita/car_ws/install/mypkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/mypkg build --build-base /home/yamashita/car_ws/build/mypkg/build install --record /home/yamashita/car_ws/build/mypkg/install.log --single-version-externally-managed

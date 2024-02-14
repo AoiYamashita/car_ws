@@ -1,0 +1,5 @@
+  File "/home/yamashita/car_ws/install/mypkg/lib/python3.10/site-packages/mypkg/receiver.py", line 102
+    global frame = data * alpha
+                 ^
+SyntaxError: invalid syntax
+

@@ -1,0 +1,25 @@
+[9.713s] Invoking command in '/home/yamashita/car_ws/src/mypkg': PYTHONPATH=/home/yamashita/car_ws/build/mypkg/prefix_override:/home/yamashita/car_ws/install/mypkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/mypkg build --build-base /home/yamashita/car_ws/build/mypkg/build install --record /home/yamashita/car_ws/build/mypkg/install.log --single-version-externally-managed
+[12.191s] running egg_info
+[12.196s] writing ../../build/mypkg/mypkg.egg-info/PKG-INFO
+[12.199s] writing dependency_links to ../../build/mypkg/mypkg.egg-info/dependency_links.txt
+[12.201s] writing entry points to ../../build/mypkg/mypkg.egg-info/entry_points.txt
+[12.202s] writing requirements to ../../build/mypkg/mypkg.egg-info/requires.txt
+[12.204s] writing top-level names to ../../build/mypkg/mypkg.egg-info/top_level.txt
+[12.222s] reading manifest file '../../build/mypkg/mypkg.egg-info/SOURCES.txt'
+[12.231s] writing manifest file '../../build/mypkg/mypkg.egg-info/SOURCES.txt'
+[12.232s] running build
+[12.233s] running build_py
+[12.236s] running install
+[12.239s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[12.240s]   warnings.warn(
+[12.241s] running install_lib
+[12.253s] running install_data
+[12.258s] copying package.xml -> /home/yamashita/car_ws/install/mypkg/share/mypkg
+[12.260s] running install_egg_info
+[12.275s] removing '/home/yamashita/car_ws/install/mypkg/lib/python3.10/site-packages/mypkg-0.0.0-py3.10.egg-info' (and everything under it)
+[12.278s] Copying ../../build/mypkg/mypkg.egg-info to /home/yamashita/car_ws/install/mypkg/lib/python3.10/site-packages/mypkg-0.0.0-py3.10.egg-info
+[12.288s] running install_scripts
+[12.460s] Installing camera script to /home/yamashita/car_ws/install/mypkg/lib/mypkg
+[12.462s] Installing serial script to /home/yamashita/car_ws/install/mypkg/lib/mypkg
+[12.465s] writing list of installed files to '/home/yamashita/car_ws/build/mypkg/install.log'
+[12.725s] Invoked command in '/home/yamashita/car_ws/src/mypkg' returned '0': PYTHONPATH=/home/yamashita/car_ws/build/mypkg/prefix_override:/home/yamashita/car_ws/install/mypkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/mypkg build --build-base /home/yamashita/car_ws/build/mypkg/build install --record /home/yamashita/car_ws/build/mypkg/install.log --single-version-externally-managed

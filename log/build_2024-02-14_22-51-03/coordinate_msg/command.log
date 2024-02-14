@@ -1,0 +1,2 @@
+Invoking command in '/home/yamashita/car_ws/build/coordinate_msg': /usr/bin/cmake --build /home/yamashita/car_ws/build/coordinate_msg -- -j4 -l4
+Invoked command in '/home/yamashita/car_ws/build/coordinate_msg' returned '2': /usr/bin/cmake --build /home/yamashita/car_ws/build/coordinate_msg -- -j4 -l4

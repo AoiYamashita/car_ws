@@ -1,0 +1,22 @@
+[14.150s] Invoking command in '/home/yamashita/car_ws/src/mypkg': PYTHONPATH=/home/yamashita/car_ws/build/mypkg/prefix_override:/home/yamashita/car_ws/install/mypkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/mypkg build --build-base /home/yamashita/car_ws/build/mypkg/build install --record /home/yamashita/car_ws/build/mypkg/install.log --single-version-externally-managed
+[16.825s] running egg_info
+[16.830s] writing ../../build/mypkg/mypkg.egg-info/PKG-INFO
+[16.832s] writing dependency_links to ../../build/mypkg/mypkg.egg-info/dependency_links.txt
+[16.834s] writing entry points to ../../build/mypkg/mypkg.egg-info/entry_points.txt
+[16.836s] writing requirements to ../../build/mypkg/mypkg.egg-info/requires.txt
+[16.837s] writing top-level names to ../../build/mypkg/mypkg.egg-info/top_level.txt
+[16.855s] reading manifest file '../../build/mypkg/mypkg.egg-info/SOURCES.txt'
+[16.862s] writing manifest file '../../build/mypkg/mypkg.egg-info/SOURCES.txt'
+[16.864s] running build
+[16.865s] running build_py
+[16.868s] running install
+[16.870s] running install_lib
+[16.881s] running install_data
+[16.887s] running install_egg_info
+[16.901s] removing '/home/yamashita/car_ws/install/mypkg/lib/python3.10/site-packages/mypkg-0.0.0-py3.10.egg-info' (and everything under it)
+[16.904s] Copying ../../build/mypkg/mypkg.egg-info to /home/yamashita/car_ws/install/mypkg/lib/python3.10/site-packages/mypkg-0.0.0-py3.10.egg-info
+[16.916s] running install_scripts
+[17.079s] Installing camera script to /home/yamashita/car_ws/install/mypkg/lib/mypkg
+[17.081s] Installing serial script to /home/yamashita/car_ws/install/mypkg/lib/mypkg
+[17.084s] writing list of installed files to '/home/yamashita/car_ws/build/mypkg/install.log'
+[17.363s] Invoked command in '/home/yamashita/car_ws/src/mypkg' returned '0': PYTHONPATH=/home/yamashita/car_ws/build/mypkg/prefix_override:/home/yamashita/car_ws/install/mypkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/mypkg build --build-base /home/yamashita/car_ws/build/mypkg/build install --record /home/yamashita/car_ws/build/mypkg/install.log --single-version-externally-managed

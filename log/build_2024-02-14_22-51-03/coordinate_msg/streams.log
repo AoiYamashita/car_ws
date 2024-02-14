@@ -1,0 +1,22 @@
+[0.507s] Invoking command in '/home/yamashita/car_ws/build/coordinate_msg': /usr/bin/cmake --build /home/yamashita/car_ws/build/coordinate_msg -- -j4 -l4
+[1.263s] -- Found ament_cmake: 1.3.7 (/opt/ros/humble/share/ament_cmake/cmake)
+[3.012s] Traceback (most recent call last):
+[3.014s]   File "/opt/ros/humble/share/ament_cmake_core/cmake/package_templates/templates_2_cmake.py", line 21, in <module>
+[3.017s]     from ament_package.templates import get_environment_hook_template_path
+[3.020s] ModuleNotFoundError: No module named 'ament_package'
+[3.161s] [31mCMake Error at /opt/ros/humble/share/ament_cmake_core/cmake/ament_cmake_package_templates-extras.cmake:41 (message):
+[3.166s]   execute_process(/usr/bin/python3.10
+[3.169s]   /opt/ros/humble/share/ament_cmake_core/cmake/package_templates/templates_2_cmake.py
+[3.173s]   /home/yamashita/car_ws/build/coordinate_msg/ament_cmake_package_templates/templates.cmake)
+[3.175s]   returned error code 1
+[3.178s] Call Stack (most recent call first):
+[3.179s]   /opt/ros/humble/share/ament_cmake_core/cmake/ament_cmake_coreConfig.cmake:41 (include)
+[3.180s]   /opt/ros/humble/share/ament_cmake/cmake/ament_cmake_export_dependencies-extras.cmake:15 (find_package)
+[3.181s]   /opt/ros/humble/share/ament_cmake/cmake/ament_cmakeConfig.cmake:41 (include)
+[3.181s]   CMakeLists.txt:9 (find_package)
+[3.182s] 
+[3.182s] [0m
+[3.183s] -- Configuring incomplete, errors occurred!
+[3.184s] See also "/home/yamashita/car_ws/build/coordinate_msg/CMakeFiles/CMakeOutput.log".
+[3.231s] gmake: *** [Makefile:747: cmake_check_build_system] Error 1
+[3.245s] Invoked command in '/home/yamashita/car_ws/build/coordinate_msg' returned '2': /usr/bin/cmake --build /home/yamashita/car_ws/build/coordinate_msg -- -j4 -l4

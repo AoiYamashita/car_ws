@@ -1,0 +1,23 @@
+[10.647s] Invoking command in '/home/yamashita/car_ws/src/mypkg': PYTHONPATH=/home/yamashita/car_ws/build/mypkg/prefix_override:/home/yamashita/car_ws/install/mypkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/mypkg build --build-base /home/yamashita/car_ws/build/mypkg/build install --record /home/yamashita/car_ws/build/mypkg/install.log --single-version-externally-managed
+[13.415s] running egg_info
+[13.420s] writing ../../build/mypkg/mypkg.egg-info/PKG-INFO
+[13.423s] writing dependency_links to ../../build/mypkg/mypkg.egg-info/dependency_links.txt
+[13.424s] writing entry points to ../../build/mypkg/mypkg.egg-info/entry_points.txt
+[13.426s] writing requirements to ../../build/mypkg/mypkg.egg-info/requires.txt
+[13.427s] writing top-level names to ../../build/mypkg/mypkg.egg-info/top_level.txt
+[13.446s] reading manifest file '../../build/mypkg/mypkg.egg-info/SOURCES.txt'
+[13.512s] writing manifest file '../../build/mypkg/mypkg.egg-info/SOURCES.txt'
+[13.514s] running build
+[13.515s] running build_py
+[13.519s] running install
+[13.521s] running install_lib
+[13.533s] running install_data
+[13.538s] copying launch/car.launch.py -> /home/yamashita/car_ws/install/mypkg/share/mypkg
+[13.539s] running install_egg_info
+[13.554s] removing '/home/yamashita/car_ws/install/mypkg/lib/python3.10/site-packages/mypkg-0.0.0-py3.10.egg-info' (and everything under it)
+[13.558s] Copying ../../build/mypkg/mypkg.egg-info to /home/yamashita/car_ws/install/mypkg/lib/python3.10/site-packages/mypkg-0.0.0-py3.10.egg-info
+[13.569s] running install_scripts
+[13.736s] Installing camera script to /home/yamashita/car_ws/install/mypkg/lib/mypkg
+[13.739s] Installing serial script to /home/yamashita/car_ws/install/mypkg/lib/mypkg
+[13.743s] writing list of installed files to '/home/yamashita/car_ws/build/mypkg/install.log'
+[14.030s] Invoked command in '/home/yamashita/car_ws/src/mypkg' returned '0': PYTHONPATH=/home/yamashita/car_ws/build/mypkg/prefix_override:/home/yamashita/car_ws/install/mypkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/mypkg build --build-base /home/yamashita/car_ws/build/mypkg/build install --record /home/yamashita/car_ws/build/mypkg/install.log --single-version-externally-managed

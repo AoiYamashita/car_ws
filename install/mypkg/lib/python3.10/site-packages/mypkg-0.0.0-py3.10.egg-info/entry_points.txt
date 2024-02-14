@@ -1,3 +1,4 @@
 [console_scripts]
 camera = mypkg.receiver:main
 serial = mypkg.serial:main
+
