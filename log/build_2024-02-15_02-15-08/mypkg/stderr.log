@@ -1,0 +1,5 @@
+  File "/home/yamashita/car_ws/install/mypkg/lib/python3.10/site-packages/mypkg/receiver.py", line 50
+    np.sqrt(abs(distance**2-distance_xy**2)))
+                                            ^
+SyntaxError: closing parenthesis ')' does not match opening parenthesis '[' on line 47
+

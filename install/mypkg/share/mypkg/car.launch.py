@@ -17,6 +17,7 @@ def generate_launch_description():
     usb_cam = launch_ros.actions.Node(
             package = 'usb_cam',
             executable = 'usb_cam_node_exe',
+            parameters=[{"image_width","640"},{"image_height","480"},{"pixel_format","yuyv"}],
             output = 'screen',
             )
     web = launch_ros.actions.Node(

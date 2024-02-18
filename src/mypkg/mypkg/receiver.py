@@ -14,7 +14,7 @@ from cv_bridge import CvBridge
 
 #cap.set(cv2.CAP_PROP_BAFFERSIZE,1)
 
-ksize = 5
+ksize = 7
 
 def Get_Color_Point(img,rgb,under_thresh,upper_thresh):
     minBGR = np.array([rgb[2] - under_thresh, rgb[1] - under_thresh, rgb[0] - under_thresh])
@@ -33,21 +33,21 @@ def Get_Color_Point(img,rgb,under_thresh,upper_thresh):
     return th
 
 px_rate = 8#distance of camera * px of object
-ball_size = 0.205#meter
+ball_size = 0.288#meter
 tan_view_angle = 11.4/23.8#horizon angle,Verticalangle
 
-def Measure_Distance(center,r,frame):
+def Measure_Distance(center,r,frame_):
     coord = np.array([0,0,0])
     if int(r) < 5 or int(r) > 90:
         return coord
     distance = px_rate/r
-    frame_coord = [center[0]-frame.shape[1]/2,-center[1]+frame.shape[0]/2]
-    distance_xy = np.sqrt(center[0]**2 + center[1]**2)*circle_size/(2*r)
+    frame_coord = [center[0]-frame_.shape[1]/2,-center[1]+frame_.shape[0]/2]
+    distance_xy = np.sqrt(center[0]**2 + center[1]**2)*ball_size/(2*r)
 
     coord = [
             distance_xy*frame_coord[0]/np.sqrt(center[0]**2 + center[1]**2),
             distance_xy*frame_coord[1]/np.sqrt(center[0]**2 + center[1]**2),
-            np.sqrt(distance**2-distance_xy**2)
+            np.sqrt(abs(distance**2-distance_xy**2))
             ]
 
     return coord
@@ -107,7 +107,7 @@ class ImgReceiver(Node):
 
         no_img = np.zeros(frame.shape)
 
-        color_point= Get_Color_Point(frame,[254,209,65],80,80)#[244,54,76]
+        color_point= Get_Color_Point(frame,[244,54,76],80,80)#[244,54,76][254,209,65]
 
         contours, hierarchy = cv2.findContours(color_point,cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
 
@@ -119,11 +119,11 @@ class ImgReceiver(Node):
                 cv2.putText(no_img,text=str(area),org=(int(np.average(cnt[:,0,0])),int(np.average(cnt[:,0,1]))),fontFace=cv2.FONT_HERSHEY_SIMPLEX,fontScale=1.0,color=(0, 255, 0),thickness=2,lineType=cv2.LINE_AA)
 
         
-        circles = Sarch_Circle(contours,0,90,10)
+        circles = Sarch_Circle(contours,5,70,10)
 
         for i in circles:
             cv2.circle(frame,(int(i[0]),int(i[1])),int(i[2]),(0,255,0),2)
-            coord = Measure_Distance(i[0:1],i[2],frame)
+            coord = Measure_Distance([i[0],i[1]],i[2],frame)
             cv2.putText(frame,text="x="+str(coord[0]),org=(int(i[0]),int(i[1])-20),fontFace=cv2.FONT_HERSHEY_SIMPLEX,fontScale=1.0,color=(0, 255, 0),thickness=2,lineType=cv2.LINE_AA)
             cv2.putText(frame,text="y="+str(coord[1]),org=(int(i[0]),int(i[1])),fontFace=cv2.FONT_HERSHEY_SIMPLEX,fontScale=1.0,color=(0, 255, 0),thickness=2,lineType=cv2.LINE_AA)
             cv2.putText(frame,text="z="+str(coord[2]),org=(int(i[0]),int(i[1])+20),fontFace=cv2.FONT_HERSHEY_SIMPLEX,fontScale=1.0,color=(0, 255, 0),thickness=2,lineType=cv2.LINE_AA)
