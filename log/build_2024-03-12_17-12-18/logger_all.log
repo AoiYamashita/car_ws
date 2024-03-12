@@ -1,0 +1,201 @@
+[4.748s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[4.749s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=4, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0xffff82146110>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0xffff8240ae00>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0xffff8240ae00>>)
+[4.960s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[4.961s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[4.961s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[4.961s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[4.962s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[4.962s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[4.962s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/yamashita/car_ws'
+[4.962s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[4.963s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[4.963s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[4.963s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[4.964s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[4.964s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[4.964s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[4.964s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[4.964s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[5.012s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[5.012s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[5.013s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[5.013s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[5.013s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[5.013s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[5.014s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[5.014s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[5.015s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[5.015s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[5.015s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[5.016s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[5.017s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[5.017s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[5.017s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[5.018s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[5.018s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[5.018s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[5.018s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[5.018s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[5.018s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[5.019s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[5.019s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[5.019s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[5.020s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[5.020s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[5.020s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[5.020s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[5.021s] Level 1:colcon.colcon_core.package_identification:_identify(src/coordinate_msg) by extensions ['ignore', 'ignore_ament_install']
+[5.021s] Level 1:colcon.colcon_core.package_identification:_identify(src/coordinate_msg) by extension 'ignore'
+[5.021s] Level 1:colcon.colcon_core.package_identification:_identify(src/coordinate_msg) by extension 'ignore_ament_install'
+[5.022s] Level 1:colcon.colcon_core.package_identification:_identify(src/coordinate_msg) by extensions ['colcon_pkg']
+[5.022s] Level 1:colcon.colcon_core.package_identification:_identify(src/coordinate_msg) by extension 'colcon_pkg'
+[5.022s] Level 1:colcon.colcon_core.package_identification:_identify(src/coordinate_msg) by extensions ['colcon_meta']
+[5.022s] Level 1:colcon.colcon_core.package_identification:_identify(src/coordinate_msg) by extension 'colcon_meta'
+[5.022s] Level 1:colcon.colcon_core.package_identification:_identify(src/coordinate_msg) by extensions ['ros']
+[5.022s] Level 1:colcon.colcon_core.package_identification:_identify(src/coordinate_msg) by extension 'ros'
+[5.031s] DEBUG:colcon.colcon_core.package_identification:Package 'src/coordinate_msg' with type 'ros.ament_cmake' and name 'coordinate_msg'
+[5.032s] Level 1:colcon.colcon_core.package_identification:_identify(src/mypkg) by extensions ['ignore', 'ignore_ament_install']
+[5.033s] Level 1:colcon.colcon_core.package_identification:_identify(src/mypkg) by extension 'ignore'
+[5.033s] Level 1:colcon.colcon_core.package_identification:_identify(src/mypkg) by extension 'ignore_ament_install'
+[5.033s] Level 1:colcon.colcon_core.package_identification:_identify(src/mypkg) by extensions ['colcon_pkg']
+[5.033s] Level 1:colcon.colcon_core.package_identification:_identify(src/mypkg) by extension 'colcon_pkg'
+[5.034s] Level 1:colcon.colcon_core.package_identification:_identify(src/mypkg) by extensions ['colcon_meta']
+[5.034s] Level 1:colcon.colcon_core.package_identification:_identify(src/mypkg) by extension 'colcon_meta'
+[5.034s] Level 1:colcon.colcon_core.package_identification:_identify(src/mypkg) by extensions ['ros']
+[5.034s] Level 1:colcon.colcon_core.package_identification:_identify(src/mypkg) by extension 'ros'
+[5.036s] DEBUG:colcon.colcon_core.package_identification:Package 'src/mypkg' with type 'ros.ament_python' and name 'mypkg'
+[5.036s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[5.037s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[5.037s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[5.037s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[5.037s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[5.445s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[5.446s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[5.586s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 2 installed packages in /home/yamashita/car_ws/install
+[5.659s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 299 installed packages in /opt/ros/humble
+[5.666s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[6.108s] Level 5:colcon.colcon_core.verb:set package 'coordinate_msg' build argument 'cmake_args' from command line to 'None'
+[6.108s] Level 5:colcon.colcon_core.verb:set package 'coordinate_msg' build argument 'cmake_target' from command line to 'None'
+[6.108s] Level 5:colcon.colcon_core.verb:set package 'coordinate_msg' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[6.108s] Level 5:colcon.colcon_core.verb:set package 'coordinate_msg' build argument 'cmake_clean_cache' from command line to 'False'
+[6.108s] Level 5:colcon.colcon_core.verb:set package 'coordinate_msg' build argument 'cmake_clean_first' from command line to 'False'
+[6.108s] Level 5:colcon.colcon_core.verb:set package 'coordinate_msg' build argument 'cmake_force_configure' from command line to 'False'
+[6.109s] Level 5:colcon.colcon_core.verb:set package 'coordinate_msg' build argument 'ament_cmake_args' from command line to 'None'
+[6.109s] Level 5:colcon.colcon_core.verb:set package 'coordinate_msg' build argument 'catkin_cmake_args' from command line to 'None'
+[6.109s] Level 5:colcon.colcon_core.verb:set package 'coordinate_msg' build argument 'catkin_skip_building_tests' from command line to 'False'
+[6.109s] DEBUG:colcon.colcon_core.verb:Building package 'coordinate_msg' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/yamashita/car_ws/build/coordinate_msg', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/yamashita/car_ws/install/coordinate_msg', 'merge_install': False, 'path': '/home/yamashita/car_ws/src/coordinate_msg', 'symlink_install': False, 'test_result_base': None}
+[6.175s] Level 5:colcon.colcon_core.verb:set package 'mypkg' build argument 'cmake_args' from command line to 'None'
+[6.176s] Level 5:colcon.colcon_core.verb:set package 'mypkg' build argument 'cmake_target' from command line to 'None'
+[6.176s] Level 5:colcon.colcon_core.verb:set package 'mypkg' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[6.176s] Level 5:colcon.colcon_core.verb:set package 'mypkg' build argument 'cmake_clean_cache' from command line to 'False'
+[6.176s] Level 5:colcon.colcon_core.verb:set package 'mypkg' build argument 'cmake_clean_first' from command line to 'False'
+[6.176s] Level 5:colcon.colcon_core.verb:set package 'mypkg' build argument 'cmake_force_configure' from command line to 'False'
+[6.176s] Level 5:colcon.colcon_core.verb:set package 'mypkg' build argument 'ament_cmake_args' from command line to 'None'
+[6.176s] Level 5:colcon.colcon_core.verb:set package 'mypkg' build argument 'catkin_cmake_args' from command line to 'None'
+[6.176s] Level 5:colcon.colcon_core.verb:set package 'mypkg' build argument 'catkin_skip_building_tests' from command line to 'False'
+[6.177s] DEBUG:colcon.colcon_core.verb:Building package 'mypkg' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/yamashita/car_ws/build/mypkg', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/yamashita/car_ws/install/mypkg', 'merge_install': False, 'path': '/home/yamashita/car_ws/src/mypkg', 'symlink_install': False, 'test_result_base': None}
+[6.241s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[6.310s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[6.311s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/yamashita/car_ws/src/coordinate_msg' with build type 'ament_cmake'
+[6.312s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/yamashita/car_ws/src/coordinate_msg'
+[6.389s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[6.390s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[6.390s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[6.606s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/yamashita/car_ws/src/mypkg' with build type 'ament_python'
+[6.607s] Level 1:colcon.colcon_core.shell:create_environment_hook('mypkg', 'ament_prefix_path')
+[6.678s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yamashita/car_ws/install/mypkg/share/mypkg/hook/ament_prefix_path.ps1'
+[6.681s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/yamashita/car_ws/install/mypkg/share/mypkg/hook/ament_prefix_path.dsv'
+[6.683s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yamashita/car_ws/install/mypkg/share/mypkg/hook/ament_prefix_path.sh'
+[6.753s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[6.754s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[6.984s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/yamashita/car_ws/build/coordinate_msg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/yamashita/car_ws/install/mypkg:/opt/ros/humble /usr/bin/cmake --build /home/yamashita/car_ws/build/coordinate_msg -- -j4 -l4
+[8.759s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/yamashita/car_ws/src/mypkg'
+[8.853s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[8.853s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[9.271s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/yamashita/car_ws/build/coordinate_msg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/yamashita/car_ws/install/mypkg:/opt/ros/humble /usr/bin/cmake --build /home/yamashita/car_ws/build/coordinate_msg -- -j4 -l4
+[9.642s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/yamashita/car_ws/build/coordinate_msg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/yamashita/car_ws/install/mypkg:/opt/ros/humble /usr/bin/cmake --install /home/yamashita/car_ws/build/coordinate_msg
+[9.951s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(coordinate_msg)
+[9.953s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/yamashita/car_ws/build/coordinate_msg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/yamashita/car_ws/install/mypkg:/opt/ros/humble /usr/bin/cmake --install /home/yamashita/car_ws/build/coordinate_msg
+[10.049s] Level 1:colcon.colcon_core.environment:checking '/home/yamashita/car_ws/install/coordinate_msg' for CMake module files
+[10.053s] Level 1:colcon.colcon_core.environment:checking '/home/yamashita/car_ws/install/coordinate_msg' for CMake config files
+[10.058s] Level 1:colcon.colcon_core.shell:create_environment_hook('coordinate_msg', 'cmake_prefix_path')
+[10.136s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yamashita/car_ws/install/coordinate_msg/share/coordinate_msg/hook/cmake_prefix_path.ps1'
+[10.138s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/yamashita/car_ws/install/coordinate_msg/share/coordinate_msg/hook/cmake_prefix_path.dsv'
+[10.140s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yamashita/car_ws/install/coordinate_msg/share/coordinate_msg/hook/cmake_prefix_path.sh'
+[10.143s] Level 1:colcon.colcon_core.environment:checking '/home/yamashita/car_ws/install/coordinate_msg/lib'
+[10.144s] Level 1:colcon.colcon_core.shell:create_environment_hook('coordinate_msg', 'ld_library_path_lib')
+[10.227s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yamashita/car_ws/install/coordinate_msg/share/coordinate_msg/hook/ld_library_path_lib.ps1'
+[10.229s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/yamashita/car_ws/install/coordinate_msg/share/coordinate_msg/hook/ld_library_path_lib.dsv'
+[10.231s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yamashita/car_ws/install/coordinate_msg/share/coordinate_msg/hook/ld_library_path_lib.sh'
+[10.233s] Level 1:colcon.colcon_core.environment:checking '/home/yamashita/car_ws/install/coordinate_msg/bin'
+[10.233s] Level 1:colcon.colcon_core.environment:checking '/home/yamashita/car_ws/install/coordinate_msg/lib/pkgconfig/coordinate_msg.pc'
+[10.235s] Level 1:colcon.colcon_core.environment:checking '/home/yamashita/car_ws/install/coordinate_msg/lib/python3.10/site-packages'
+[10.236s] Level 1:colcon.colcon_core.environment:checking '/home/yamashita/car_ws/install/coordinate_msg/bin'
+[10.317s] INFO:colcon.colcon_core.shell:Creating package script '/home/yamashita/car_ws/install/coordinate_msg/share/coordinate_msg/package.ps1'
+[10.321s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/yamashita/car_ws/install/coordinate_msg/share/coordinate_msg/package.dsv'
+[10.324s] INFO:colcon.colcon_core.shell:Creating package script '/home/yamashita/car_ws/install/coordinate_msg/share/coordinate_msg/package.sh'
+[10.328s] INFO:colcon.colcon_core.shell:Creating package script '/home/yamashita/car_ws/install/coordinate_msg/share/coordinate_msg/package.bash'
+[10.332s] INFO:colcon.colcon_core.shell:Creating package script '/home/yamashita/car_ws/install/coordinate_msg/share/coordinate_msg/package.zsh'
+[10.335s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/yamashita/car_ws/install/coordinate_msg/share/colcon-core/packages/coordinate_msg)
+[10.754s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(coordinate_msg)
+[10.849s] Level 1:colcon.colcon_core.environment:checking '/home/yamashita/car_ws/install/coordinate_msg' for CMake module files
+[10.853s] Level 1:colcon.colcon_core.environment:checking '/home/yamashita/car_ws/install/coordinate_msg' for CMake config files
+[10.858s] Level 1:colcon.colcon_core.shell:create_environment_hook('coordinate_msg', 'cmake_prefix_path')
+[10.939s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yamashita/car_ws/install/coordinate_msg/share/coordinate_msg/hook/cmake_prefix_path.ps1'
+[10.942s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/yamashita/car_ws/install/coordinate_msg/share/coordinate_msg/hook/cmake_prefix_path.dsv'
+[10.943s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yamashita/car_ws/install/coordinate_msg/share/coordinate_msg/hook/cmake_prefix_path.sh'
+[10.946s] Level 1:colcon.colcon_core.environment:checking '/home/yamashita/car_ws/install/coordinate_msg/lib'
+[10.947s] Level 1:colcon.colcon_core.shell:create_environment_hook('coordinate_msg', 'ld_library_path_lib')
+[11.030s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yamashita/car_ws/install/coordinate_msg/share/coordinate_msg/hook/ld_library_path_lib.ps1'
+[11.033s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/yamashita/car_ws/install/coordinate_msg/share/coordinate_msg/hook/ld_library_path_lib.dsv'
+[11.035s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yamashita/car_ws/install/coordinate_msg/share/coordinate_msg/hook/ld_library_path_lib.sh'
+[11.037s] Level 1:colcon.colcon_core.environment:checking '/home/yamashita/car_ws/install/coordinate_msg/bin'
+[11.038s] Level 1:colcon.colcon_core.environment:checking '/home/yamashita/car_ws/install/coordinate_msg/lib/pkgconfig/coordinate_msg.pc'
+[11.039s] Level 1:colcon.colcon_core.environment:checking '/home/yamashita/car_ws/install/coordinate_msg/lib/python3.10/site-packages'
+[11.040s] Level 1:colcon.colcon_core.environment:checking '/home/yamashita/car_ws/install/coordinate_msg/bin'
+[11.148s] INFO:colcon.colcon_core.shell:Creating package script '/home/yamashita/car_ws/install/coordinate_msg/share/coordinate_msg/package.ps1'
+[11.161s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/yamashita/car_ws/install/coordinate_msg/share/coordinate_msg/package.dsv'
+[11.166s] INFO:colcon.colcon_core.shell:Creating package script '/home/yamashita/car_ws/install/coordinate_msg/share/coordinate_msg/package.sh'
+[11.170s] INFO:colcon.colcon_core.shell:Creating package script '/home/yamashita/car_ws/install/coordinate_msg/share/coordinate_msg/package.bash'
+[11.174s] INFO:colcon.colcon_core.shell:Creating package script '/home/yamashita/car_ws/install/coordinate_msg/share/coordinate_msg/package.zsh'
+[11.179s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/yamashita/car_ws/install/coordinate_msg/share/colcon-core/packages/coordinate_msg)
+[11.310s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/yamashita/car_ws/src/mypkg': PYTHONPATH=/home/yamashita/car_ws/build/mypkg/prefix_override:/home/yamashita/car_ws/install/mypkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/mypkg build --build-base /home/yamashita/car_ws/build/mypkg/build install --record /home/yamashita/car_ws/build/mypkg/install.log --single-version-externally-managed
+[12.791s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/yamashita/car_ws/src/mypkg' returned '0': PYTHONPATH=/home/yamashita/car_ws/build/mypkg/prefix_override:/home/yamashita/car_ws/install/mypkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/mypkg build --build-base /home/yamashita/car_ws/build/mypkg/build install --record /home/yamashita/car_ws/build/mypkg/install.log --single-version-externally-managed
+[12.859s] Level 1:colcon.colcon_core.environment:checking '/home/yamashita/car_ws/install/mypkg' for CMake module files
+[12.861s] Level 1:colcon.colcon_core.environment:checking '/home/yamashita/car_ws/install/mypkg' for CMake config files
+[12.865s] Level 1:colcon.colcon_core.environment:checking '/home/yamashita/car_ws/install/mypkg/lib'
+[12.865s] Level 1:colcon.colcon_core.environment:checking '/home/yamashita/car_ws/install/mypkg/bin'
+[12.865s] Level 1:colcon.colcon_core.environment:checking '/home/yamashita/car_ws/install/mypkg/lib/pkgconfig/mypkg.pc'
+[12.866s] Level 1:colcon.colcon_core.environment:checking '/home/yamashita/car_ws/install/mypkg/lib/python3.10/site-packages'
+[12.867s] Level 1:colcon.colcon_core.shell:create_environment_hook('mypkg', 'pythonpath')
+[12.935s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yamashita/car_ws/install/mypkg/share/mypkg/hook/pythonpath.ps1'
+[12.937s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/yamashita/car_ws/install/mypkg/share/mypkg/hook/pythonpath.dsv'
+[12.938s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yamashita/car_ws/install/mypkg/share/mypkg/hook/pythonpath.sh'
+[12.941s] Level 1:colcon.colcon_core.environment:checking '/home/yamashita/car_ws/install/mypkg/bin'
+[12.941s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(mypkg)
+[13.010s] INFO:colcon.colcon_core.shell:Creating package script '/home/yamashita/car_ws/install/mypkg/share/mypkg/package.ps1'
+[13.012s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/yamashita/car_ws/install/mypkg/share/mypkg/package.dsv'
+[13.014s] INFO:colcon.colcon_core.shell:Creating package script '/home/yamashita/car_ws/install/mypkg/share/mypkg/package.sh'
+[13.017s] INFO:colcon.colcon_core.shell:Creating package script '/home/yamashita/car_ws/install/mypkg/share/mypkg/package.bash'
+[13.018s] INFO:colcon.colcon_core.shell:Creating package script '/home/yamashita/car_ws/install/mypkg/share/mypkg/package.zsh'
+[13.020s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/yamashita/car_ws/install/mypkg/share/colcon-core/packages/mypkg)
+[13.021s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[13.023s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[13.023s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[13.023s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[13.113s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.notify_send': Could not find 'notify-send'
+[13.114s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[13.114s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[13.114s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[13.117s] DEBUG:colcon.colcon_notification.desktop_notification.notify2:Failed to initialize notify2: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.Notifications was not provided by any .service files
+[13.118s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[13.188s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/yamashita/car_ws/install/local_setup.ps1'
+[13.192s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/yamashita/car_ws/install/_local_setup_util_ps1.py'
+[13.197s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/yamashita/car_ws/install/setup.ps1'
+[13.268s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/yamashita/car_ws/install/local_setup.sh'
+[13.270s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/yamashita/car_ws/install/_local_setup_util_sh.py'
+[13.272s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/yamashita/car_ws/install/setup.sh'
+[13.343s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/yamashita/car_ws/install/local_setup.bash'
+[13.346s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/yamashita/car_ws/install/setup.bash'
+[13.416s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/yamashita/car_ws/install/local_setup.zsh'
+[13.418s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/yamashita/car_ws/install/setup.zsh'

@@ -67,7 +67,7 @@ include CMakeFiles/ament_cmake_python_build_coordinate_msg_egg.dir/compiler_depe
 include CMakeFiles/ament_cmake_python_build_coordinate_msg_egg.dir/progress.make
 
 CMakeFiles/ament_cmake_python_build_coordinate_msg_egg:
-	cd /home/yamashita/car_ws/build/coordinate_msg/ament_cmake_python/coordinate_msg && /usr/bin/python3.10 setup.py egg_info
+	cd /home/yamashita/car_ws/build/coordinate_msg/ament_cmake_python/coordinate_msg && /usr/bin/python3 setup.py egg_info
 
 ament_cmake_python_build_coordinate_msg_egg: CMakeFiles/ament_cmake_python_build_coordinate_msg_egg
 ament_cmake_python_build_coordinate_msg_egg: CMakeFiles/ament_cmake_python_build_coordinate_msg_egg.dir/build.make

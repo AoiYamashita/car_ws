@@ -79,7 +79,7 @@ rosidl_typesupport_fastrtps_c/coordinate_msg/msg/detail/coordinate__rosidl_types
 rosidl_typesupport_fastrtps_c/coordinate_msg/msg/detail/coordinate__rosidl_typesupport_fastrtps_c.h: /opt/ros/humble/share/rosidl_typesupport_fastrtps_c/resource/srv__type_support_c.cpp.em
 rosidl_typesupport_fastrtps_c/coordinate_msg/msg/detail/coordinate__rosidl_typesupport_fastrtps_c.h: rosidl_adapter/coordinate_msg/msg/Coordinate.idl
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/yamashita/car_ws/build/coordinate_msg/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C type support for eProsima Fast-RTPS"
-	/usr/bin/python3.10 /opt/ros/humble/lib/rosidl_typesupport_fastrtps_c/rosidl_typesupport_fastrtps_c --generator-arguments-file /home/yamashita/car_ws/build/coordinate_msg/rosidl_typesupport_fastrtps_c__arguments.json
+	/usr/bin/python3 /opt/ros/humble/lib/rosidl_typesupport_fastrtps_c/rosidl_typesupport_fastrtps_c --generator-arguments-file /home/yamashita/car_ws/build/coordinate_msg/rosidl_typesupport_fastrtps_c__arguments.json
 
 rosidl_typesupport_fastrtps_c/coordinate_msg/msg/detail/coordinate__type_support_c.cpp: rosidl_typesupport_fastrtps_c/coordinate_msg/msg/detail/coordinate__rosidl_typesupport_fastrtps_c.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_fastrtps_c/coordinate_msg/msg/detail/coordinate__type_support_c.cpp

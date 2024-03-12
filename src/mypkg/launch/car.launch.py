@@ -23,7 +23,12 @@ def generate_launch_description():
     web = launch_ros.actions.Node(
             package = 'rosbridge_server',
             executable = 'rosbridge_websocket.py',
-            parameters=[{'port': 9091}],
+            parameters=[{'port': 9092}],
             output = 'screen',
             )
-    return launch.LaunchDescription([web,camera,serial,usb_cam])
+    circle = launch_ros.actions.Node(
+            package = 'mypkg',
+            executable = 'CircleImgPub',
+            output = 'screen',
+            )
+    return launch.LaunchDescription([web,circle,usb_cam])#camera,serial])

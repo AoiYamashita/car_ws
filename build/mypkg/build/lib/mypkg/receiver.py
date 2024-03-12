@@ -14,7 +14,7 @@ from cv_bridge import CvBridge
 
 #cap.set(cv2.CAP_PROP_BAFFERSIZE,1)
 
-ksize = 5
+ksize = 7
 
 def Get_Color_Point(img,rgb,under_thresh,upper_thresh):
     minBGR = np.array([rgb[2] - under_thresh, rgb[1] - under_thresh, rgb[0] - under_thresh])

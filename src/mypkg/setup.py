@@ -24,7 +24,8 @@ setup(
     entry_points={
         'console_scripts': [
             'serial = mypkg.serial:main',
-            'camera = mypkg.receiver:main',
+            'camera0 = mypkg.receiver:main',
+            'CircleImgPub = mypkg.CircleImgPub:main',
         ],
     },
 )

@@ -1,4 +1,5 @@
 [console_scripts]
-camera = mypkg.receiver:main
+CircleImgPub = mypkg.CircleImgPub:main
+camera0 = mypkg.receiver:main
 serial = mypkg.serial:main
 
