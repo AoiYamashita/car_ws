@@ -51,18 +51,22 @@ class CircleImgPub(Node):
         frame[:,:,:] += beta
 
         frame = np.clip(frame,0,255).astype(np.uint8)
+        
+        #frame = cv2.blur(frame, (10, 10))
 
-        new_img = cv2.Canny(frame,90,90)
+        new_img = cv2.Canny(frame,120,120)
         #ret, new_img = cv2.threshold(cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY), 127, 255, cv2.THRESH_BINARY)
+        
+        contours, hierarchy = cv2.findContours(new_img,cv2.RETR_LIST, cv2.CHAIN_APPROX_TC89_L1)
 
-        contours, hierarchy = cv2.findContours(new_img,cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
-
-        circles = Sarch_Circle(contours,5,300,10)
+        circles = Sarch_Circle(contours,5,400,20)
+        #circles = cv2.HoughCircles(new_img,cv2.HOUGH_GRADIENT,1,20,param1=50,param2=30,minRadius=0,maxRadius=0)
+        #circles = np.uint16(np.around(circles))
 
         img_bgr = cv2.cvtColor(new_img, cv2.COLOR_GRAY2BGR)
-
-        #for i in circles:
-        #    cv2.circle(img_bgr,(int(i[0]),int(i[1])),int(i[2]),(0,255,0),2)
+        
+        for i in circles:
+            cv2.circle(img_bgr,(int(i[0]),int(i[1])),int(i[2]),(0,0,255),2)
 
         for i,cnt in enumerate(contours):
             img_bgr = cv2.drawContours(img_bgr,cnt,-1,(0,255,0),2)

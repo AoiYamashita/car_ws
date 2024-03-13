@@ -31,4 +31,4 @@ def generate_launch_description():
             executable = 'CircleImgPub',
             output = 'screen',
             )
-    return launch.LaunchDescription([web,circle,usb_cam])#camera,serial])
+    return launch.LaunchDescription([web,usb_cam,camera])#,serial])

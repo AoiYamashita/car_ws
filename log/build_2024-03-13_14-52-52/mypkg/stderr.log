@@ -1,0 +1,5 @@
+  File "/home/yamashita/car_ws/install/mypkg/lib/python3.10/site-packages/mypkg/CircleImgPub.py", line 67
+    t++
+       ^
+SyntaxError: invalid syntax
+

@@ -1,0 +1,24 @@
+[4.306s] Invoking command in '/home/yamashita/car_ws/src/mypkg': PYTHONPATH=/home/yamashita/car_ws/build/mypkg/prefix_override:/home/yamashita/car_ws/install/mypkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/mypkg build --build-base /home/yamashita/car_ws/build/mypkg/build install --record /home/yamashita/car_ws/build/mypkg/install.log --single-version-externally-managed
+[5.424s] running egg_info
+[5.426s] writing ../../build/mypkg/mypkg.egg-info/PKG-INFO
+[5.427s] writing dependency_links to ../../build/mypkg/mypkg.egg-info/dependency_links.txt
+[5.428s] writing entry points to ../../build/mypkg/mypkg.egg-info/entry_points.txt
+[5.428s] writing requirements to ../../build/mypkg/mypkg.egg-info/requires.txt
+[5.429s] writing top-level names to ../../build/mypkg/mypkg.egg-info/top_level.txt
+[5.437s] reading manifest file '../../build/mypkg/mypkg.egg-info/SOURCES.txt'
+[5.441s] writing manifest file '../../build/mypkg/mypkg.egg-info/SOURCES.txt'
+[5.442s] running build
+[5.442s] running build_py
+[5.443s] running install
+[5.445s] running install_lib
+[5.451s] running install_data
+[5.453s] copying launch/car.launch.py -> /home/yamashita/car_ws/install/mypkg/share/mypkg
+[5.454s] running install_egg_info
+[5.460s] removing '/home/yamashita/car_ws/install/mypkg/lib/python3.10/site-packages/mypkg-0.0.0-py3.10.egg-info' (and everything under it)
+[5.461s] Copying ../../build/mypkg/mypkg.egg-info to /home/yamashita/car_ws/install/mypkg/lib/python3.10/site-packages/mypkg-0.0.0-py3.10.egg-info
+[5.467s] running install_scripts
+[5.540s] Installing CircleImgPub script to /home/yamashita/car_ws/install/mypkg/lib/mypkg
+[5.541s] Installing camera script to /home/yamashita/car_ws/install/mypkg/lib/mypkg
+[5.542s] Installing serial script to /home/yamashita/car_ws/install/mypkg/lib/mypkg
+[5.543s] writing list of installed files to '/home/yamashita/car_ws/build/mypkg/install.log'
+[5.666s] Invoked command in '/home/yamashita/car_ws/src/mypkg' returned '0': PYTHONPATH=/home/yamashita/car_ws/build/mypkg/prefix_override:/home/yamashita/car_ws/install/mypkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/mypkg build --build-base /home/yamashita/car_ws/build/mypkg/build install --record /home/yamashita/car_ws/build/mypkg/install.log --single-version-externally-managed
