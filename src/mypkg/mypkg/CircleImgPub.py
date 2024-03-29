@@ -94,7 +94,7 @@ class ImgReceiver(Node):
 
         data = self.br.imgmsg_to_cv2(data,'bgr8')
         
-        alpha = 1.2
+        alpha = 1.3
         beta = 50
 
         frame= data * alpha
@@ -104,7 +104,7 @@ class ImgReceiver(Node):
 
         no_img = np.zeros(frame.shape)
 
-        color_point= Get_Color_Point(frame,color,80,80)#[244,54,76][254,209,65]
+        color_point= Get_Color_Point(frame,color,60,60)#[244,54,76][254,209,65]
 
         contours, hierarchy = cv2.findContours(color_point,cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
 
