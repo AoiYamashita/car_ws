@@ -6,11 +6,13 @@
 module coordinate_msg {
   module msg {
     struct Coordinate {
-      double x;
+      int8 num;
 
-      double y;
+      sequence<float> x;
 
-      double r;
+      sequence<float> y;
+
+      sequence<float> z;
     };
   };
 };

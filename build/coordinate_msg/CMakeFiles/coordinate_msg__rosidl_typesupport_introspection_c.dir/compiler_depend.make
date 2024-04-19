@@ -63,8 +63,12 @@ CMakeFiles/coordinate_msg__rosidl_typesupport_introspection_c.dir/rosidl_typesup
   /usr/include/alloca.h \
   /usr/include/aarch64-linux-gnu/bits/stdlib-float.h \
   rosidl_generator_c/coordinate_msg/msg/rosidl_generator_c__visibility_control.h \
-  rosidl_generator_c/coordinate_msg/msg/detail/coordinate__struct.h
+  rosidl_generator_c/coordinate_msg/msg/detail/coordinate__struct.h \
+  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence.h \
+  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence_functions.h
 
+
+/opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence_functions.h:
 
 rosidl_generator_c/coordinate_msg/msg/detail/coordinate__struct.h:
 
@@ -93,6 +97,8 @@ rosidl_typesupport_introspection_c/coordinate_msg/msg/detail/coordinate__type_su
 /usr/include/aarch64-linux-gnu/bits/struct_mutex.h:
 
 rosidl_typesupport_introspection_c/coordinate_msg/msg/detail/coordinate__rosidl_typesupport_introspection_c.h:
+
+/opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence.h:
 
 /usr/include/aarch64-linux-gnu/sys/types.h:
 

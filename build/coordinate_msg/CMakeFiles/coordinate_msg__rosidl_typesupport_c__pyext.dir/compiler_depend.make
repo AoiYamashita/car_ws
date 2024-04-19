@@ -244,10 +244,13 @@ CMakeFiles/coordinate_msg__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/c
   rosidl_generator_c/coordinate_msg/msg/detail/coordinate__type_support.h \
   rosidl_generator_c/coordinate_msg/msg/rosidl_generator_c__visibility_control.h \
   rosidl_generator_c/coordinate_msg/msg/detail/coordinate__struct.h \
+  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence.h \
   rosidl_generator_c/coordinate_msg/msg/detail/coordinate__functions.h
 
 
 rosidl_generator_c/coordinate_msg/msg/detail/coordinate__functions.h:
+
+/opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence.h:
 
 rosidl_generator_c/coordinate_msg/msg/rosidl_generator_c__visibility_control.h:
 

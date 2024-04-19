@@ -12,6 +12,12 @@
 #include "coordinate_msg/msg/detail/coordinate__struct.h"
 
 
+// Include directives for member types
+// Member `x`
+// Member `y`
+// Member `z`
+#include "rosidl_runtime_c/primitives_sequence_functions.h"
+
 #ifdef __cplusplus
 extern "C"
 {
@@ -31,64 +37,246 @@ void coordinate_msg__msg__Coordinate__rosidl_typesupport_introspection_c__Coordi
   coordinate_msg__msg__Coordinate__fini(message_memory);
 }
 
-static rosidl_typesupport_introspection_c__MessageMember coordinate_msg__msg__Coordinate__rosidl_typesupport_introspection_c__Coordinate_message_member_array[3] = {
+size_t coordinate_msg__msg__Coordinate__rosidl_typesupport_introspection_c__size_function__Coordinate__x(
+  const void * untyped_member)
+{
+  const rosidl_runtime_c__float__Sequence * member =
+    (const rosidl_runtime_c__float__Sequence *)(untyped_member);
+  return member->size;
+}
+
+const void * coordinate_msg__msg__Coordinate__rosidl_typesupport_introspection_c__get_const_function__Coordinate__x(
+  const void * untyped_member, size_t index)
+{
+  const rosidl_runtime_c__float__Sequence * member =
+    (const rosidl_runtime_c__float__Sequence *)(untyped_member);
+  return &member->data[index];
+}
+
+void * coordinate_msg__msg__Coordinate__rosidl_typesupport_introspection_c__get_function__Coordinate__x(
+  void * untyped_member, size_t index)
+{
+  rosidl_runtime_c__float__Sequence * member =
+    (rosidl_runtime_c__float__Sequence *)(untyped_member);
+  return &member->data[index];
+}
+
+void coordinate_msg__msg__Coordinate__rosidl_typesupport_introspection_c__fetch_function__Coordinate__x(
+  const void * untyped_member, size_t index, void * untyped_value)
+{
+  const float * item =
+    ((const float *)
+    coordinate_msg__msg__Coordinate__rosidl_typesupport_introspection_c__get_const_function__Coordinate__x(untyped_member, index));
+  float * value =
+    (float *)(untyped_value);
+  *value = *item;
+}
+
+void coordinate_msg__msg__Coordinate__rosidl_typesupport_introspection_c__assign_function__Coordinate__x(
+  void * untyped_member, size_t index, const void * untyped_value)
+{
+  float * item =
+    ((float *)
+    coordinate_msg__msg__Coordinate__rosidl_typesupport_introspection_c__get_function__Coordinate__x(untyped_member, index));
+  const float * value =
+    (const float *)(untyped_value);
+  *item = *value;
+}
+
+bool coordinate_msg__msg__Coordinate__rosidl_typesupport_introspection_c__resize_function__Coordinate__x(
+  void * untyped_member, size_t size)
+{
+  rosidl_runtime_c__float__Sequence * member =
+    (rosidl_runtime_c__float__Sequence *)(untyped_member);
+  rosidl_runtime_c__float__Sequence__fini(member);
+  return rosidl_runtime_c__float__Sequence__init(member, size);
+}
+
+size_t coordinate_msg__msg__Coordinate__rosidl_typesupport_introspection_c__size_function__Coordinate__y(
+  const void * untyped_member)
+{
+  const rosidl_runtime_c__float__Sequence * member =
+    (const rosidl_runtime_c__float__Sequence *)(untyped_member);
+  return member->size;
+}
+
+const void * coordinate_msg__msg__Coordinate__rosidl_typesupport_introspection_c__get_const_function__Coordinate__y(
+  const void * untyped_member, size_t index)
+{
+  const rosidl_runtime_c__float__Sequence * member =
+    (const rosidl_runtime_c__float__Sequence *)(untyped_member);
+  return &member->data[index];
+}
+
+void * coordinate_msg__msg__Coordinate__rosidl_typesupport_introspection_c__get_function__Coordinate__y(
+  void * untyped_member, size_t index)
+{
+  rosidl_runtime_c__float__Sequence * member =
+    (rosidl_runtime_c__float__Sequence *)(untyped_member);
+  return &member->data[index];
+}
+
+void coordinate_msg__msg__Coordinate__rosidl_typesupport_introspection_c__fetch_function__Coordinate__y(
+  const void * untyped_member, size_t index, void * untyped_value)
+{
+  const float * item =
+    ((const float *)
+    coordinate_msg__msg__Coordinate__rosidl_typesupport_introspection_c__get_const_function__Coordinate__y(untyped_member, index));
+  float * value =
+    (float *)(untyped_value);
+  *value = *item;
+}
+
+void coordinate_msg__msg__Coordinate__rosidl_typesupport_introspection_c__assign_function__Coordinate__y(
+  void * untyped_member, size_t index, const void * untyped_value)
+{
+  float * item =
+    ((float *)
+    coordinate_msg__msg__Coordinate__rosidl_typesupport_introspection_c__get_function__Coordinate__y(untyped_member, index));
+  const float * value =
+    (const float *)(untyped_value);
+  *item = *value;
+}
+
+bool coordinate_msg__msg__Coordinate__rosidl_typesupport_introspection_c__resize_function__Coordinate__y(
+  void * untyped_member, size_t size)
+{
+  rosidl_runtime_c__float__Sequence * member =
+    (rosidl_runtime_c__float__Sequence *)(untyped_member);
+  rosidl_runtime_c__float__Sequence__fini(member);
+  return rosidl_runtime_c__float__Sequence__init(member, size);
+}
+
+size_t coordinate_msg__msg__Coordinate__rosidl_typesupport_introspection_c__size_function__Coordinate__z(
+  const void * untyped_member)
+{
+  const rosidl_runtime_c__float__Sequence * member =
+    (const rosidl_runtime_c__float__Sequence *)(untyped_member);
+  return member->size;
+}
+
+const void * coordinate_msg__msg__Coordinate__rosidl_typesupport_introspection_c__get_const_function__Coordinate__z(
+  const void * untyped_member, size_t index)
+{
+  const rosidl_runtime_c__float__Sequence * member =
+    (const rosidl_runtime_c__float__Sequence *)(untyped_member);
+  return &member->data[index];
+}
+
+void * coordinate_msg__msg__Coordinate__rosidl_typesupport_introspection_c__get_function__Coordinate__z(
+  void * untyped_member, size_t index)
+{
+  rosidl_runtime_c__float__Sequence * member =
+    (rosidl_runtime_c__float__Sequence *)(untyped_member);
+  return &member->data[index];
+}
+
+void coordinate_msg__msg__Coordinate__rosidl_typesupport_introspection_c__fetch_function__Coordinate__z(
+  const void * untyped_member, size_t index, void * untyped_value)
+{
+  const float * item =
+    ((const float *)
+    coordinate_msg__msg__Coordinate__rosidl_typesupport_introspection_c__get_const_function__Coordinate__z(untyped_member, index));
+  float * value =
+    (float *)(untyped_value);
+  *value = *item;
+}
+
+void coordinate_msg__msg__Coordinate__rosidl_typesupport_introspection_c__assign_function__Coordinate__z(
+  void * untyped_member, size_t index, const void * untyped_value)
+{
+  float * item =
+    ((float *)
+    coordinate_msg__msg__Coordinate__rosidl_typesupport_introspection_c__get_function__Coordinate__z(untyped_member, index));
+  const float * value =
+    (const float *)(untyped_value);
+  *item = *value;
+}
+
+bool coordinate_msg__msg__Coordinate__rosidl_typesupport_introspection_c__resize_function__Coordinate__z(
+  void * untyped_member, size_t size)
+{
+  rosidl_runtime_c__float__Sequence * member =
+    (rosidl_runtime_c__float__Sequence *)(untyped_member);
+  rosidl_runtime_c__float__Sequence__fini(member);
+  return rosidl_runtime_c__float__Sequence__init(member, size);
+}
+
+static rosidl_typesupport_introspection_c__MessageMember coordinate_msg__msg__Coordinate__rosidl_typesupport_introspection_c__Coordinate_message_member_array[4] = {
   {
-    "x",  // name
-    rosidl_typesupport_introspection_c__ROS_TYPE_DOUBLE,  // type
+    "num",  // name
+    rosidl_typesupport_introspection_c__ROS_TYPE_INT8,  // type
     0,  // upper bound of string
     NULL,  // members of sub message
     false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(coordinate_msg__msg__Coordinate, num),  // bytes offset in struct
+    NULL,  // default value
+    NULL,  // size() function pointer
+    NULL,  // get_const(index) function pointer
+    NULL,  // get(index) function pointer
+    NULL,  // fetch(index, &value) function pointer
+    NULL,  // assign(index, value) function pointer
+    NULL  // resize(index) function pointer
+  },
+  {
+    "x",  // name
+    rosidl_typesupport_introspection_c__ROS_TYPE_FLOAT,  // type
+    0,  // upper bound of string
+    NULL,  // members of sub message
+    true,  // is array
     0,  // array size
     false,  // is upper bound
     offsetof(coordinate_msg__msg__Coordinate, x),  // bytes offset in struct
     NULL,  // default value
-    NULL,  // size() function pointer
-    NULL,  // get_const(index) function pointer
-    NULL,  // get(index) function pointer
-    NULL,  // fetch(index, &value) function pointer
-    NULL,  // assign(index, value) function pointer
-    NULL  // resize(index) function pointer
+    coordinate_msg__msg__Coordinate__rosidl_typesupport_introspection_c__size_function__Coordinate__x,  // size() function pointer
+    coordinate_msg__msg__Coordinate__rosidl_typesupport_introspection_c__get_const_function__Coordinate__x,  // get_const(index) function pointer
+    coordinate_msg__msg__Coordinate__rosidl_typesupport_introspection_c__get_function__Coordinate__x,  // get(index) function pointer
+    coordinate_msg__msg__Coordinate__rosidl_typesupport_introspection_c__fetch_function__Coordinate__x,  // fetch(index, &value) function pointer
+    coordinate_msg__msg__Coordinate__rosidl_typesupport_introspection_c__assign_function__Coordinate__x,  // assign(index, value) function pointer
+    coordinate_msg__msg__Coordinate__rosidl_typesupport_introspection_c__resize_function__Coordinate__x  // resize(index) function pointer
   },
   {
     "y",  // name
-    rosidl_typesupport_introspection_c__ROS_TYPE_DOUBLE,  // type
+    rosidl_typesupport_introspection_c__ROS_TYPE_FLOAT,  // type
     0,  // upper bound of string
     NULL,  // members of sub message
-    false,  // is array
+    true,  // is array
     0,  // array size
     false,  // is upper bound
     offsetof(coordinate_msg__msg__Coordinate, y),  // bytes offset in struct
     NULL,  // default value
-    NULL,  // size() function pointer
-    NULL,  // get_const(index) function pointer
-    NULL,  // get(index) function pointer
-    NULL,  // fetch(index, &value) function pointer
-    NULL,  // assign(index, value) function pointer
-    NULL  // resize(index) function pointer
+    coordinate_msg__msg__Coordinate__rosidl_typesupport_introspection_c__size_function__Coordinate__y,  // size() function pointer
+    coordinate_msg__msg__Coordinate__rosidl_typesupport_introspection_c__get_const_function__Coordinate__y,  // get_const(index) function pointer
+    coordinate_msg__msg__Coordinate__rosidl_typesupport_introspection_c__get_function__Coordinate__y,  // get(index) function pointer
+    coordinate_msg__msg__Coordinate__rosidl_typesupport_introspection_c__fetch_function__Coordinate__y,  // fetch(index, &value) function pointer
+    coordinate_msg__msg__Coordinate__rosidl_typesupport_introspection_c__assign_function__Coordinate__y,  // assign(index, value) function pointer
+    coordinate_msg__msg__Coordinate__rosidl_typesupport_introspection_c__resize_function__Coordinate__y  // resize(index) function pointer
   },
   {
-    "r",  // name
-    rosidl_typesupport_introspection_c__ROS_TYPE_DOUBLE,  // type
+    "z",  // name
+    rosidl_typesupport_introspection_c__ROS_TYPE_FLOAT,  // type
     0,  // upper bound of string
     NULL,  // members of sub message
-    false,  // is array
+    true,  // is array
     0,  // array size
     false,  // is upper bound
-    offsetof(coordinate_msg__msg__Coordinate, r),  // bytes offset in struct
+    offsetof(coordinate_msg__msg__Coordinate, z),  // bytes offset in struct
     NULL,  // default value
-    NULL,  // size() function pointer
-    NULL,  // get_const(index) function pointer
-    NULL,  // get(index) function pointer
-    NULL,  // fetch(index, &value) function pointer
-    NULL,  // assign(index, value) function pointer
-    NULL  // resize(index) function pointer
+    coordinate_msg__msg__Coordinate__rosidl_typesupport_introspection_c__size_function__Coordinate__z,  // size() function pointer
+    coordinate_msg__msg__Coordinate__rosidl_typesupport_introspection_c__get_const_function__Coordinate__z,  // get_const(index) function pointer
+    coordinate_msg__msg__Coordinate__rosidl_typesupport_introspection_c__get_function__Coordinate__z,  // get(index) function pointer
+    coordinate_msg__msg__Coordinate__rosidl_typesupport_introspection_c__fetch_function__Coordinate__z,  // fetch(index, &value) function pointer
+    coordinate_msg__msg__Coordinate__rosidl_typesupport_introspection_c__assign_function__Coordinate__z,  // assign(index, value) function pointer
+    coordinate_msg__msg__Coordinate__rosidl_typesupport_introspection_c__resize_function__Coordinate__z  // resize(index) function pointer
   }
 };
 
 static const rosidl_typesupport_introspection_c__MessageMembers coordinate_msg__msg__Coordinate__rosidl_typesupport_introspection_c__Coordinate_message_members = {
   "coordinate_msg__msg",  // message namespace
   "Coordinate",  // message name
-  3,  // number of fields
+  4,  // number of fields
   sizeof(coordinate_msg__msg__Coordinate),
   coordinate_msg__msg__Coordinate__rosidl_typesupport_introspection_c__Coordinate_message_member_array,  // message members
   coordinate_msg__msg__Coordinate__rosidl_typesupport_introspection_c__Coordinate_init_function,  // function to initialize message memory (memory has to be allocated)

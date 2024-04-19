@@ -34,6 +34,8 @@ extern "C"
 {
 #endif
 
+#include "rosidl_runtime_c/primitives_sequence.h"  // x, y, z
+#include "rosidl_runtime_c/primitives_sequence_functions.h"  // x, y, z
 
 // forward declare type support functions
 
@@ -49,19 +51,33 @@ static bool _Coordinate__cdr_serialize(
     return false;
   }
   const _Coordinate__ros_msg_type * ros_message = static_cast<const _Coordinate__ros_msg_type *>(untyped_ros_message);
+  // Field name: num
+  {
+    cdr << ros_message->num;
+  }
+
   // Field name: x
   {
-    cdr << ros_message->x;
+    size_t size = ros_message->x.size;
+    auto array_ptr = ros_message->x.data;
+    cdr << static_cast<uint32_t>(size);
+    cdr.serializeArray(array_ptr, size);
   }
 
   // Field name: y
   {
-    cdr << ros_message->y;
+    size_t size = ros_message->y.size;
+    auto array_ptr = ros_message->y.data;
+    cdr << static_cast<uint32_t>(size);
+    cdr.serializeArray(array_ptr, size);
   }
 
-  // Field name: r
+  // Field name: z
   {
-    cdr << ros_message->r;
+    size_t size = ros_message->z.size;
+    auto array_ptr = ros_message->z.data;
+    cdr << static_cast<uint32_t>(size);
+    cdr.serializeArray(array_ptr, size);
   }
 
   return true;
@@ -76,19 +92,57 @@ static bool _Coordinate__cdr_deserialize(
     return false;
   }
   _Coordinate__ros_msg_type * ros_message = static_cast<_Coordinate__ros_msg_type *>(untyped_ros_message);
+  // Field name: num
+  {
+    cdr >> ros_message->num;
+  }
+
   // Field name: x
   {
-    cdr >> ros_message->x;
+    uint32_t cdrSize;
+    cdr >> cdrSize;
+    size_t size = static_cast<size_t>(cdrSize);
+    if (ros_message->x.data) {
+      rosidl_runtime_c__float__Sequence__fini(&ros_message->x);
+    }
+    if (!rosidl_runtime_c__float__Sequence__init(&ros_message->x, size)) {
+      fprintf(stderr, "failed to create array for field 'x'");
+      return false;
+    }
+    auto array_ptr = ros_message->x.data;
+    cdr.deserializeArray(array_ptr, size);
   }
 
   // Field name: y
   {
-    cdr >> ros_message->y;
+    uint32_t cdrSize;
+    cdr >> cdrSize;
+    size_t size = static_cast<size_t>(cdrSize);
+    if (ros_message->y.data) {
+      rosidl_runtime_c__float__Sequence__fini(&ros_message->y);
+    }
+    if (!rosidl_runtime_c__float__Sequence__init(&ros_message->y, size)) {
+      fprintf(stderr, "failed to create array for field 'y'");
+      return false;
+    }
+    auto array_ptr = ros_message->y.data;
+    cdr.deserializeArray(array_ptr, size);
   }
 
-  // Field name: r
+  // Field name: z
   {
-    cdr >> ros_message->r;
+    uint32_t cdrSize;
+    cdr >> cdrSize;
+    size_t size = static_cast<size_t>(cdrSize);
+    if (ros_message->z.data) {
+      rosidl_runtime_c__float__Sequence__fini(&ros_message->z);
+    }
+    if (!rosidl_runtime_c__float__Sequence__init(&ros_message->z, size)) {
+      fprintf(stderr, "failed to create array for field 'z'");
+      return false;
+    }
+    auto array_ptr = ros_message->z.data;
+    cdr.deserializeArray(array_ptr, size);
   }
 
   return true;
@@ -108,22 +162,43 @@ size_t get_serialized_size_coordinate_msg__msg__Coordinate(
   (void)padding;
   (void)wchar_size;
 
+  // field.name num
+  {
+    size_t item_size = sizeof(ros_message->num);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
   // field.name x
   {
-    size_t item_size = sizeof(ros_message->x);
-    current_alignment += item_size +
+    size_t array_size = ros_message->x.size;
+    auto array_ptr = ros_message->x.data;
+    current_alignment += padding +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
+    (void)array_ptr;
+    size_t item_size = sizeof(array_ptr[0]);
+    current_alignment += array_size * item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
   // field.name y
   {
-    size_t item_size = sizeof(ros_message->y);
-    current_alignment += item_size +
+    size_t array_size = ros_message->y.size;
+    auto array_ptr = ros_message->y.data;
+    current_alignment += padding +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
+    (void)array_ptr;
+    size_t item_size = sizeof(array_ptr[0]);
+    current_alignment += array_size * item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
-  // field.name r
+  // field.name z
   {
-    size_t item_size = sizeof(ros_message->r);
-    current_alignment += item_size +
+    size_t array_size = ros_message->z.size;
+    auto array_ptr = ros_message->z.data;
+    current_alignment += padding +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
+    (void)array_ptr;
+    size_t item_size = sizeof(array_ptr[0]);
+    current_alignment += array_size * item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
 
@@ -155,29 +230,48 @@ size_t max_serialized_size_coordinate_msg__msg__Coordinate(
   full_bounded = true;
   is_plain = true;
 
-  // member: x
+  // member: num
   {
     size_t array_size = 1;
 
-    last_member_size = array_size * sizeof(uint64_t);
-    current_alignment += array_size * sizeof(uint64_t) +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
+    last_member_size = array_size * sizeof(uint8_t);
+    current_alignment += array_size * sizeof(uint8_t);
+  }
+  // member: x
+  {
+    size_t array_size = 0;
+    full_bounded = false;
+    is_plain = false;
+    current_alignment += padding +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
+
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
   }
   // member: y
   {
-    size_t array_size = 1;
+    size_t array_size = 0;
+    full_bounded = false;
+    is_plain = false;
+    current_alignment += padding +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
 
-    last_member_size = array_size * sizeof(uint64_t);
-    current_alignment += array_size * sizeof(uint64_t) +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
   }
-  // member: r
+  // member: z
   {
-    size_t array_size = 1;
+    size_t array_size = 0;
+    full_bounded = false;
+    is_plain = false;
+    current_alignment += padding +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
 
-    last_member_size = array_size * sizeof(uint64_t);
-    current_alignment += array_size * sizeof(uint64_t) +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
   }
 
   size_t ret_val = current_alignment - initial_alignment;
@@ -188,7 +282,7 @@ size_t max_serialized_size_coordinate_msg__msg__Coordinate(
     using DataType = coordinate_msg__msg__Coordinate;
     is_plain =
       (
-      offsetof(DataType, r) +
+      offsetof(DataType, z) +
       last_member_size
       ) == ret_val;
   }

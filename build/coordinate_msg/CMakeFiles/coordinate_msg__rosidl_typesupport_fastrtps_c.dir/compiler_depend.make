@@ -225,7 +225,8 @@ CMakeFiles/coordinate_msg__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_
   rosidl_generator_c/coordinate_msg/msg/detail/coordinate__struct.h \
   rosidl_generator_c/coordinate_msg/msg/detail/coordinate__functions.h \
   /usr/include/c++/11/stdlib.h \
-  rosidl_generator_c/coordinate_msg/msg/rosidl_generator_c__visibility_control.h
+  rosidl_generator_c/coordinate_msg/msg/rosidl_generator_c__visibility_control.h \
+  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence_functions.h
 
 
 /usr/include/c++/11/stdlib.h:
@@ -253,6 +254,8 @@ rosidl_generator_c/coordinate_msg/msg/detail/coordinate__struct.h:
 /usr/include/c++/11/bits/locale_classes.tcc:
 
 /usr/include/c++/11/bits/locale_classes.h:
+
+/opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence_functions.h:
 
 /usr/include/c++/11/bits/ios_base.h:
 

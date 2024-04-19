@@ -38,9 +38,7 @@ struct Coordinate_
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
-      this->x = 0.0;
-      this->y = 0.0;
-      this->r = 0.0;
+      this->num = 0;
     }
   }
 
@@ -50,40 +48,47 @@ struct Coordinate_
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
-      this->x = 0.0;
-      this->y = 0.0;
-      this->r = 0.0;
+      this->num = 0;
     }
   }
 
   // field types and members
+  using _num_type =
+    int8_t;
+  _num_type num;
   using _x_type =
-    double;
+    std::vector<float, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<float>>;
   _x_type x;
   using _y_type =
-    double;
+    std::vector<float, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<float>>;
   _y_type y;
-  using _r_type =
-    double;
-  _r_type r;
+  using _z_type =
+    std::vector<float, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<float>>;
+  _z_type z;
 
   // setters for named parameter idiom
+  Type & set__num(
+    const int8_t & _arg)
+  {
+    this->num = _arg;
+    return *this;
+  }
   Type & set__x(
-    const double & _arg)
+    const std::vector<float, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<float>> & _arg)
   {
     this->x = _arg;
     return *this;
   }
   Type & set__y(
-    const double & _arg)
+    const std::vector<float, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<float>> & _arg)
   {
     this->y = _arg;
     return *this;
   }
-  Type & set__r(
-    const double & _arg)
+  Type & set__z(
+    const std::vector<float, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<float>> & _arg)
   {
-    this->r = _arg;
+    this->z = _arg;
     return *this;
   }
 
@@ -129,13 +134,16 @@ struct Coordinate_
   // comparison operators
   bool operator==(const Coordinate_ & other) const
   {
+    if (this->num != other.num) {
+      return false;
+    }
     if (this->x != other.x) {
       return false;
     }
     if (this->y != other.y) {
       return false;
     }
-    if (this->r != other.r) {
+    if (this->z != other.z) {
       return false;
     }
     return true;

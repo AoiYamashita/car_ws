@@ -25,24 +25,64 @@ inline void to_flow_style_yaml(
   std::ostream & out)
 {
   out << "{";
+  // member: num
+  {
+    out << "num: ";
+    rosidl_generator_traits::value_to_yaml(msg.num, out);
+    out << ", ";
+  }
+
   // member: x
   {
-    out << "x: ";
-    rosidl_generator_traits::value_to_yaml(msg.x, out);
+    if (msg.x.size() == 0) {
+      out << "x: []";
+    } else {
+      out << "x: [";
+      size_t pending_items = msg.x.size();
+      for (auto item : msg.x) {
+        rosidl_generator_traits::value_to_yaml(item, out);
+        if (--pending_items > 0) {
+          out << ", ";
+        }
+      }
+      out << "]";
+    }
     out << ", ";
   }
 
   // member: y
   {
-    out << "y: ";
-    rosidl_generator_traits::value_to_yaml(msg.y, out);
+    if (msg.y.size() == 0) {
+      out << "y: []";
+    } else {
+      out << "y: [";
+      size_t pending_items = msg.y.size();
+      for (auto item : msg.y) {
+        rosidl_generator_traits::value_to_yaml(item, out);
+        if (--pending_items > 0) {
+          out << ", ";
+        }
+      }
+      out << "]";
+    }
     out << ", ";
   }
 
-  // member: r
+  // member: z
   {
-    out << "r: ";
-    rosidl_generator_traits::value_to_yaml(msg.r, out);
+    if (msg.z.size() == 0) {
+      out << "z: []";
+    } else {
+      out << "z: [";
+      size_t pending_items = msg.z.size();
+      for (auto item : msg.z) {
+        rosidl_generator_traits::value_to_yaml(item, out);
+        if (--pending_items > 0) {
+          out << ", ";
+        }
+      }
+      out << "]";
+    }
   }
   out << "}";
 }  // NOLINT(readability/fn_size)
@@ -51,14 +91,34 @@ inline void to_block_style_yaml(
   const Coordinate & msg,
   std::ostream & out, size_t indentation = 0)
 {
+  // member: num
+  {
+    if (indentation > 0) {
+      out << std::string(indentation, ' ');
+    }
+    out << "num: ";
+    rosidl_generator_traits::value_to_yaml(msg.num, out);
+    out << "\n";
+  }
+
   // member: x
   {
     if (indentation > 0) {
       out << std::string(indentation, ' ');
     }
-    out << "x: ";
-    rosidl_generator_traits::value_to_yaml(msg.x, out);
-    out << "\n";
+    if (msg.x.size() == 0) {
+      out << "x: []\n";
+    } else {
+      out << "x:\n";
+      for (auto item : msg.x) {
+        if (indentation > 0) {
+          out << std::string(indentation, ' ');
+        }
+        out << "- ";
+        rosidl_generator_traits::value_to_yaml(item, out);
+        out << "\n";
+      }
+    }
   }
 
   // member: y
@@ -66,19 +126,39 @@ inline void to_block_style_yaml(
     if (indentation > 0) {
       out << std::string(indentation, ' ');
     }
-    out << "y: ";
-    rosidl_generator_traits::value_to_yaml(msg.y, out);
-    out << "\n";
+    if (msg.y.size() == 0) {
+      out << "y: []\n";
+    } else {
+      out << "y:\n";
+      for (auto item : msg.y) {
+        if (indentation > 0) {
+          out << std::string(indentation, ' ');
+        }
+        out << "- ";
+        rosidl_generator_traits::value_to_yaml(item, out);
+        out << "\n";
+      }
+    }
   }
 
-  // member: r
+  // member: z
   {
     if (indentation > 0) {
       out << std::string(indentation, ' ');
     }
-    out << "r: ";
-    rosidl_generator_traits::value_to_yaml(msg.r, out);
-    out << "\n";
+    if (msg.z.size() == 0) {
+      out << "z: []\n";
+    } else {
+      out << "z:\n";
+      for (auto item : msg.z) {
+        if (indentation > 0) {
+          out << std::string(indentation, ' ');
+        }
+        out << "- ";
+        rosidl_generator_traits::value_to_yaml(item, out);
+        out << "\n";
+      }
+    }
   }
 }  // NOLINT(readability/fn_size)
 
@@ -128,11 +208,11 @@ inline const char * name<coordinate_msg::msg::Coordinate>()
 
 template<>
 struct has_fixed_size<coordinate_msg::msg::Coordinate>
-  : std::integral_constant<bool, true> {};
+  : std::integral_constant<bool, false> {};
 
 template<>
 struct has_bounded_size<coordinate_msg::msg::Coordinate>
-  : std::integral_constant<bool, true> {};
+  : std::integral_constant<bool, false> {};
 
 template<>
 struct is_message<coordinate_msg::msg::Coordinate>

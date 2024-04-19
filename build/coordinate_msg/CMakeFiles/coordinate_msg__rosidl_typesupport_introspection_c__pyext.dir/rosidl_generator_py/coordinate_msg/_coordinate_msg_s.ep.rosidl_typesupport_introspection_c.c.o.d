@@ -204,4 +204,5 @@ CMakeFiles/coordinate_msg__rosidl_typesupport_introspection_c__pyext.dir/rosidl_
  /home/yamashita/car_ws/build/coordinate_msg/rosidl_generator_c/coordinate_msg/msg/detail/coordinate__type_support.h \
  /home/yamashita/car_ws/build/coordinate_msg/rosidl_generator_c/coordinate_msg/msg/rosidl_generator_c__visibility_control.h \
  /home/yamashita/car_ws/build/coordinate_msg/rosidl_generator_c/coordinate_msg/msg/detail/coordinate__struct.h \
+ /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence.h \
  /home/yamashita/car_ws/build/coordinate_msg/rosidl_generator_c/coordinate_msg/msg/detail/coordinate__functions.h

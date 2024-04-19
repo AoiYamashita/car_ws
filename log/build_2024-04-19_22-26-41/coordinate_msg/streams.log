@@ -1,0 +1,216 @@
+[0.084s] Invoking command in '/home/yamashita/car_ws/build/coordinate_msg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/yamashita/robot_2024/install/robot_2024:/home/yamashita/robot_2024/install/gazebo_robot_2024:/home/yamashita/LegControll/install/test_controll:/home/yamashita/LegControll/install/monitor_node:/home/yamashita/LegControll/install/monitor:/home/yamashita/car_ws/install/mypkg:/opt/ros/humble /usr/bin/cmake --build /home/yamashita/car_ws/build/coordinate_msg -- -j4 -l4
+[0.192s] -- Found ament_cmake: 1.3.8 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.850s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[0.862s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.874s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.050s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.452s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[3.382s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[4.667s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[4.784s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[4.906s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[4.906s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[4.907s] -- Using PYTHON_LIBRARIES: /usr/lib/aarch64-linux-gnu/libpython3.10.so
+[4.965s] -- Found ament_lint_auto: 0.12.10 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[5.014s] -- Added test 'lint_cmake' to check CMake code style
+[5.020s] -- Added test 'xmllint' to check XML markup files
+[5.030s] -- Configuring done
+[5.217s] -- Generating done
+[5.240s] -- Build files have been written to: /home/yamashita/car_ws/build/coordinate_msg
+[5.351s] [  3%] [34m[1mGenerating C code for ROS interfaces[0m
+[5.419s] [  6%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[5.499s] [  6%] Built target ament_cmake_python_copy_coordinate_msg
+[6.749s] [  6%] Built target coordinate_msg__cpp
+[6.751s] [35m[1mConsolidate compiler generated dependencies of target coordinate_msg__rosidl_generator_c[0m
+[6.799s] [ 12%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[6.800s] [ 12%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[6.810s] [ 16%] [32mBuilding C object CMakeFiles/coordinate_msg__rosidl_generator_c.dir/rosidl_generator_c/coordinate_msg/msg/detail/coordinate__functions.c.o[0m
+[7.106s] [ 19%] [32m[1mLinking C shared library libcoordinate_msg__rosidl_generator_c.so[0m
+[7.313s] [ 19%] Built target coordinate_msg__rosidl_generator_c
+[7.348s] running egg_info
+[7.355s] writing coordinate_msg.egg-info/PKG-INFO
+[7.358s] writing dependency_links to coordinate_msg.egg-info/dependency_links.txt
+[7.361s] writing top-level names to coordinate_msg.egg-info/top_level.txt
+[7.367s] [ 22%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[7.379s] reading manifest file 'coordinate_msg.egg-info/SOURCES.txt'
+[7.385s] writing manifest file 'coordinate_msg.egg-info/SOURCES.txt'
+[7.570s] [ 22%] Built target ament_cmake_python_build_coordinate_msg_egg
+[7.629s] [ 25%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[8.062s] [35m[1mConsolidate compiler generated dependencies of target coordinate_msg__rosidl_typesupport_cpp[0m
+[8.143s] [ 29%] [32mBuilding CXX object CMakeFiles/coordinate_msg__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/coordinate_msg/msg/coordinate__type_support.cpp.o[0m
+[8.198s] [35m[1mConsolidate compiler generated dependencies of target coordinate_msg__rosidl_typesupport_fastrtps_cpp[0m
+[8.267s] [ 32%] [32mBuilding CXX object CMakeFiles/coordinate_msg__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/coordinate_msg/msg/detail/dds_fastrtps/coordinate__type_support.cpp.o[0m
+[8.708s] [35m[1mConsolidate compiler generated dependencies of target coordinate_msg__rosidl_typesupport_introspection_cpp[0m
+[8.780s] [ 35%] [32mBuilding CXX object CMakeFiles/coordinate_msg__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/coordinate_msg/msg/detail/coordinate__type_support.cpp.o[0m
+[9.025s] [35m[1mConsolidate compiler generated dependencies of target coordinate_msg__rosidl_typesupport_fastrtps_c[0m
+[9.098s] [ 38%] [32mBuilding CXX object CMakeFiles/coordinate_msg__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/coordinate_msg/msg/detail/coordinate__type_support_c.cpp.o[0m
+[9.817s] [ 41%] [32m[1mLinking CXX shared library libcoordinate_msg__rosidl_typesupport_cpp.so[0m
+[10.037s] [ 41%] Built target coordinate_msg__rosidl_typesupport_cpp
+[10.101s] [ 45%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[11.038s] [ 48%] [32m[1mLinking CXX shared library libcoordinate_msg__rosidl_typesupport_fastrtps_cpp.so[0m
+[11.285s] [ 51%] [32m[1mLinking CXX shared library libcoordinate_msg__rosidl_typesupport_fastrtps_c.so[0m
+[11.428s] [ 51%] Built target coordinate_msg__rosidl_typesupport_fastrtps_cpp
+[11.439s] [ 54%] [32m[1mLinking CXX shared library libcoordinate_msg__rosidl_typesupport_introspection_cpp.so[0m
+[11.492s] [ 58%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[11.712s] [35m[1mConsolidate compiler generated dependencies of target coordinate_msg__rosidl_typesupport_introspection_c[0m
+[11.760s] [ 58%] Built target coordinate_msg__rosidl_typesupport_fastrtps_c
+[11.779s] [ 61%] [32mBuilding C object CMakeFiles/coordinate_msg__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/coordinate_msg/msg/detail/coordinate__type_support.c.o[0m
+[11.857s] [ 61%] Built target coordinate_msg__rosidl_typesupport_introspection_cpp
+[11.996s] [ 64%] [32m[1mLinking C shared library libcoordinate_msg__rosidl_typesupport_introspection_c.so[0m
+[12.122s] [ 64%] Built target coordinate_msg__rosidl_typesupport_introspection_c
+[12.568s] [35m[1mConsolidate compiler generated dependencies of target coordinate_msg__rosidl_typesupport_c[0m
+[12.616s] [ 67%] [32mBuilding CXX object CMakeFiles/coordinate_msg__rosidl_typesupport_c.dir/rosidl_typesupport_c/coordinate_msg/msg/coordinate__type_support.cpp.o[0m
+[12.759s] [ 70%] [32m[1mLinking CXX shared library libcoordinate_msg__rosidl_typesupport_c.so[0m
+[12.916s] [ 70%] Built target coordinate_msg__rosidl_typesupport_c
+[13.005s] [ 70%] Built target coordinate_msg
+[13.094s] [ 74%] [34m[1mGenerating Python code for ROS interfaces[0m
+[14.363s] [ 74%] Built target coordinate_msg__py
+[14.411s] [35m[1mConsolidate compiler generated dependencies of target coordinate_msg__rosidl_generator_py[0m
+[14.473s] [ 77%] [32mBuilding C object CMakeFiles/coordinate_msg__rosidl_generator_py.dir/rosidl_generator_py/coordinate_msg/msg/_coordinate_s.c.o[0m
+[14.978s] [ 80%] [32m[1mLinking C shared library rosidl_generator_py/coordinate_msg/libcoordinate_msg__rosidl_generator_py.so[0m
+[15.155s] [ 80%] Built target coordinate_msg__rosidl_generator_py
+[15.203s] [35m[1mConsolidate compiler generated dependencies of target coordinate_msg__rosidl_typesupport_fastrtps_c__pyext[0m
+[15.204s] [35m[1mConsolidate compiler generated dependencies of target coordinate_msg__rosidl_typesupport_introspection_c__pyext[0m
+[15.206s] [35m[1mConsolidate compiler generated dependencies of target coordinate_msg__rosidl_typesupport_c__pyext[0m
+[15.266s] [ 87%] [32mBuilding C object CMakeFiles/coordinate_msg__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/coordinate_msg/_coordinate_msg_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[15.267s] [ 87%] [32mBuilding C object CMakeFiles/coordinate_msg__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/coordinate_msg/_coordinate_msg_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[15.274s] [ 90%] [32mBuilding C object CMakeFiles/coordinate_msg__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/coordinate_msg/_coordinate_msg_s.ep.rosidl_typesupport_c.c.o[0m
+[15.710s] [ 93%] [32m[1mLinking C shared library rosidl_generator_py/coordinate_msg/coordinate_msg_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so[0m
+[15.722s] [ 96%] [32m[1mLinking C shared library rosidl_generator_py/coordinate_msg/coordinate_msg_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so[0m
+[15.765s] [100%] [32m[1mLinking C shared library rosidl_generator_py/coordinate_msg/coordinate_msg_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so[0m
+[15.895s] [100%] Built target coordinate_msg__rosidl_typesupport_c__pyext
+[15.908s] [100%] Built target coordinate_msg__rosidl_typesupport_introspection_c__pyext
+[15.946s] [100%] Built target coordinate_msg__rosidl_typesupport_fastrtps_c__pyext
+[15.990s] Invoked command in '/home/yamashita/car_ws/build/coordinate_msg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/yamashita/robot_2024/install/robot_2024:/home/yamashita/robot_2024/install/gazebo_robot_2024:/home/yamashita/LegControll/install/test_controll:/home/yamashita/LegControll/install/monitor_node:/home/yamashita/LegControll/install/monitor:/home/yamashita/car_ws/install/mypkg:/opt/ros/humble /usr/bin/cmake --build /home/yamashita/car_ws/build/coordinate_msg -- -j4 -l4
+[16.441s] Invoking command in '/home/yamashita/car_ws/build/coordinate_msg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/yamashita/robot_2024/install/robot_2024:/home/yamashita/robot_2024/install/gazebo_robot_2024:/home/yamashita/LegControll/install/test_controll:/home/yamashita/LegControll/install/monitor_node:/home/yamashita/LegControll/install/monitor:/home/yamashita/car_ws/install/mypkg:/opt/ros/humble /usr/bin/cmake --install /home/yamashita/car_ws/build/coordinate_msg
+[16.471s] -- Install configuration: ""
+[16.472s] -- Up-to-date: /home/yamashita/car_ws/install/coordinate_msg/share/ament_index/resource_index/rosidl_interfaces/coordinate_msg
+[16.472s] -- Up-to-date: /home/yamashita/car_ws/install/coordinate_msg/include/coordinate_msg/coordinate_msg
+[16.473s] -- Up-to-date: /home/yamashita/car_ws/install/coordinate_msg/include/coordinate_msg/coordinate_msg/msg
+[16.473s] -- Up-to-date: /home/yamashita/car_ws/install/coordinate_msg/include/coordinate_msg/coordinate_msg/msg/detail
+[16.473s] -- Installing: /home/yamashita/car_ws/install/coordinate_msg/include/coordinate_msg/coordinate_msg/msg/detail/coordinate__functions.h
+[16.474s] -- Installing: /home/yamashita/car_ws/install/coordinate_msg/include/coordinate_msg/coordinate_msg/msg/detail/coordinate__type_support.h
+[16.476s] -- Installing: /home/yamashita/car_ws/install/coordinate_msg/include/coordinate_msg/coordinate_msg/msg/detail/coordinate__functions.c
+[16.477s] -- Installing: /home/yamashita/car_ws/install/coordinate_msg/include/coordinate_msg/coordinate_msg/msg/detail/coordinate__struct.h
+[16.478s] -- Up-to-date: /home/yamashita/car_ws/install/coordinate_msg/include/coordinate_msg/coordinate_msg/msg/rosidl_generator_c__visibility_control.h
+[16.479s] -- Installing: /home/yamashita/car_ws/install/coordinate_msg/include/coordinate_msg/coordinate_msg/msg/coordinate.h
+[16.480s] -- Up-to-date: /home/yamashita/car_ws/install/coordinate_msg/share/coordinate_msg/environment/library_path.sh
+[16.480s] -- Installing: /home/yamashita/car_ws/install/coordinate_msg/share/coordinate_msg/environment/library_path.dsv
+[16.482s] -- Installing: /home/yamashita/car_ws/install/coordinate_msg/lib/libcoordinate_msg__rosidl_generator_c.so
+[16.485s] -- Set runtime path of "/home/yamashita/car_ws/install/coordinate_msg/lib/libcoordinate_msg__rosidl_generator_c.so" to ""
+[16.485s] -- Up-to-date: /home/yamashita/car_ws/install/coordinate_msg/include/coordinate_msg/coordinate_msg
+[16.485s] -- Up-to-date: /home/yamashita/car_ws/install/coordinate_msg/include/coordinate_msg/coordinate_msg/msg
+[16.486s] -- Up-to-date: /home/yamashita/car_ws/install/coordinate_msg/include/coordinate_msg/coordinate_msg/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[16.486s] -- Up-to-date: /home/yamashita/car_ws/install/coordinate_msg/include/coordinate_msg/coordinate_msg/msg/detail
+[16.487s] -- Installing: /home/yamashita/car_ws/install/coordinate_msg/include/coordinate_msg/coordinate_msg/msg/detail/coordinate__rosidl_typesupport_fastrtps_c.h
+[16.488s] -- Installing: /home/yamashita/car_ws/install/coordinate_msg/lib/libcoordinate_msg__rosidl_typesupport_fastrtps_c.so
+[16.491s] -- Set runtime path of "/home/yamashita/car_ws/install/coordinate_msg/lib/libcoordinate_msg__rosidl_typesupport_fastrtps_c.so" to ""
+[16.491s] -- Up-to-date: /home/yamashita/car_ws/install/coordinate_msg/include/coordinate_msg/coordinate_msg
+[16.492s] -- Up-to-date: /home/yamashita/car_ws/install/coordinate_msg/include/coordinate_msg/coordinate_msg/msg
+[16.492s] -- Up-to-date: /home/yamashita/car_ws/install/coordinate_msg/include/coordinate_msg/coordinate_msg/msg/detail
+[16.492s] -- Installing: /home/yamashita/car_ws/install/coordinate_msg/include/coordinate_msg/coordinate_msg/msg/detail/coordinate__rosidl_typesupport_introspection_c.h
+[16.494s] -- Installing: /home/yamashita/car_ws/install/coordinate_msg/include/coordinate_msg/coordinate_msg/msg/detail/coordinate__type_support.c
+[16.495s] -- Up-to-date: /home/yamashita/car_ws/install/coordinate_msg/include/coordinate_msg/coordinate_msg/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[16.496s] -- Installing: /home/yamashita/car_ws/install/coordinate_msg/lib/libcoordinate_msg__rosidl_typesupport_introspection_c.so
+[16.499s] -- Set runtime path of "/home/yamashita/car_ws/install/coordinate_msg/lib/libcoordinate_msg__rosidl_typesupport_introspection_c.so" to ""
+[16.499s] -- Installing: /home/yamashita/car_ws/install/coordinate_msg/lib/libcoordinate_msg__rosidl_typesupport_c.so
+[16.502s] -- Set runtime path of "/home/yamashita/car_ws/install/coordinate_msg/lib/libcoordinate_msg__rosidl_typesupport_c.so" to ""
+[16.502s] -- Up-to-date: /home/yamashita/car_ws/install/coordinate_msg/include/coordinate_msg/coordinate_msg
+[16.503s] -- Up-to-date: /home/yamashita/car_ws/install/coordinate_msg/include/coordinate_msg/coordinate_msg/msg
+[16.503s] -- Installing: /home/yamashita/car_ws/install/coordinate_msg/include/coordinate_msg/coordinate_msg/msg/coordinate.hpp
+[16.504s] -- Up-to-date: /home/yamashita/car_ws/install/coordinate_msg/include/coordinate_msg/coordinate_msg/msg/detail
+[16.505s] -- Installing: /home/yamashita/car_ws/install/coordinate_msg/include/coordinate_msg/coordinate_msg/msg/detail/coordinate__struct.hpp
+[16.506s] -- Installing: /home/yamashita/car_ws/install/coordinate_msg/include/coordinate_msg/coordinate_msg/msg/detail/coordinate__traits.hpp
+[16.507s] -- Installing: /home/yamashita/car_ws/install/coordinate_msg/include/coordinate_msg/coordinate_msg/msg/detail/coordinate__builder.hpp
+[16.508s] -- Up-to-date: /home/yamashita/car_ws/install/coordinate_msg/include/coordinate_msg/coordinate_msg
+[16.508s] -- Up-to-date: /home/yamashita/car_ws/install/coordinate_msg/include/coordinate_msg/coordinate_msg/msg
+[16.509s] -- Up-to-date: /home/yamashita/car_ws/install/coordinate_msg/include/coordinate_msg/coordinate_msg/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[16.509s] -- Up-to-date: /home/yamashita/car_ws/install/coordinate_msg/include/coordinate_msg/coordinate_msg/msg/detail
+[16.510s] -- Installing: /home/yamashita/car_ws/install/coordinate_msg/include/coordinate_msg/coordinate_msg/msg/detail/coordinate__rosidl_typesupport_fastrtps_cpp.hpp
+[16.511s] -- Up-to-date: /home/yamashita/car_ws/install/coordinate_msg/include/coordinate_msg/coordinate_msg/msg/detail/dds_fastrtps
+[16.512s] -- Installing: /home/yamashita/car_ws/install/coordinate_msg/lib/libcoordinate_msg__rosidl_typesupport_fastrtps_cpp.so
+[16.515s] -- Set runtime path of "/home/yamashita/car_ws/install/coordinate_msg/lib/libcoordinate_msg__rosidl_typesupport_fastrtps_cpp.so" to ""
+[16.516s] -- Up-to-date: /home/yamashita/car_ws/install/coordinate_msg/include/coordinate_msg/coordinate_msg
+[16.516s] -- Up-to-date: /home/yamashita/car_ws/install/coordinate_msg/include/coordinate_msg/coordinate_msg/msg
+[16.516s] -- Up-to-date: /home/yamashita/car_ws/install/coordinate_msg/include/coordinate_msg/coordinate_msg/msg/detail
+[16.517s] -- Installing: /home/yamashita/car_ws/install/coordinate_msg/include/coordinate_msg/coordinate_msg/msg/detail/coordinate__type_support.cpp
+[16.518s] -- Installing: /home/yamashita/car_ws/install/coordinate_msg/include/coordinate_msg/coordinate_msg/msg/detail/coordinate__rosidl_typesupport_introspection_cpp.hpp
+[16.520s] -- Installing: /home/yamashita/car_ws/install/coordinate_msg/lib/libcoordinate_msg__rosidl_typesupport_introspection_cpp.so
+[16.523s] -- Set runtime path of "/home/yamashita/car_ws/install/coordinate_msg/lib/libcoordinate_msg__rosidl_typesupport_introspection_cpp.so" to ""
+[16.524s] -- Installing: /home/yamashita/car_ws/install/coordinate_msg/lib/libcoordinate_msg__rosidl_typesupport_cpp.so
+[16.526s] -- Set runtime path of "/home/yamashita/car_ws/install/coordinate_msg/lib/libcoordinate_msg__rosidl_typesupport_cpp.so" to ""
+[16.527s] -- Up-to-date: /home/yamashita/car_ws/install/coordinate_msg/share/coordinate_msg/environment/pythonpath.sh
+[16.527s] -- Installing: /home/yamashita/car_ws/install/coordinate_msg/share/coordinate_msg/environment/pythonpath.dsv
+[16.528s] -- Up-to-date: /home/yamashita/car_ws/install/coordinate_msg/local/lib/python3.10/dist-packages/coordinate_msg-0.0.0-py3.10.egg-info
+[16.528s] -- Installing: /home/yamashita/car_ws/install/coordinate_msg/local/lib/python3.10/dist-packages/coordinate_msg-0.0.0-py3.10.egg-info/SOURCES.txt
+[16.530s] -- Installing: /home/yamashita/car_ws/install/coordinate_msg/local/lib/python3.10/dist-packages/coordinate_msg-0.0.0-py3.10.egg-info/dependency_links.txt
+[16.531s] -- Installing: /home/yamashita/car_ws/install/coordinate_msg/local/lib/python3.10/dist-packages/coordinate_msg-0.0.0-py3.10.egg-info/PKG-INFO
+[16.532s] -- Installing: /home/yamashita/car_ws/install/coordinate_msg/local/lib/python3.10/dist-packages/coordinate_msg-0.0.0-py3.10.egg-info/top_level.txt
+[16.533s] -- Up-to-date: /home/yamashita/car_ws/install/coordinate_msg/local/lib/python3.10/dist-packages/coordinate_msg
+[16.534s] -- Installing: /home/yamashita/car_ws/install/coordinate_msg/local/lib/python3.10/dist-packages/coordinate_msg/__init__.py
+[16.535s] -- Installing: /home/yamashita/car_ws/install/coordinate_msg/local/lib/python3.10/dist-packages/coordinate_msg/coordinate_msg_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so
+[16.536s] -- Installing: /home/yamashita/car_ws/install/coordinate_msg/local/lib/python3.10/dist-packages/coordinate_msg/libcoordinate_msg__rosidl_generator_py.so
+[16.538s] -- Installing: /home/yamashita/car_ws/install/coordinate_msg/local/lib/python3.10/dist-packages/coordinate_msg/_coordinate_msg_s.ep.rosidl_typesupport_fastrtps_c.c
+[16.539s] -- Installing: /home/yamashita/car_ws/install/coordinate_msg/local/lib/python3.10/dist-packages/coordinate_msg/coordinate_msg_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so
+[16.540s] -- Installing: /home/yamashita/car_ws/install/coordinate_msg/local/lib/python3.10/dist-packages/coordinate_msg/coordinate_msg_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so
+[16.542s] -- Installing: /home/yamashita/car_ws/install/coordinate_msg/local/lib/python3.10/dist-packages/coordinate_msg/_coordinate_msg_s.ep.rosidl_typesupport_c.c
+[16.543s] -- Up-to-date: /home/yamashita/car_ws/install/coordinate_msg/local/lib/python3.10/dist-packages/coordinate_msg/msg
+[16.543s] -- Installing: /home/yamashita/car_ws/install/coordinate_msg/local/lib/python3.10/dist-packages/coordinate_msg/msg/__init__.py
+[16.544s] -- Installing: /home/yamashita/car_ws/install/coordinate_msg/local/lib/python3.10/dist-packages/coordinate_msg/msg/_coordinate_s.c
+[16.546s] -- Installing: /home/yamashita/car_ws/install/coordinate_msg/local/lib/python3.10/dist-packages/coordinate_msg/msg/_coordinate.py
+[16.547s] -- Installing: /home/yamashita/car_ws/install/coordinate_msg/local/lib/python3.10/dist-packages/coordinate_msg/_coordinate_msg_s.ep.rosidl_typesupport_introspection_c.c
+[16.715s] Listing '/home/yamashita/car_ws/install/coordinate_msg/local/lib/python3.10/dist-packages/coordinate_msg'...
+[16.716s] Compiling '/home/yamashita/car_ws/install/coordinate_msg/local/lib/python3.10/dist-packages/coordinate_msg/__init__.py'...
+[16.717s] Listing '/home/yamashita/car_ws/install/coordinate_msg/local/lib/python3.10/dist-packages/coordinate_msg/msg'...
+[16.717s] Compiling '/home/yamashita/car_ws/install/coordinate_msg/local/lib/python3.10/dist-packages/coordinate_msg/msg/__init__.py'...
+[16.718s] Compiling '/home/yamashita/car_ws/install/coordinate_msg/local/lib/python3.10/dist-packages/coordinate_msg/msg/_coordinate.py'...
+[16.739s] -- Installing: /home/yamashita/car_ws/install/coordinate_msg/local/lib/python3.10/dist-packages/coordinate_msg/coordinate_msg_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so
+[16.742s] -- Set runtime path of "/home/yamashita/car_ws/install/coordinate_msg/local/lib/python3.10/dist-packages/coordinate_msg/coordinate_msg_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so" to ""
+[16.743s] -- Installing: /home/yamashita/car_ws/install/coordinate_msg/local/lib/python3.10/dist-packages/coordinate_msg/coordinate_msg_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so
+[16.746s] -- Set runtime path of "/home/yamashita/car_ws/install/coordinate_msg/local/lib/python3.10/dist-packages/coordinate_msg/coordinate_msg_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so" to ""
+[16.747s] -- Installing: /home/yamashita/car_ws/install/coordinate_msg/local/lib/python3.10/dist-packages/coordinate_msg/coordinate_msg_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so
+[16.750s] -- Set runtime path of "/home/yamashita/car_ws/install/coordinate_msg/local/lib/python3.10/dist-packages/coordinate_msg/coordinate_msg_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so" to ""
+[16.751s] -- Installing: /home/yamashita/car_ws/install/coordinate_msg/lib/libcoordinate_msg__rosidl_generator_py.so
+[16.753s] -- Set runtime path of "/home/yamashita/car_ws/install/coordinate_msg/lib/libcoordinate_msg__rosidl_generator_py.so" to ""
+[16.754s] -- Installing: /home/yamashita/car_ws/install/coordinate_msg/share/coordinate_msg/msg/Coordinate.idl
+[16.755s] -- Installing: /home/yamashita/car_ws/install/coordinate_msg/share/coordinate_msg/msg/Coordinate.msg
+[16.756s] -- Up-to-date: /home/yamashita/car_ws/install/coordinate_msg/share/ament_index/resource_index/package_run_dependencies/coordinate_msg
+[16.757s] -- Up-to-date: /home/yamashita/car_ws/install/coordinate_msg/share/ament_index/resource_index/parent_prefix_path/coordinate_msg
+[16.757s] -- Up-to-date: /home/yamashita/car_ws/install/coordinate_msg/share/coordinate_msg/environment/ament_prefix_path.sh
+[16.757s] -- Installing: /home/yamashita/car_ws/install/coordinate_msg/share/coordinate_msg/environment/ament_prefix_path.dsv
+[16.759s] -- Up-to-date: /home/yamashita/car_ws/install/coordinate_msg/share/coordinate_msg/environment/path.sh
+[16.759s] -- Installing: /home/yamashita/car_ws/install/coordinate_msg/share/coordinate_msg/environment/path.dsv
+[16.760s] -- Up-to-date: /home/yamashita/car_ws/install/coordinate_msg/share/coordinate_msg/local_setup.bash
+[16.760s] -- Up-to-date: /home/yamashita/car_ws/install/coordinate_msg/share/coordinate_msg/local_setup.sh
+[16.761s] -- Up-to-date: /home/yamashita/car_ws/install/coordinate_msg/share/coordinate_msg/local_setup.zsh
+[16.761s] -- Installing: /home/yamashita/car_ws/install/coordinate_msg/share/coordinate_msg/local_setup.dsv
+[16.762s] -- Installing: /home/yamashita/car_ws/install/coordinate_msg/share/coordinate_msg/package.dsv
+[16.763s] -- Up-to-date: /home/yamashita/car_ws/install/coordinate_msg/share/ament_index/resource_index/packages/coordinate_msg
+[16.764s] -- Up-to-date: /home/yamashita/car_ws/install/coordinate_msg/share/coordinate_msg/cmake/export_coordinate_msg__rosidl_generator_cExport.cmake
+[16.764s] -- Up-to-date: /home/yamashita/car_ws/install/coordinate_msg/share/coordinate_msg/cmake/export_coordinate_msg__rosidl_generator_cExport-noconfig.cmake
+[16.765s] -- Up-to-date: /home/yamashita/car_ws/install/coordinate_msg/share/coordinate_msg/cmake/export_coordinate_msg__rosidl_typesupport_fastrtps_cExport.cmake
+[16.766s] -- Up-to-date: /home/yamashita/car_ws/install/coordinate_msg/share/coordinate_msg/cmake/export_coordinate_msg__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[16.767s] -- Up-to-date: /home/yamashita/car_ws/install/coordinate_msg/share/coordinate_msg/cmake/coordinate_msg__rosidl_typesupport_introspection_cExport.cmake
+[16.767s] -- Up-to-date: /home/yamashita/car_ws/install/coordinate_msg/share/coordinate_msg/cmake/coordinate_msg__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[16.768s] -- Up-to-date: /home/yamashita/car_ws/install/coordinate_msg/share/coordinate_msg/cmake/coordinate_msg__rosidl_typesupport_cExport.cmake
+[16.768s] -- Up-to-date: /home/yamashita/car_ws/install/coordinate_msg/share/coordinate_msg/cmake/coordinate_msg__rosidl_typesupport_cExport-noconfig.cmake
+[16.769s] -- Up-to-date: /home/yamashita/car_ws/install/coordinate_msg/share/coordinate_msg/cmake/export_coordinate_msg__rosidl_generator_cppExport.cmake
+[16.770s] -- Up-to-date: /home/yamashita/car_ws/install/coordinate_msg/share/coordinate_msg/cmake/export_coordinate_msg__rosidl_typesupport_fastrtps_cppExport.cmake
+[16.770s] -- Up-to-date: /home/yamashita/car_ws/install/coordinate_msg/share/coordinate_msg/cmake/export_coordinate_msg__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[16.771s] -- Up-to-date: /home/yamashita/car_ws/install/coordinate_msg/share/coordinate_msg/cmake/coordinate_msg__rosidl_typesupport_introspection_cppExport.cmake
+[16.771s] -- Up-to-date: /home/yamashita/car_ws/install/coordinate_msg/share/coordinate_msg/cmake/coordinate_msg__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[16.772s] -- Up-to-date: /home/yamashita/car_ws/install/coordinate_msg/share/coordinate_msg/cmake/coordinate_msg__rosidl_typesupport_cppExport.cmake
+[16.773s] -- Up-to-date: /home/yamashita/car_ws/install/coordinate_msg/share/coordinate_msg/cmake/coordinate_msg__rosidl_typesupport_cppExport-noconfig.cmake
+[16.773s] -- Up-to-date: /home/yamashita/car_ws/install/coordinate_msg/share/coordinate_msg/cmake/export_coordinate_msg__rosidl_generator_pyExport.cmake
+[16.774s] -- Up-to-date: /home/yamashita/car_ws/install/coordinate_msg/share/coordinate_msg/cmake/export_coordinate_msg__rosidl_generator_pyExport-noconfig.cmake
+[16.774s] -- Up-to-date: /home/yamashita/car_ws/install/coordinate_msg/share/coordinate_msg/cmake/rosidl_cmake-extras.cmake
+[16.775s] -- Up-to-date: /home/yamashita/car_ws/install/coordinate_msg/share/coordinate_msg/cmake/ament_cmake_export_include_directories-extras.cmake
+[16.775s] -- Up-to-date: /home/yamashita/car_ws/install/coordinate_msg/share/coordinate_msg/cmake/ament_cmake_export_libraries-extras.cmake
+[16.775s] -- Up-to-date: /home/yamashita/car_ws/install/coordinate_msg/share/coordinate_msg/cmake/ament_cmake_export_targets-extras.cmake
+[16.776s] -- Up-to-date: /home/yamashita/car_ws/install/coordinate_msg/share/coordinate_msg/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[16.776s] -- Up-to-date: /home/yamashita/car_ws/install/coordinate_msg/share/coordinate_msg/cmake/ament_cmake_export_dependencies-extras.cmake
+[16.776s] -- Up-to-date: /home/yamashita/car_ws/install/coordinate_msg/share/coordinate_msg/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[16.777s] -- Up-to-date: /home/yamashita/car_ws/install/coordinate_msg/share/coordinate_msg/cmake/coordinate_msgConfig.cmake
+[16.777s] -- Up-to-date: /home/yamashita/car_ws/install/coordinate_msg/share/coordinate_msg/cmake/coordinate_msgConfig-version.cmake
+[16.778s] -- Up-to-date: /home/yamashita/car_ws/install/coordinate_msg/share/coordinate_msg/package.xml
+[16.786s] Invoked command in '/home/yamashita/car_ws/build/coordinate_msg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/yamashita/robot_2024/install/robot_2024:/home/yamashita/robot_2024/install/gazebo_robot_2024:/home/yamashita/LegControll/install/test_controll:/home/yamashita/LegControll/install/monitor_node:/home/yamashita/LegControll/install/monitor:/home/yamashita/car_ws/install/mypkg:/opt/ros/humble /usr/bin/cmake --install /home/yamashita/car_ws/build/coordinate_msg

@@ -55,6 +55,7 @@ CMakeFiles/coordinate_msg__rosidl_generator_c.dir/rosidl_generator_c/coordinate_
   /usr/include/stdint.h \
   /usr/include/aarch64-linux-gnu/bits/wchar.h \
   /usr/include/aarch64-linux-gnu/bits/stdint-uintn.h \
+  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence.h \
   /usr/include/assert.h \
   /usr/include/string.h \
   /usr/include/aarch64-linux-gnu/bits/types/locale_t.h \
@@ -74,8 +75,11 @@ CMakeFiles/coordinate_msg__rosidl_generator_c.dir/rosidl_generator_c/coordinate_
   /usr/include/aarch64-linux-gnu/bits/stdio_lim.h \
   /opt/ros/humble/include/rcutils/rcutils/visibility_control.h \
   /opt/ros/humble/include/rcutils/rcutils/visibility_control_macros.h \
-  /opt/ros/humble/include/rcutils/rcutils/types/rcutils_ret.h
+  /opt/ros/humble/include/rcutils/rcutils/types/rcutils_ret.h \
+  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence_functions.h
 
+
+/opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence_functions.h:
 
 /usr/include/aarch64-linux-gnu/bits/stdio_lim.h:
 
@@ -97,6 +101,8 @@ CMakeFiles/coordinate_msg__rosidl_generator_c.dir/rosidl_generator_c/coordinate_
 
 /opt/ros/humble/include/rcutils/rcutils/allocator.h:
 
+/usr/include/strings.h:
+
 /usr/include/endian.h:
 
 /usr/include/aarch64-linux-gnu/bits/types/time_t.h:
@@ -105,13 +111,9 @@ CMakeFiles/coordinate_msg__rosidl_generator_c.dir/rosidl_generator_c/coordinate_
 
 rosidl_generator_c/coordinate_msg/msg/detail/coordinate__functions.c:
 
-/usr/include/strings.h:
-
 /usr/include/aarch64-linux-gnu/bits/time64.h:
 
 /usr/include/aarch64-linux-gnu/bits/types/locale_t.h:
-
-/usr/include/aarch64-linux-gnu/sys/types.h:
 
 /usr/include/string.h:
 
@@ -208,6 +210,10 @@ rosidl_generator_c/coordinate_msg/msg/detail/coordinate__functions.h:
 /usr/include/aarch64-linux-gnu/bits/types/__fpos_t.h:
 
 /usr/include/aarch64-linux-gnu/bits/stdlib-float.h:
+
+/usr/include/aarch64-linux-gnu/sys/types.h:
+
+/opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence.h:
 
 rosidl_generator_c/coordinate_msg/msg/rosidl_generator_c__visibility_control.h:
 

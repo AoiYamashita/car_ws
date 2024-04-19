@@ -11,15 +11,34 @@
 #include "rcutils/allocator.h"
 
 
+// Include directives for member types
+// Member `x`
+// Member `y`
+// Member `z`
+#include "rosidl_runtime_c/primitives_sequence_functions.h"
+
 bool
 coordinate_msg__msg__Coordinate__init(coordinate_msg__msg__Coordinate * msg)
 {
   if (!msg) {
     return false;
   }
+  // num
   // x
+  if (!rosidl_runtime_c__float__Sequence__init(&msg->x, 0)) {
+    coordinate_msg__msg__Coordinate__fini(msg);
+    return false;
+  }
   // y
-  // r
+  if (!rosidl_runtime_c__float__Sequence__init(&msg->y, 0)) {
+    coordinate_msg__msg__Coordinate__fini(msg);
+    return false;
+  }
+  // z
+  if (!rosidl_runtime_c__float__Sequence__init(&msg->z, 0)) {
+    coordinate_msg__msg__Coordinate__fini(msg);
+    return false;
+  }
   return true;
 }
 
@@ -29,9 +48,13 @@ coordinate_msg__msg__Coordinate__fini(coordinate_msg__msg__Coordinate * msg)
   if (!msg) {
     return;
   }
+  // num
   // x
+  rosidl_runtime_c__float__Sequence__fini(&msg->x);
   // y
-  // r
+  rosidl_runtime_c__float__Sequence__fini(&msg->y);
+  // z
+  rosidl_runtime_c__float__Sequence__fini(&msg->z);
 }
 
 bool
@@ -40,16 +63,26 @@ coordinate_msg__msg__Coordinate__are_equal(const coordinate_msg__msg__Coordinate
   if (!lhs || !rhs) {
     return false;
   }
+  // num
+  if (lhs->num != rhs->num) {
+    return false;
+  }
   // x
-  if (lhs->x != rhs->x) {
+  if (!rosidl_runtime_c__float__Sequence__are_equal(
+      &(lhs->x), &(rhs->x)))
+  {
     return false;
   }
   // y
-  if (lhs->y != rhs->y) {
+  if (!rosidl_runtime_c__float__Sequence__are_equal(
+      &(lhs->y), &(rhs->y)))
+  {
     return false;
   }
-  // r
-  if (lhs->r != rhs->r) {
+  // z
+  if (!rosidl_runtime_c__float__Sequence__are_equal(
+      &(lhs->z), &(rhs->z)))
+  {
     return false;
   }
   return true;
@@ -63,12 +96,26 @@ coordinate_msg__msg__Coordinate__copy(
   if (!input || !output) {
     return false;
   }
+  // num
+  output->num = input->num;
   // x
-  output->x = input->x;
+  if (!rosidl_runtime_c__float__Sequence__copy(
+      &(input->x), &(output->x)))
+  {
+    return false;
+  }
   // y
-  output->y = input->y;
-  // r
-  output->r = input->r;
+  if (!rosidl_runtime_c__float__Sequence__copy(
+      &(input->y), &(output->y)))
+  {
+    return false;
+  }
+  // z
+  if (!rosidl_runtime_c__float__Sequence__copy(
+      &(input->z), &(output->z)))
+  {
+    return false;
+  }
   return true;
 }
 

@@ -248,13 +248,19 @@ CMakeFiles/coordinate_msg__rosidl_generator_py.dir/rosidl_generator_py/coordinat
   /usr/include/python3.10/numpy/__multiarray_api.h \
   /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/visibility_control.h \
   rosidl_generator_c/coordinate_msg/msg/detail/coordinate__struct.h \
+  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence.h \
   rosidl_generator_c/coordinate_msg/msg/detail/coordinate__functions.h \
-  rosidl_generator_c/coordinate_msg/msg/rosidl_generator_c__visibility_control.h
+  rosidl_generator_c/coordinate_msg/msg/rosidl_generator_c__visibility_control.h \
+  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence_functions.h
 
+
+/opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence_functions.h:
 
 rosidl_generator_c/coordinate_msg/msg/rosidl_generator_c__visibility_control.h:
 
 rosidl_generator_c/coordinate_msg/msg/detail/coordinate__functions.h:
+
+/opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence.h:
 
 /usr/include/python3.10/numpy/_neighborhood_iterator_imp.h:
 

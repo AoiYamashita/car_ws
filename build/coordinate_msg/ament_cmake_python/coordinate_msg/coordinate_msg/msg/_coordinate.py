@@ -5,6 +5,11 @@
 
 # Import statements for member types
 
+# Member 'x'
+# Member 'y'
+# Member 'z'
+import array  # noqa: E402, I100
+
 import builtins  # noqa: E402, I100
 
 import math  # noqa: E402, I100
@@ -57,30 +62,34 @@ class Coordinate(metaclass=Metaclass_Coordinate):
     """Message class 'Coordinate'."""
 
     __slots__ = [
+        '_num',
         '_x',
         '_y',
-        '_r',
+        '_z',
     ]
 
     _fields_and_field_types = {
-        'x': 'double',
-        'y': 'double',
-        'r': 'double',
+        'num': 'int8',
+        'x': 'sequence<float>',
+        'y': 'sequence<float>',
+        'z': 'sequence<float>',
     }
 
     SLOT_TYPES = (
-        rosidl_parser.definition.BasicType('double'),  # noqa: E501
-        rosidl_parser.definition.BasicType('double'),  # noqa: E501
-        rosidl_parser.definition.BasicType('double'),  # noqa: E501
+        rosidl_parser.definition.BasicType('int8'),  # noqa: E501
+        rosidl_parser.definition.UnboundedSequence(rosidl_parser.definition.BasicType('float')),  # noqa: E501
+        rosidl_parser.definition.UnboundedSequence(rosidl_parser.definition.BasicType('float')),  # noqa: E501
+        rosidl_parser.definition.UnboundedSequence(rosidl_parser.definition.BasicType('float')),  # noqa: E501
     )
 
     def __init__(self, **kwargs):
         assert all('_' + key in self.__slots__ for key in kwargs.keys()), \
             'Invalid arguments passed to constructor: %s' % \
             ', '.join(sorted(k for k in kwargs.keys() if '_' + k not in self.__slots__))
-        self.x = kwargs.get('x', float())
-        self.y = kwargs.get('y', float())
-        self.r = kwargs.get('r', float())
+        self.num = kwargs.get('num', int())
+        self.x = array.array('f', kwargs.get('x', []))
+        self.y = array.array('f', kwargs.get('y', []))
+        self.z = array.array('f', kwargs.get('z', []))
 
     def __repr__(self):
         typename = self.__class__.__module__.split('.')
@@ -111,11 +120,13 @@ class Coordinate(metaclass=Metaclass_Coordinate):
     def __eq__(self, other):
         if not isinstance(other, self.__class__):
             return False
+        if self.num != other.num:
+            return False
         if self.x != other.x:
             return False
         if self.y != other.y:
             return False
-        if self.r != other.r:
+        if self.z != other.z:
             return False
         return True
 
@@ -125,19 +136,47 @@ class Coordinate(metaclass=Metaclass_Coordinate):
         return copy(cls._fields_and_field_types)
 
     @builtins.property
+    def num(self):
+        """Message field 'num'."""
+        return self._num
+
+    @num.setter
+    def num(self, value):
+        if __debug__:
+            assert \
+                isinstance(value, int), \
+                "The 'num' field must be of type 'int'"
+            assert value >= -128 and value < 128, \
+                "The 'num' field must be an integer in [-128, 127]"
+        self._num = value
+
+    @builtins.property
     def x(self):
         """Message field 'x'."""
         return self._x
 
     @x.setter
     def x(self, value):
+        if isinstance(value, array.array):
+            assert value.typecode == 'f', \
+                "The 'x' array.array() must have the type code of 'f'"
+            self._x = value
+            return
         if __debug__:
+            from collections.abc import Sequence
+            from collections.abc import Set
+            from collections import UserList
+            from collections import UserString
             assert \
-                isinstance(value, float), \
-                "The 'x' field must be of type 'float'"
-            assert not (value < -1.7976931348623157e+308 or value > 1.7976931348623157e+308) or math.isinf(value), \
-                "The 'x' field must be a double in [-1.7976931348623157e+308, 1.7976931348623157e+308]"
-        self._x = value
+                ((isinstance(value, Sequence) or
+                  isinstance(value, Set) or
+                  isinstance(value, UserList)) and
+                 not isinstance(value, str) and
+                 not isinstance(value, UserString) and
+                 all(isinstance(v, float) for v in value) and
+                 all(not (val < -3.402823466e+38 or val > 3.402823466e+38) or math.isinf(val) for val in value)), \
+                "The 'x' field must be a set or sequence and each value of type 'float' and each float in [-340282346600000016151267322115014000640.000000, 340282346600000016151267322115014000640.000000]"
+        self._x = array.array('f', value)
 
     @builtins.property
     def y(self):
@@ -146,25 +185,51 @@ class Coordinate(metaclass=Metaclass_Coordinate):
 
     @y.setter
     def y(self, value):
+        if isinstance(value, array.array):
+            assert value.typecode == 'f', \
+                "The 'y' array.array() must have the type code of 'f'"
+            self._y = value
+            return
         if __debug__:
+            from collections.abc import Sequence
+            from collections.abc import Set
+            from collections import UserList
+            from collections import UserString
             assert \
-                isinstance(value, float), \
-                "The 'y' field must be of type 'float'"
-            assert not (value < -1.7976931348623157e+308 or value > 1.7976931348623157e+308) or math.isinf(value), \
-                "The 'y' field must be a double in [-1.7976931348623157e+308, 1.7976931348623157e+308]"
-        self._y = value
+                ((isinstance(value, Sequence) or
+                  isinstance(value, Set) or
+                  isinstance(value, UserList)) and
+                 not isinstance(value, str) and
+                 not isinstance(value, UserString) and
+                 all(isinstance(v, float) for v in value) and
+                 all(not (val < -3.402823466e+38 or val > 3.402823466e+38) or math.isinf(val) for val in value)), \
+                "The 'y' field must be a set or sequence and each value of type 'float' and each float in [-340282346600000016151267322115014000640.000000, 340282346600000016151267322115014000640.000000]"
+        self._y = array.array('f', value)
 
     @builtins.property
-    def r(self):
-        """Message field 'r'."""
-        return self._r
+    def z(self):
+        """Message field 'z'."""
+        return self._z
 
-    @r.setter
-    def r(self, value):
+    @z.setter
+    def z(self, value):
+        if isinstance(value, array.array):
+            assert value.typecode == 'f', \
+                "The 'z' array.array() must have the type code of 'f'"
+            self._z = value
+            return
         if __debug__:
+            from collections.abc import Sequence
+            from collections.abc import Set
+            from collections import UserList
+            from collections import UserString
             assert \
-                isinstance(value, float), \
-                "The 'r' field must be of type 'float'"
-            assert not (value < -1.7976931348623157e+308 or value > 1.7976931348623157e+308) or math.isinf(value), \
-                "The 'r' field must be a double in [-1.7976931348623157e+308, 1.7976931348623157e+308]"
-        self._r = value
+                ((isinstance(value, Sequence) or
+                  isinstance(value, Set) or
+                  isinstance(value, UserList)) and
+                 not isinstance(value, str) and
+                 not isinstance(value, UserString) and
+                 all(isinstance(v, float) for v in value) and
+                 all(not (val < -3.402823466e+38 or val > 3.402823466e+38) or math.isinf(val) for val in value)), \
+                "The 'z' field must be a set or sequence and each value of type 'float' and each float in [-340282346600000016151267322115014000640.000000, 340282346600000016151267322115014000640.000000]"
+        self._z = array.array('f', value)

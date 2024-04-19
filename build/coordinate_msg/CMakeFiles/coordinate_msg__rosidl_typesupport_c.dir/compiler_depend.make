@@ -30,6 +30,7 @@ CMakeFiles/coordinate_msg__rosidl_typesupport_c.dir/rosidl_typesupport_c/coordin
   /usr/include/aarch64-linux-gnu/bits/wchar.h \
   /usr/include/aarch64-linux-gnu/bits/stdint-intn.h \
   /usr/include/aarch64-linux-gnu/bits/stdint-uintn.h \
+  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence.h \
   rosidl_generator_c/coordinate_msg/msg/detail/coordinate__type_support.h \
   rosidl_generator_c/coordinate_msg/msg/rosidl_generator_c__visibility_control.h \
   /opt/ros/humble/include/rosidl_typesupport_c/rosidl_typesupport_c/identifier.h \
@@ -45,6 +46,8 @@ CMakeFiles/coordinate_msg__rosidl_typesupport_c.dir/rosidl_typesupport_c/coordin
 /opt/ros/humble/include/rosidl_typesupport_c/rosidl_typesupport_c/visibility_control.h:
 
 /opt/ros/humble/include/rosidl_typesupport_c/rosidl_typesupport_c/identifier.h:
+
+/opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence.h:
 
 /usr/include/aarch64-linux-gnu/bits/wordsize.h:
 

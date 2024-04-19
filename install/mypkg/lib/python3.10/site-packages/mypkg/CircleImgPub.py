@@ -5,6 +5,7 @@ from rclpy.node import Node
 from rclpy.qos import qos_profile_sensor_data
 from sensor_msgs.msg import Image
 from std_msgs.msg import String
+from coordinate_msg.msg import Coordinate
 #from geometry_msgs.msg import Vector3
 import numpy as np
 import cv2
@@ -29,12 +30,12 @@ def Get_Color_Point(img,rgb,under_thresh,upper_thresh):
     return th
 
 px_rate = 8#distance of camera * px of object
-ball_size = 1.288#meter
+ball_size = 0.200#meter
 tan_view_angle = 11.4/23.8#horizon angle,Verticalangle
 
 def Measure_Distance(center,r,frame_):
     coord = np.array([0,0,0])
-    if int(r) < 5 or int(r) > 90:
+    if int(r) < 0 or int(r) > 90:
         return coord
     distance = px_rate/r
     frame_coord = [center[0]-frame_.shape[1]/2,-center[1]+frame_.shape[0]/2]
@@ -52,7 +53,7 @@ def Sarch_Circle(contours,min_size,max_size,number_of_circles):
 
     margin = 100
 
-    circle_data = np.zeros((margin,3))
+    circle_data = np.zeros((margin,3),dtype=np.float32)
 
     count = 0
 
@@ -86,6 +87,7 @@ class ImgReceiver(Node):
         self.publisher = self.create_publisher(Image,"processed",10)
         #self.publisher = self.create_publisher(Vector3,"balls",10)
         self.pub = self.create_publisher(String, 'web_image', 10)
+        self.pub_coord = self.create_publisher(Coordinate, 'coordinate', 10)
         self.clip_pub = self.create_publisher(String, 'clip_image', 10)
     def cb(self,data):
 
@@ -111,6 +113,8 @@ class ImgReceiver(Node):
         circles = Sarch_Circle(contours,0,10000,100)
 
         circle_imgs = []
+
+        coordinates = []
 
         for t in circles:
           edge = 1.0*t[2]
@@ -149,6 +153,13 @@ class ImgReceiver(Node):
                 cv2.circle(frame,(int(t[0]+(l[0]-60)*t[2]/30),int(t[1]+(l[1]-60)*t[2]/30)),int(l[2]*t[2]/30),(255, 0, 0),2)
                 #cv2.putText(frame,str(point_area/(120*120)),(int(t[0]+(l[0]-60)*t[2]/30),int(t[1]+(l[1]-60)*t[2]/30)),cv2.FONT_HERSHEY_SIMPLEX,1,(255,0,0),2,cv2.LINE_4)
                 cv2.circle(dst,(l[0],l[1]),l[2],(255,0,0),2)
+                
+                coordinates.append(l)
+
+                coord = Measure_Distance([t[0],t[1]],0.8*t[2]+0.2*t[2],frame)
+                cv2.putText(frame,text="x="+str(coord[0]),org=(int(t[0]),int(t[1])-20),fontFace=cv2.FONT_HERSHEY_SIMPLEX,fontScale=1.0,color=(0, 255, 0),thickness=2,lineType=cv2.LINE_AA)
+                cv2.putText(frame,text="y="+str(coord[1]),org=(int(t[0]),int(t[1])),fontFace=cv2.FONT_HERSHEY_SIMPLEX,fontScale=1.0,color=(0, 255, 0),thickness=2,lineType=cv2.LINE_AA)
+                cv2.putText(frame,text="z="+str(coord[2]),org=(int(t[0]),int(t[1])+20),fontFace=cv2.FONT_HERSHEY_SIMPLEX,fontScale=1.0,color=(0, 255, 0),thickness=2,lineType=cv2.LINE_AA)
               circle_imgs.append(dst)
             #print(point_area/(120*120))
 
@@ -156,10 +167,10 @@ class ImgReceiver(Node):
         for i in circles:
           cv2.circle(frame,(int(i[0]),int(i[1])),int(i[2]),(0,255,0),2)
 
-          coord = Measure_Distance([i[0],i[1]],i[2],frame)
-          cv2.putText(frame,text="x="+str(coord[0]),org=(int(i[0]),int(i[1])-20),fontFace=cv2.FONT_HERSHEY_SIMPLEX,fontScale=1.0,color=(0, 255, 0),thickness=2,lineType=cv2.LINE_AA)
-          cv2.putText(frame,text="y="+str(coord[1]),org=(int(i[0]),int(i[1])),fontFace=cv2.FONT_HERSHEY_SIMPLEX,fontScale=1.0,color=(0, 255, 0),thickness=2,lineType=cv2.LINE_AA)
-          cv2.putText(frame,text="z="+str(coord[2]),org=(int(i[0]),int(i[1])+20),fontFace=cv2.FONT_HERSHEY_SIMPLEX,fontScale=1.0,color=(0, 255, 0),thickness=2,lineType=cv2.LINE_AA)
+          #coord = Measure_Distance([i[0],i[1]],i[2],frame)
+          #cv2.putText(frame,text="x="+str(coord[0]),org=(int(i[0]),int(i[1])-20),fontFace=cv2.FONT_HERSHEY_SIMPLEX,fontScale=1.0,color=(0, 255, 0),thickness=2,lineType=cv2.LINE_AA)
+          #cv2.putText(frame,text="y="+str(coord[1]),org=(int(i[0]),int(i[1])),fontFace=cv2.FONT_HERSHEY_SIMPLEX,fontScale=1.0,color=(0, 255, 0),thickness=2,lineType=cv2.LINE_AA)
+          #cv2.putText(frame,text="z="+str(coord[2]),org=(int(i[0]),int(i[1])+20),fontFace=cv2.FONT_HERSHEY_SIMPLEX,fontScale=1.0,color=(0, 255, 0),thickness=2,lineType=cv2.LINE_AA)
         
 
         for t in circle_imgs:
@@ -172,8 +183,17 @@ class ImgReceiver(Node):
         pub_msg = String()
         pub_msg.data = base64.b64encode(img_jpeg).decode()
         self.pub.publish(pub_msg)
-
         
+        if len(coordinates):
+            msg = Coordinate()
+            msg.num = len(coordinates)
+            coordinates = np.array(coordinates,dtype = np.float32).T
+            #print(coordinates[0,:])
+            msg.x = [float(i) for i in coordinates[0,:]]
+            msg.y = [float(i) for i in coordinates[1,:]]
+            msg.z = [float(i) for i in coordinates[2,:]]
+
+            self.pub_coord.publish(msg)
 
         global counter
         counter += 1
