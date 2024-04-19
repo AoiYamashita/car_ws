@@ -146,7 +146,7 @@ class ImgReceiver(Node):
 
           if point_area/(120*120) > 0.015:
               for l in circles_hough[0,:]:
-                cv2.circle(frame,(int(t[0]+(l[0]-60)*t[2]/30),int(t[1]+(l[1]-60)*t[2]/30)),int(l[2]*t[2]/30),     (255, 0, 0), 2)
+                cv2.circle(frame,(int(t[0]+(l[0]-60)*t[2]/30),int(t[1]+(l[1]-60)*t[2]/30)),int(l[2]*t[2]/30),(255, 0, 0),2)
                 #cv2.putText(frame,str(point_area/(120*120)),(int(t[0]+(l[0]-60)*t[2]/30),int(t[1]+(l[1]-60)*t[2]/30)),cv2.FONT_HERSHEY_SIMPLEX,1,(255,0,0),2,cv2.LINE_4)
                 cv2.circle(dst,(l[0],l[1]),l[2],(255,0,0),2)
               circle_imgs.append(dst)
@@ -156,12 +156,11 @@ class ImgReceiver(Node):
         for i in circles:
           cv2.circle(frame,(int(i[0]),int(i[1])),int(i[2]),(0,255,0),2)
 
-        """
-        coord = Measure_Distance([i[0],i[1]],i[2],frame)
-        cv2.putText(frame,text="x="+str(coord[0]),org=(int(i[0]),int(i[1])-20),fontFace=cv2.FONT_HERSHEY_SIMPLEX,fontScale=1.0,color=(0, 255, 0),thickness=2,lineType=cv2.LINE_AA)
-        cv2.putText(frame,text="y="+str(coord[1]),org=(int(i[0]),int(i[1])),fontFace=cv2.FONT_HERSHEY_SIMPLEX,fontScale=1.0,color=(0, 255, 0),thickness=2,lineType=cv2.LINE_AA)
-        cv2.putText(frame,text="z="+str(coord[2]),org=(int(i[0]),int(i[1])+20),fontFace=cv2.FONT_HERSHEY_SIMPLEX,fontScale=1.0,color=(0, 255, 0),thickness=2,lineType=cv2.LINE_AA)
-        """
+          coord = Measure_Distance([i[0],i[1]],i[2],frame)
+          cv2.putText(frame,text="x="+str(coord[0]),org=(int(i[0]),int(i[1])-20),fontFace=cv2.FONT_HERSHEY_SIMPLEX,fontScale=1.0,color=(0, 255, 0),thickness=2,lineType=cv2.LINE_AA)
+          cv2.putText(frame,text="y="+str(coord[1]),org=(int(i[0]),int(i[1])),fontFace=cv2.FONT_HERSHEY_SIMPLEX,fontScale=1.0,color=(0, 255, 0),thickness=2,lineType=cv2.LINE_AA)
+          cv2.putText(frame,text="z="+str(coord[2]),org=(int(i[0]),int(i[1])+20),fontFace=cv2.FONT_HERSHEY_SIMPLEX,fontScale=1.0,color=(0, 255, 0),thickness=2,lineType=cv2.LINE_AA)
+        
 
         for t in circle_imgs:
             img_jpeg = simplejpeg.encode_jpeg(t, colorspace = "BGR", quality = 50)
